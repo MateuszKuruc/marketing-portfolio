@@ -6,7 +6,7 @@ import Button from "./Button";
 
 const NavBar = () => {
   return (
-    <nav className="border-2 border-black flexAroundglob max-container padding-container relative z-30 py-5 bg-slate-600">
+    <nav className="border-2 border-black flexAround glob max-container padding-container relative z-30 py-5 bg-slate-600">
       <Link href="/">
         <Image src="/boostguru.png" alt="home_logo" width={70} height={46} />
       </Link>
