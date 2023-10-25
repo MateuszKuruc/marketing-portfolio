@@ -2,12 +2,13 @@ import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Button from "./Button";
 
 const NavBar = () => {
   return (
     <nav className="border-2 border-red-500 flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
-        <Image src="/home.svg" alt="home_logo" width={45} height={45} />
+        <Image src="/boostguru.png" alt="home_logo" width={70} height={46} />
       </Link>
       <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map((link) => (
@@ -20,6 +21,13 @@ const NavBar = () => {
           </Link>
         ))}
       </ul>
+
+    <div className="lg:flexCenter hidden">
+<Button type="button"
+title="Login"
+
+/>
+    </div>
     </nav>
   );
 };
