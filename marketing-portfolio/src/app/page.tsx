@@ -1,5 +1,15 @@
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Hero from "@/components/Hero";
+import Portfolio from "@/components/Portfolio";
+
 export default function Home() {
   return (
-    <h1 className="font-bold text-2xl text-teal-500">Hello World</h1>
-  )
+    <>
+      <Hero />
+      <About />
+      <Portfolio />
+      <Contact />
+    </>
+  );
 }
