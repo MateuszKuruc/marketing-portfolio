@@ -6,7 +6,7 @@ import Button from "./Button";
 
 const NavBar = () => {
   return (
-    <nav className="border-2 border-red-500 flexBetween max-container padding-container relative z-30 py-5">
+    <nav className="border-2 border-black flexAround max-container padding-container relative z-30 py-5 bg-slate-600">
       <Link href="/">
         <Image src="/boostguru.png" alt="home_logo" width={70} height={46} />
       </Link>
@@ -15,19 +15,29 @@ const NavBar = () => {
           <Link
             href={link.href}
             key={link.key}
-            className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 hover:font-bold"
+            className="regular-16 text-white flexCenter cursor-pointer pb-1.5 hover:font-bold"
           >
             {link.label}
           </Link>
         ))}
       </ul>
 
-    <div className="lg:flexCenter hidden">
-<Button type="button"
-title="Login"
+      {/* <div className="lg:flexCenter hidden">
+        <Button
+          type="button"
+          title="Login"
+          icon="/user.svg"
+          variant="btn_dark_green"
+        />
+      </div> */}
 
-/>
-    </div>
+      <Image
+        src="menu.svg"
+        alt="menu"
+        width={32}
+        height={32}
+        className="inline-block cursor-pointer lg:hidden"
+      />
     </nav>
   );
 };
