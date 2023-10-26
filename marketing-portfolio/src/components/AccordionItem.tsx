@@ -10,25 +10,15 @@ const AccordionItem = ({
   description,
 }: AccordionItemProps) => {
   return (
-    <div
-    // className="pt-[10px]"
-    className="bg-blue-50"
-    >
-      <div
-        // className="bg-white py-[25px] px-[50px] flex justify-between items-center cursor-pointer"
-        className="bg-gray-90 border-4 p-10"
-        onClick={toggleAccordion}
-      >
-        <p
-        // className="text-[22px] font-semibold"
-        className="text-blue-50 bold-32"
-        >
-          {title}
-        </p>
-        <div
-        // className="text-[30px]"
-        >
-          {open ? <AiFillMinusCircle /> : <AiFillPlusCircle />}
+    <div className="bg-blue-50">
+      <div className="bg-gray-90 border-2 p-10 flex flexBetween" onClick={toggleAccordion}>
+        <p className="text-blue-50 bold-32">{title}</p>
+        <div>
+          {open ? (
+            <AiFillMinusCircle color="white" size={50} />
+          ) : (
+            <AiFillPlusCircle color="white" size={50} />
+          )}
         </div>
       </div>
 
