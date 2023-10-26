@@ -1,5 +1,6 @@
 import React from "react";
 import { ACCORDION_DATA } from "@/constants";
+import AccordionItem from "./AccordionItem";
 
 const Portfolio = () => {
   return (
@@ -11,12 +12,11 @@ const Portfolio = () => {
           wynioslem ich marketing na jakis kosmiczny poziom ze hej
         </p>
       </header>
-<div className="bg-gray-90 padding-container max-container py-10">
-{ACCORDION_DATA.map((data, index) => {
-  return <AccordionItem />
-})}
-</div>
-
+      <div className="bg-gray-90 padding-container max-container py-10">
+        {ACCORDION_DATA.map((data, index) => {
+          return <AccordionItem key={data.title} />;
+        })}
+      </div>
     </section>
   );
 };
