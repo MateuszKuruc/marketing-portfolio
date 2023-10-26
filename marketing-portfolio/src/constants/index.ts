@@ -14,6 +14,24 @@ export const NAV_LINKS = [
 //     { href: '/', key: 'contact_us', label: 'Contact Us' },
 //   ];
 
+export const ACCORDION_DATA = [
+  {
+    title: "Client 1 - Microsoft",
+    description:
+      "Dla tego klienta przygotowalem niezle gowno, zrobilismy fajna kampanie pod kliki na fb i prowadzilem im jeszcze profile na wszystkich social mediach. sadsadsa sadsadsad sadsadsad sadsadsad sadsadd",
+  },
+  {
+    title: "Client 2 - Google",
+    description:
+      "Tutaj robilismy kampanie google ads i nagrywalismy tiktoki. Do tego pracowalismy nad podniesienem ruchu na stronie, zanotowalismy wzrost 500%. sadsadsadsadsa sadsadsadsa sdsadsadsad sadsadsadsadas",
+  },
+  {
+    title: "Client 3 - Apple",
+    description:
+      "Prowadzilem konsultacje marketingowe dla klienta w branzy bankowej. Tematyka dotyczyla doboru grafik przy prowadzeniu profilow w social media. adasdasdsadsa sadasdasdsadas dsadsadsadsad sadsadsadsa",
+  },
+];
+
 // CAMP SECTION
 export const PEOPLE_URL = [
   "/person-1.png",

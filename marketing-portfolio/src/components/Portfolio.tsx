@@ -1,4 +1,5 @@
 import React from "react";
+import { ACCORDION_DATA } from "@/constants";
 
 const Portfolio = () => {
   return (
@@ -6,37 +7,14 @@ const Portfolio = () => {
       <header className="mb-10 padding container max-container">
         <h1 className="bold-52 lg:bold-70 text-blue-50">Portfolio</h1>
         <p className="regular-16 text-white mt-6">
-          Sprawdz jak poprawilem marketingowe wskazniki u moich klientow{" "}
+          Sprawdz jak poprawilem marketingowe wskazniki u moich klientow i
+          wynioslem ich marketing na jakis kosmiczny poziom ze hej
         </p>
       </header>
-      <section>
-        <div>
-          <h2 className="bold-32 text-blue-50">Client 1</h2>
-          <p className="regular-16 text-white mt-6">
-            Dla tego klienta przygotowalem niezle gowno, zrobilismy fajna
-            kampanie pod kliki na fb i prowadzilem im jeszcze profile na
-            wszystkich social mediach.
-          </p>
-        </div>
+<div className="bg-gray-90">
 
-        <div>
-          <h2 className="bold-32 text-blue-50">Client 1</h2>
-          <p className="regular-16 text-white mt-6">
-            Tutaj robilismy kampanie google ads i nagrywalismy tiktoki. Do tego
-            pracowalismy nad podniesienem ruchu na stronie, zanotowalismy wzrost
-            500%.
-          </p>
-        </div>
+</div>
 
-        <div>
-          <h2 className="bold-32 text-blue-50">Client 1</h2>
-          <p className="regular-16 text-white mt-6">
-            Prowadzilem konsultacje marketingowe dla klienta w branzy bankowej.
-            Tematyka dotyczyla doboru grafik przy prowadzeniu profilow w social
-            media.
-          </p>
-        </div>
-      </section>
     </section>
   );
 };
