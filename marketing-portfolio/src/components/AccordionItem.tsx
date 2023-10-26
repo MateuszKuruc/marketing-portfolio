@@ -1,8 +1,14 @@
 import React from "react";
 import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
 import { Collapse } from "react-collapse";
+import { AccordionItemProps } from "../../types";
 
-const AccordionItem = ({ open, toggle, title, description }) => {
+const AccordionItem = ({
+  open,
+  toggle,
+  title,
+  description,
+}: AccordionItemProps) => {
   return (
     <div className="pt-[10px]">
       <div
