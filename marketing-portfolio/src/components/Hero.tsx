@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="skew-y-3 bg-gradient-to-r from-blue-50 max-container padding-container border-2 flex flex-col border-red-500 gap-20 py-10 pb-32 md:gap-28 lg:py-20">
+    <section className="skew-y-3 bg-gradient-to-r from-blue-50 max-container padding-container flex flex-col flexCenter gap-20 py-10 pb-32 md:gap-28 lg:py-20">
       <div className="-skew-y-3">
 
       <Image
