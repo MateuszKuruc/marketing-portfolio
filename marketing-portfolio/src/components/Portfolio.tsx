@@ -8,7 +8,7 @@ import { useState } from "react";
 const Portfolio = () => {
   const [open, setOpen] = useState<number | string | false>(false);
 
-  const toggle = (index: number) => {
+  const toggleAccordion = (index: number) => {
     if (open === index) {
       return setOpen(false);
     }
@@ -32,7 +32,7 @@ const Portfolio = () => {
               open={index === open}
               title={data.title}
               description={data.description}
-              toggle={() => toggle(index)}
+              toggleAccordion={() => toggleAccordion(index)}
             />
           );
         })}

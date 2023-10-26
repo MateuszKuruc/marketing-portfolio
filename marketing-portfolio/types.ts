@@ -1,6 +1,6 @@
 export interface AccordionItemProps {
   open: boolean;
-  toggle: () => void;
+  toggleAccordion: () => void;
   title: string;
   description: string;
 }
