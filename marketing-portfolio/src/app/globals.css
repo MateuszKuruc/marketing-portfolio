@@ -15,7 +15,7 @@ body {
 }
 
 @layer utilities {
-  .btn_white {
+  /* .btn_white {
     @apply border-white bg-white px-8 py-3 text-green-50;
   }
   .btn_white_text {
@@ -29,7 +29,7 @@ body {
   }
   .btn_dark_green_outline {
     @apply border-gray-20 bg-green-90 px-8 py-5 text-white;
-  }
+  } */
 
   .max-container {
     @apply mx-auto max-w-[1440px];
@@ -128,10 +128,6 @@ body {
     @apply text-[16px] font-[700];
   }
 
-  /* Hero */
-  .hero-map {
-    @apply absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-60;
-  }
 
   /* Camp */
   .camp-quote {
