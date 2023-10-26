@@ -7,7 +7,7 @@ const About = () => {
       <div className="-skew-y-3 flex gap-10 padding-container">
         <header>
           <h1 className="bold-52 lg:bold-70 text-blue-50">O mnie</h1>
-          <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px] text-white">
+          <p className="regular-16 mt-6 xl:max-w-[520px] text-white">
             Jestem fajowym marketingowcem, zrobie ci graficzke i zmontuje teksty
             reklamowe. Zajmuje sie tym 20 lat co najmniej. Co bys jeszcze
             chcial? Robie:
@@ -19,13 +19,13 @@ const About = () => {
             <li>kompleksowo ogarne ci marketing</li>
           </ul>
         </header>
-        {/* <Image
+        <Image
           className="lg:block md:hidden sm:hidden xs:hidden"
           src="/placeholder.jpg"
           width={350}
           height={350}
           alt="marketing photo"
-        /> */}
+        />
       </div>
     </section>
   );
