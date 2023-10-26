@@ -16,7 +16,7 @@ const AccordionItem = ({ open, toggle, title, description }) => {
       </div>
 
       <Collapse isOpened={open}>
-        <div className="bg-white px-[50px] pb-[20px]"></div>
+        <div className="bg-white px-[50px] pb-[20px]">{description}</div>
       </Collapse>
     </div>
   );
