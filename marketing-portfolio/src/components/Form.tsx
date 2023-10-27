@@ -8,7 +8,7 @@ const Form = () => {
     console.log("form submitted");
   };
 
-  const formik = useFormik({
+  const { values, handleChange, handleBlur } = useFormik({
     initialValues: {
       email: "",
     },
@@ -21,9 +21,9 @@ const Form = () => {
         id="email"
         type="email"
         placeholder="Enter your email"
-        value={formik.values.email}
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
+        value={values.email}
+        onChange={handleChange}
+        onBlur={handleBlur}
       />
       <Button type="submit" title="Wyślij" variant="btn_submit" />
     </form>
