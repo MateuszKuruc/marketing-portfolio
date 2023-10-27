@@ -14,23 +14,6 @@ const Contact = () => {
           </p>
           <Form />
         </div>
-
-        <div className="sm: mt-10">
-          <p className="regular-20 text-white">...lub skontaktuj się przez:</p>
-          <p className="text-white regular-16">
-            Email:{" "}
-            <Link
-              className="text-blue-50"
-              href={`mailto:${process.env.CONTACT_EMAIL}`}
-            >
-              {process.env.CONTACT_EMAIL}
-            </Link>
-          </p>
-          <p className="text-white regular-16">
-            Telefon:{" "}
-            <span className="text-blue-50">{process.env.CONTACT_NUMBER}</span>
-          </p>
-        </div>
       </div>
     </section>
   );
