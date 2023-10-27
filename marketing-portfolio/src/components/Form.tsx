@@ -2,30 +2,27 @@
 import { useFormik } from "formik";
 import React from "react";
 import Button from "./Button";
+import { formSchema } from "@/schemas";
 
 const Form = () => {
-  const handleSubmit = (values, actions) => {
-    console.log("form submitted");
+  const onSubmit = () => {
+    console.log("submitted");
   };
 
-  const {
-    values,
-    handleChange,
-    handleBlur,
-    handleSubmit: formikSubmit,
-  } = useFormik({
+  const { values, handleChange, handleBlur, handleSubmit } = useFormik({
     initialValues: {
       name: "",
       email: "",
       phone: "",
       message: "",
     },
-    onSubmit: handleSubmit,
+    onSubmit,
+    validationSchema: formSchema,
   });
   return (
     <form
       className="bg-gray-50 p-10 flex flex-col gap-2"
-      onSubmit={formikSubmit}
+      onSubmit={handleSubmit}
     >
       <label htmlFor="name">Imię i nazwisko</label>
       <input
