@@ -24,7 +24,7 @@ const Form = () => {
   console.log(errors.name);
   return (
     <form
-      className="mt-10 bg-gray-90 p-10 flex flex-col gap-2 max-w-[520px] rounded-md"
+      className="md:mt-10 mt-5 bg-gray-90 p-5 md:p-10 flex flex-col gap-2 max-w-[520px] rounded-md"
       onSubmit={handleSubmit}
       noValidate
     >
