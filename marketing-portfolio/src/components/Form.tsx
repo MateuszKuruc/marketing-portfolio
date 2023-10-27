@@ -64,7 +64,6 @@ const Form = () => {
         className="p-2 rounded-md"
         id="phone"
         type="number"
-       
         placeholder="Podaj nr telefonu"
         onChange={handleChange}
         onBlur={handleBlur}

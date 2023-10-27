@@ -9,9 +9,6 @@ export const formSchema = yup.object().shape({
     .string()
     .email("Wprowadź poprawny adres e-mail")
     .required("Adres e-mail jest wymagany"),
-  phone: yup
-    .number()
-    .min(9, "Minimum 9 znaków")
-    .integer(),
+  phone: yup.number().integer(),
   message: yup.string().required("Wprowadź treść wiadomości"),
 });
