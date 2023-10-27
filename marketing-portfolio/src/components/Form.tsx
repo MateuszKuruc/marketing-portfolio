@@ -9,20 +9,24 @@ const Form = () => {
     console.log("submitted");
   };
 
-  const { values, handleChange, handleBlur, handleSubmit } = useFormik({
-    initialValues: {
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    },
-    onSubmit,
-    validationSchema: formSchema,
-  });
+  const { values, errors, touched, handleChange, handleBlur, handleSubmit } =
+    useFormik({
+      initialValues: {
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      },
+      onSubmit,
+      validationSchema: formSchema,
+    });
+
+  console.log(errors.name);
   return (
     <form
       className="bg-gray-50 p-10 flex flex-col gap-2"
       onSubmit={handleSubmit}
+      noValidate
     >
       <label htmlFor="name">Imię i nazwisko</label>
       <input
@@ -32,6 +36,9 @@ const Form = () => {
         value={values.name}
         onChange={handleChange}
         onBlur={handleBlur}
+        style={{ outline: "none" }}
+      
+       
       />
       <label htmlFor="email">Email</label>
       <input

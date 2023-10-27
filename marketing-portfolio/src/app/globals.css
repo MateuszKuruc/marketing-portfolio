@@ -31,6 +31,10 @@ body {
     @apply border-gray-20 bg-green-90 px-8 py-5 text-white;
   } */
 
+  .input-error {
+    @apply border-red-50;
+  }
+
   .btn_submit {
     @apply border-gray-20 bg-blue-50 px-8 py-5;
   }
