@@ -15,16 +15,18 @@ module.exports = {
         red: {
           50: "#DC143C",
         },
-        orange: {
-          50: "#ff814c",
-        },
-
         gray: {
           10: "#EEEEEE",
           20: "#A2A2A2",
           30: "#7B7B7B",
           50: "#585858",
           90: "#141414",
+        },
+        gold: {
+          50: "#ffbf00", // Lighter shade
+          // 50: "#fff",
+          // 50: "#8A2BE2",
+         
         },
       },
       backgroundImage: {
