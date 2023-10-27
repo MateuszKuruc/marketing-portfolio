@@ -15,6 +15,9 @@ const Footer = () => {
           <Link href="/" className="mb-10">
             <Image src="/boostguru.png" width={70} height={46} alt="logo" />
           </Link>
+          <div className="flex flex-wrap gap-10 sm:justify-between md:flex-1">
+
+          </div>
         </div>
       </div>
     </footer>
