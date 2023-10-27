@@ -24,10 +24,7 @@ const Portfolio = () => {
           wynioslem ich marketing na jakis kosmiczny poziom ze hej
         </p>
       </header>
-      <div 
-      // className="bg-gray-90 padding-container max-container py-10"
-      className="max-container padding-container"
-      >
+      <div className="max-container padding-container">
         {ACCORDION_DATA.map((data, index) => {
           return (
             <AccordionItem
@@ -45,5 +42,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
-// divide border for projects? with accordion? first one shown
