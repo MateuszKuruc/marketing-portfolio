@@ -10,7 +10,7 @@ const Hero = () => {
           <h1 className="mt-6 bold-52 lg:bold-70 text-blue-50">
             Social media ekspert
           </h1>
-          <p className="regular-16 mt-6 text-white xl:max-w-[520px]">
+          <p className="regular-20 mt-6 text-white xl:max-w-[520px]">
             Ogarnij se social media, cokolwiek robisz to barti ogarnie, bedzie
             git. Marketing jest super wazny bo wiadomo. Jak cos to wiecej info
             na dole, tutaj tylko wstep. Bedzie spoko strona z tego.
