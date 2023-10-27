@@ -63,12 +63,15 @@ const Form = () => {
       <input
         className="p-2 rounded-md"
         id="phone"
-        type="text"
+        type="number"
+       
         placeholder="Podaj nr telefonu"
         onChange={handleChange}
         onBlur={handleBlur}
       />
-      {errors.phone && touched.phone && <p className="error ">{errors.phone}</p>}
+      {errors.phone && touched.phone && (
+        <p className="error ">{errors.phone}</p>
+      )}
       <label className="text-blue-50 bold-20" htmlFor="message">
         Wiadomość
       </label>
@@ -81,7 +84,9 @@ const Form = () => {
         onChange={handleChange}
         onBlur={handleBlur}
       />
-      {errors.message && touched.message && <p className="error ">{errors.message}</p>}
+      {errors.message && touched.message && (
+        <p className="error ">{errors.message}</p>
+      )}
       <Button type="submit" title="Wyślij" variant="btn_submit" />
     </form>
   );
