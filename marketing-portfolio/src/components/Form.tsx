@@ -39,7 +39,6 @@ const Form = () => {
         value={values.name}
         onChange={handleChange}
         onBlur={handleBlur}
-        // className={errors.name ? "input-error" : ""}
       />
       {errors.name && touched.name && <p className="error ">{errors.name}</p>}
       <label className="text-blue-50 bold-20" htmlFor="email">

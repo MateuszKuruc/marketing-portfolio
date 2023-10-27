@@ -23,14 +23,6 @@ const NavBar = () => {
         ))}
       </ul>
 
-      {/* <Image
-        src="menu.svg"
-        alt="menu"
-        width={32}
-        height={32}
-        color="white"
-        className="inline-block cursor-pointer lg:hidden"
-      /> */}
       <AiOutlineMenu color="white" className="bold-32 lg:hidden" />
     </nav>
   );

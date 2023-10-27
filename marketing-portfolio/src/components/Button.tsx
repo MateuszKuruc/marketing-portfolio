@@ -1,19 +1,6 @@
 import Image from "next/image";
 import { ButtonProps } from "../../types";
 
-// EXAMPLE:
-
-{
-  /* <div className="lg:flexCenter hidden">
-        <Button
-          type="button"
-          title="Login"
-          icon="/user.svg"
-          variant="btn_dark_green"
-        />
-      </div> */
-}
-
 const Button = ({ type, title, icon, variant }: ButtonProps) => {
   return (
     <button
