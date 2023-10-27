@@ -8,14 +8,19 @@ const Form = () => {
     console.log("form submitted");
   };
 
-  const { values, handleChange, handleBlur } = useFormik({
+  const {
+    values,
+    handleChange,
+    handleBlur,
+    handleSubmit: formikSubmit,
+  } = useFormik({
     initialValues: {
       email: "",
     },
     onSubmit: handleSubmit,
   });
   return (
-    <form className="bg-gray-50 py-10" onSubmit={formik.handleSubmit}>
+    <form className="bg-gray-50 py-10" onSubmit={formikSubmit}>
       <label htmlFor="email">Email</label>
       <input
         id="email"
