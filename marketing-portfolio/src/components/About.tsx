@@ -20,7 +20,7 @@ const About = () => {
           </ul>
         </header>
         <Image
-          className="lg:block md:hidden sm:hidden xs:hidden"
+          className="hidden lg:block"
           src="/placeholder.jpg"
           width={350}
           height={350}
