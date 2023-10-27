@@ -9,15 +9,20 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="flexCenter mb-24">
-      <div className="padding-container max-container flex w-full flex-col gap-14">
-        <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
-          <Link href="/" className="mb-10">
-            <Image src="/boostguru.png" width={70} height={46} alt="logo" />
-          </Link>
-          <div className="flex flex-wrap gap-10 sm:justify-between md:flex-1">
+    <footer className="flexCenter mb-0 bg-gray-90 py-10 max-container">
+      <div className="flex flex-col items-center gap-4">
+        <p className="text-blue-50 bold-20">Social</p>
+        <div className="flex ">
 
-          </div>
+        <Link href="placeholder">
+          <AiOutlineFacebook color="white" size="50" />
+        </Link>
+        <Link href="placeholderlink">
+          <AiOutlineInstagram color="white" size="50" />
+        </Link>
+        <Link href="placeholderlink">
+          <AiOutlineLinkedin color="white" size="50" />
+        </Link>
         </div>
       </div>
     </footer>
