@@ -2,8 +2,9 @@ import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Button from "./Button";
 import { AiOutlineMenu } from "react-icons/ai";
+
+const goldAccent = "#ffbf00";
 
 const NavBar = () => {
   return (
@@ -23,7 +24,7 @@ const NavBar = () => {
         ))}
       </ul>
 
-      <AiOutlineMenu color="white" className="bold-32 lg:hidden" />
+      <AiOutlineMenu color={`${goldAccent}`} className="bold-32 lg:hidden" />
     </nav>
   );
 };
