@@ -24,7 +24,7 @@ const Portfolio = () => {
           wynioslem ich marketing na jakis kosmiczny poziom ze hej
         </p>
       </header>
-      <div className="max-container padding-container">
+      <div className="max-container md:padding-container">
         {ACCORDION_DATA.map((data, index) => {
           return (
             <AccordionItem
