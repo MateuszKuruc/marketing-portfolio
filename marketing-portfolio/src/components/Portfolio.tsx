@@ -6,7 +6,7 @@ import AccordionItem from "./AccordionItem";
 import { useState } from "react";
 
 const Portfolio = () => {
-  const [open, setOpen] = useState<number | string | false>(false);
+  const [open, setOpen] = useState<number | string | false>(0);
 
   const toggleAccordion = (index: number) => {
     if (open === index) {
