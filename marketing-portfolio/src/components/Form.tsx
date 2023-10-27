@@ -32,7 +32,7 @@ const Form = () => {
         Imię i nazwisko
       </label>
       <input
-        className="p-2 rounded-md"
+        className={`p-2 rounded-md ${errors.name ? "input-error" : ""}`}
         id="name"
         type="text"
         placeholder="Podaj imię i nazwisko"
@@ -45,7 +45,7 @@ const Form = () => {
         Email
       </label>
       <input
-        className="p-2 rounded-md"
+        className={`p-2 rounded-md ${errors.email ? "input-error" : ""}`}
         id="email"
         type="email"
         placeholder="Podaj e-mail"
@@ -60,7 +60,7 @@ const Form = () => {
         Telefon
       </label>
       <input
-        className="p-2 rounded-md"
+        className={`p-2 rounded-md ${errors.phone ? "input-error" : ""}`}
         id="phone"
         type="number"
         placeholder="Podaj nr telefonu"
@@ -74,7 +74,7 @@ const Form = () => {
         Wiadomość
       </label>
       <textarea
-        className="p-2 rounded-md"
+        className={`p-2 rounded-md ${errors.message ? "input-error" : ""}`}
         id="message"
         rows={6}
         placeholder="Wprowadź wiadomość..."

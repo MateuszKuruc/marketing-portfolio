@@ -23,10 +23,7 @@ module.exports = {
           90: "#141414",
         },
         gold: {
-          50: "#ffbf00", // Lighter shade
-          // 50: "#fff",
-          // 50: "#8A2BE2",
-         
+          50: "#ffbf00",
         },
       },
       backgroundImage: {
