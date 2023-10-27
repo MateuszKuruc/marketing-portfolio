@@ -13,6 +13,7 @@ module.exports = {
         // },
         blue: {
           50: "#2de1fc",
+          70: "#1ac7e5",
         },
         red: {
           50: "#DC143C",
