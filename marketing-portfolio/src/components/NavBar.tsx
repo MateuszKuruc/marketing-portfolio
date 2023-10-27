@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Button from "./Button";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const NavBar = () => {
   return (
@@ -22,13 +23,15 @@ const NavBar = () => {
         ))}
       </ul>
 
-      <Image
+      {/* <Image
         src="menu.svg"
         alt="menu"
         width={32}
         height={32}
+        color="white"
         className="inline-block cursor-pointer lg:hidden"
-      />
+      /> */}
+      <AiOutlineMenu color="white" className="bold-32 lg:hidden" />
     </nav>
   );
 };
