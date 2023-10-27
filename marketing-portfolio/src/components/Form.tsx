@@ -24,24 +24,29 @@ const Form = () => {
   console.log(errors.name);
   return (
     <form
-      className="bg-gray-50 p-10 flex flex-col gap-2"
+      className="mt-10 bg-gray-90 p-10 flex flex-col gap-2 max-w-[520px] rounded-md"
       onSubmit={handleSubmit}
       noValidate
     >
-      <label htmlFor="name">Imię i nazwisko</label>
+      <label className="text-blue-50 bold-20" htmlFor="name">
+        Imię i nazwisko
+      </label>
       <input
+        className="p-2 rounded-md"
         id="name"
         type="text"
         placeholder="Podaj imię i nazwisko"
         value={values.name}
         onChange={handleChange}
         onBlur={handleBlur}
-        style={{ outline: "none" }}
-      
-       
+        // className={errors.name ? "input-error" : ""}
       />
-      <label htmlFor="email">Email</label>
+      {errors.name && touched.name && <p className="error ">{errors.name}</p>}
+      <label className="text-blue-50 bold-20" htmlFor="email">
+        Email
+      </label>
       <input
+        className="p-2 rounded-md"
         id="email"
         type="email"
         placeholder="Podaj e-mail"
@@ -49,16 +54,22 @@ const Form = () => {
         onChange={handleChange}
         onBlur={handleBlur}
       />
-      <label htmlFor="phone">Telefon</label>
+      <label className="text-blue-50 bold-20" htmlFor="phone">
+        Telefon
+      </label>
       <input
+        className="p-2 rounded-md"
         id="phone"
-        type="number"
+        type="text"
         placeholder="Podaj nr telefonu"
         onChange={handleChange}
         onBlur={handleBlur}
       />
-      <label htmlFor="message">Wiadomość</label>
+      <label className="text-blue-50 bold-20" htmlFor="message">
+        Wiadomość
+      </label>
       <textarea
+        className="p-2 rounded-md"
         id="message"
         rows={6}
         placeholder="Wprowadź wiadomość..."
