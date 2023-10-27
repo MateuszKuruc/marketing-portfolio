@@ -5,8 +5,10 @@ import Button from "./Button";
 import { formSchema } from "@/schemas";
 
 const Form = () => {
-  const onSubmit = () => {
+  const onSubmit = (values, actions) => {
     console.log("submitted");
+    
+    actions.resetForm();
   };
 
   const { values, errors, touched, handleChange, handleBlur, handleSubmit } =
@@ -21,7 +23,6 @@ const Form = () => {
       validationSchema: formSchema,
     });
 
-  console.log(errors.name);
   return (
     <form
       className="md:mt-10 mt-5 bg-gray-90 p-5 md:p-10 flex flex-col gap-2 md:w-[520px] rounded-md"
