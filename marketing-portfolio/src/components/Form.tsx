@@ -54,9 +54,9 @@ const Form = () => {
         onBlur={handleBlur}
       />
       <label htmlFor="message">Wiadomość</label>
-      <input
+      <textarea
         id="message"
-        type="text"
+        rows={6}
         placeholder="Wprowadź wiadomość..."
         value={values.message}
         onChange={handleChange}
