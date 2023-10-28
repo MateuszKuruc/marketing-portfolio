@@ -74,10 +74,10 @@ const Form = () => {
       </label>
       <input
         className={`p-2 rounded-md border-3 ${
-          errors.phone ? "input-error" : ""
+          errors.phone && touched.phone ? "input-error" : ""
         }`}
         id="phone"
-        type="number"
+        type="tel"
         value={values.phone}
         placeholder="Podaj nr telefonu"
         onChange={handleChange}
@@ -91,7 +91,7 @@ const Form = () => {
       </label>
       <textarea
         className={`p-2 rounded-md border-3 ${
-          errors.message ? "input-error" : ""
+          errors.message && touched.message ? "input-error" : ""
         }`}
         id="message"
         rows={6}
