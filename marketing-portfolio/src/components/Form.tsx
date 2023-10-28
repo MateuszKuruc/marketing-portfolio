@@ -3,8 +3,12 @@ import { useFormik } from "formik";
 import React from "react";
 import Button from "./Button";
 import { formSchema } from "@/schemas";
+import { useState } from "react";
+
 
 const Form = () => {
+  const [notification, setNotification] = useState(true);
+
   const onSubmit = async (values, actions) => {
     console.log(values.phone);
     console.log(isSubmitting);
@@ -41,6 +45,13 @@ const Form = () => {
       onSubmit={handleSubmit}
       noValidate
     >
+      
+        {notification && (
+<div className="p-5 rounded-2xl bg-green-700 border-2">
+<p className="text-white regular-16">Formularz został przesłany, dziękuję!</p>
+</div>
+        )}
+     
       <label className="text-blue-50 bold-20" htmlFor="name">
         Imię i nazwisko
       </label>
