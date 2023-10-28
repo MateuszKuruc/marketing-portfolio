@@ -6,7 +6,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 const NavBar = () => {
   return (
-    <nav className="border-2 border-black flexAround glob max-container padding-container relative z-30 py-5 bg-gray-90">
+    <nav className="border-2 border-black flexAround glob max-container padding-container relative z-30 py-8 bg-gray-90">
       <Link href="/">
         <Image src="/boostguru.png" alt="home_logo" width={70} height={46} />
       </Link>

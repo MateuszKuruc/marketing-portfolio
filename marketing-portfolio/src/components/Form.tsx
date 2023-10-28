@@ -33,7 +33,7 @@ const Form = () => {
 
   return (
     <form
-      className="md:mt-10 mt-5 bg-gray-90 p-5 md:p-10 flex flex-col gap-2 md:w-[520px] rounded-md"
+      className="md:my-10 mt-5 bg-gray-90 p-5 md:p-10 flex flex-col gap-2 md:w-[520px] rounded-md relative"
       onSubmit={handleSubmit}
       noValidate
     >
