@@ -4,7 +4,7 @@ import { ButtonProps } from "../../types";
 const Button = ({ disabled, type, title, icon, variant }: ButtonProps) => {
   return (
     <button
-      className={`rounded-full min-w-[250px] self-center mt-2 ${variant} ${disabled} ? opacity-0.35 : ""`}
+      className={`rounded-full min-w-[250px] self-center mt-2 ${variant}`}
       type={type}
       title={title}
     >

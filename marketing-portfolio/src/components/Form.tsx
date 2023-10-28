@@ -8,7 +8,7 @@ const Form = () => {
   const onSubmit = async (values, actions) => {
     console.log(values.phone);
     console.log(isSubmitting);
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, 5000));
     actions.resetForm();
   };
 
@@ -31,9 +31,13 @@ const Form = () => {
     validationSchema: formSchema,
   });
 
+  console.log(isSubmitting);
+
   return (
     <form
-      className="md:my-10 mt-5 bg-gray-90 p-5 md:p-10 flex flex-col gap-2 md:w-[520px] rounded-md relative"
+      className={`md:my-10 mt-5 bg-gray-90 p-5 md:p-10 flex flex-col gap-2 md:w-[520px] rounded-md relative  ${
+        isSubmitting ? "opacity-50" : "opacity-100"
+      }  `}
       onSubmit={handleSubmit}
       noValidate
     >
