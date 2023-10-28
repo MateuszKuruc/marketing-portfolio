@@ -57,7 +57,7 @@ const Form = () => {
       </label>
       <input
         className={`p-2 rounded-md border-3 ${
-          errors.email ? "input-error" : ""
+          errors.email && touched.email ? "input-error" : ""
         }`}
         id="email"
         type="email"
@@ -78,6 +78,7 @@ const Form = () => {
         }`}
         id="phone"
         type="number"
+        value={values.phone}
         placeholder="Podaj nr telefonu"
         onChange={handleChange}
         onBlur={handleBlur}
