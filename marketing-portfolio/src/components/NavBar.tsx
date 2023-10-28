@@ -4,8 +4,6 @@ import Link from "next/link";
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 
-const goldAccent = "#ffbf00";
-
 const NavBar = () => {
   return (
     <nav className="border-2 border-black flexAround glob max-container padding-container relative z-30 py-5 bg-gray-90">
@@ -24,7 +22,7 @@ const NavBar = () => {
         ))}
       </ul>
 
-      <AiOutlineMenu color={`${goldAccent}`} className="bold-32 lg:hidden" />
+      <AiOutlineMenu color="white" className="bold-32 lg:hidden" />
     </nav>
   );
 };

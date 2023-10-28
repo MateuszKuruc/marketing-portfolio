@@ -26,7 +26,9 @@ module.exports = {
           90: "#141414",
         },
         gold: {
-          50: "#ffbf00",
+          // 50: "#ffbf00",
+          // 50: "#BF40BF",
+          50: "#ffffff",
         },
       },
       backgroundImage: {
