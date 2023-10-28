@@ -4,7 +4,7 @@ import React from "react";
 import Button from "./Button";
 import { formSchema } from "@/schemas";
 import { useState } from "react";
-
+import { GiConfirmed } from "react-icons/gi";
 
 const Form = () => {
   const [notification, setNotification] = useState(true);
@@ -45,13 +45,15 @@ const Form = () => {
       onSubmit={handleSubmit}
       noValidate
     >
-      
-        {notification && (
-<div className="p-5 rounded-2xl bg-green-700 border-2">
-<p className="text-white regular-16">Formularz został przesłany, dziękuję!</p>
-</div>
-        )}
-     
+      {notification && (
+        <div className="px-4 py-3 rounded-2xl bg-green-700 border-2 flex flexAround">
+          <p className="text-white regular-16">
+            Formularz został przesłany, dziękuję!
+          </p>
+          <GiConfirmed color="white" size="20" />
+        </div>
+      )}
+
       <label className="text-blue-50 bold-20" htmlFor="name">
         Imię i nazwisko
       </label>
