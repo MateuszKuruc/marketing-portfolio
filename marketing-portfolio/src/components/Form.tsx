@@ -42,7 +42,7 @@ const Form = () => {
       </label>
       <input
         className={`p-2 rounded-md border-3 ${
-          errors.name ? "input-error" : ""
+          errors.name && touched.name ? "input-error" : ""
         }`}
         id="name"
         type="text"
