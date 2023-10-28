@@ -5,9 +5,11 @@ import Button from "./Button";
 import { formSchema } from "@/schemas";
 import { useState } from "react";
 import { GiConfirmed } from "react-icons/gi";
+import { BiErrorCircle } from "react-icons/bi";
 
 const Form = () => {
-  const [notification, setNotification] = useState(true);
+  const [successNotification, setSuccessNotification] = useState(true);
+  const [errorNotification, setErrorNotification] = useState(true);
 
   const onSubmit = async (values, actions) => {
     console.log(values.phone);
@@ -45,12 +47,21 @@ const Form = () => {
       onSubmit={handleSubmit}
       noValidate
     >
-      {notification && (
-        <div className="px-4 py-3 rounded-2xl bg-green-700 border-2 flex flexAround">
+      {successNotification && (
+        <div className="px-4 py-3 mb-4 rounded-2xl bg-green-700 border-2 flex flexAround">
           <p className="text-white regular-16">
             Formularz został przesłany, dziękuję!
           </p>
           <GiConfirmed color="white" size="20" />
+        </div>
+      )}
+
+      {errorNotification && (
+        <div className="px-4 py-3 mb-4 rounded-2xl bg-red-700 border-2 flex flexAround">
+          <p className="text-white regular-16">
+            Wystąpił problem, spróbuj ponownie!
+          </p>
+          <BiErrorCircle color="white" size="20" />
         </div>
       )}
 
