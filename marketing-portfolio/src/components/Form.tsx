@@ -5,23 +5,31 @@ import Button from "./Button";
 import { formSchema } from "@/schemas";
 
 const Form = () => {
-  const onSubmit = (values, actions) => {
-    console.log("submitted");
-    
+  const onSubmit = async (values, actions) => {
+    console.log(values.phone);
+    console.log(isSubmitting);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
     actions.resetForm();
   };
 
-  const { values, errors, touched, handleChange, handleBlur, handleSubmit } =
-    useFormik({
-      initialValues: {
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
-      },
-      onSubmit,
-      validationSchema: formSchema,
-    });
+  const {
+    values,
+    errors,
+    touched,
+    isSubmitting,
+    handleChange,
+    handleBlur,
+    handleSubmit,
+  } = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    },
+    onSubmit,
+    validationSchema: formSchema,
+  });
 
   return (
     <form
@@ -33,7 +41,9 @@ const Form = () => {
         Imię i nazwisko
       </label>
       <input
-        className={`p-2 rounded-md ${errors.name ? "input-error" : ""}`}
+        className={`p-2 rounded-md border-3 ${
+          errors.name ? "input-error" : ""
+        }`}
         id="name"
         type="text"
         placeholder="Podaj imię i nazwisko"
@@ -46,7 +56,9 @@ const Form = () => {
         Email
       </label>
       <input
-        className={`p-2 rounded-md ${errors.email ? "input-error" : ""}`}
+        className={`p-2 rounded-md border-3 ${
+          errors.email ? "input-error" : ""
+        }`}
         id="email"
         type="email"
         placeholder="Podaj e-mail"
@@ -61,7 +73,9 @@ const Form = () => {
         Telefon
       </label>
       <input
-        className={`p-2 rounded-md ${errors.phone ? "input-error" : ""}`}
+        className={`p-2 rounded-md border-3 ${
+          errors.phone ? "input-error" : ""
+        }`}
         id="phone"
         type="number"
         placeholder="Podaj nr telefonu"
@@ -75,7 +89,9 @@ const Form = () => {
         Wiadomość
       </label>
       <textarea
-        className={`p-2 rounded-md ${errors.message ? "input-error" : ""}`}
+        className={`p-2 rounded-md border-3 ${
+          errors.message ? "input-error" : ""
+        }`}
         id="message"
         rows={6}
         placeholder="Wprowadź wiadomość..."
@@ -86,7 +102,12 @@ const Form = () => {
       {errors.message && touched.message && (
         <p className="error ">{errors.message}</p>
       )}
-      <Button type="submit" title="Wyślij" variant="btn_submit" />
+      <Button
+        disabled={isSubmitting}
+        type="submit"
+        title="Wyślij"
+        variant="btn_submit"
+      />
     </form>
   );
 };

@@ -20,7 +20,7 @@ body {
   }
 
   .input-error {
-    @apply outline-red-50;
+    @apply border-red-50;
   }
 
   .btn_submit {

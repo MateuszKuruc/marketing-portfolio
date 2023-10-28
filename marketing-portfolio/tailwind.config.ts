@@ -14,6 +14,9 @@ module.exports = {
         },
         red: {
           50: "#DC143C",
+          // 50: "#CE2029",
+          // 50: "#CD5C5C",
+          // 50: "#BC8F8F",
         },
         gray: {
           10: "#EEEEEE",
@@ -32,6 +35,10 @@ module.exports = {
         "feature-bg": "url('/feature-bg.png')",
         pattern: "url('/pattern.png')",
         "pattern-2": "url('/pattern-bg.png')",
+      },
+      borderWidth: {
+        "2.5": "2.5px",
+        "3": "3px",
       },
       screens: {
         xs: "400px",

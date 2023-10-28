@@ -6,6 +6,7 @@ export interface AccordionItemProps {
 }
 
 export type ButtonProps = {
+  disabled: boolean;
   type: "button" | "submit";
   title: string;
   icon?: string;
