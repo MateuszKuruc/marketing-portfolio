@@ -8,8 +8,6 @@ export async function POST(request: NextRequest) {
   try {
     const { name, email, phone, message } = await request.json();
 
-    console.log("data in api", name, email, phone, message);
-
     const transporter = nodemailer.createTransport({
       service: "gmail",
 
@@ -25,7 +23,7 @@ export async function POST(request: NextRequest) {
       text: "This is a test string",
       subject: "Email sent test123",
       html: `
-    <h3>Cześć Barti,</h3>
+    <h3>Cześć ${process.env.USER_NAME},</h3>
     <p>Pięknego dnia i pysznej kawusi!</p>
     <p>Masz nowe zgłoszenie ze swojej strony internetowej:</p>
     <li>name: ${name}</li>
