@@ -11,6 +11,7 @@
   "dependencies": {
     "formik": "^2.4.5",
     "next": "13.5.6",
+    "nodemailer": "^6.9.7",
     "react": "^18",
     "react-collapse": "^5.1.1",
     "react-dom": "^18",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.13",
     "@types/react": "^18",
     "@types/react-collapse": "^5.0.3",
     "@types/react-dom": "^18",
