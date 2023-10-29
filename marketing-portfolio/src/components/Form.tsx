@@ -10,27 +10,46 @@ import { FormValues } from "../../types";
 
 const Form = () => {
   const [successNotification, setSuccessNotification] = useState(false);
-  const [errorNotification, setErrorNotification] = useState(true);
+  const [errorNotification, setErrorNotification] = useState(false);
 
   const onSubmit = async (
     values: FormValues,
     actions: FormikHelpers<FormValues>
   ) => {
-    const response = await fetch("/api/sendEmail", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: values.name,
-        email: values.email,
-        phone: values.phone,
-        message: values.message,
-      }),
-    });
-    console.log(await response.json());
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: values.name,
+          email: values.email,
+          phone: values.phone,
+          message: values.message,
+        }),
+      });
+      console.log(await response.json());
 
-    actions.resetForm();
+      if (response.ok) {
+        setSuccessNotification(true);
+        setTimeout(() => {
+          setSuccessNotification(false);
+        }, 3000);
+      } else {
+        setErrorNotification(true);
+        setTimeout(() => {
+          setErrorNotification(false);
+        }, 3000);
+      }
+
+      actions.resetForm();
+    } catch (error) {
+      setErrorNotification(true);
+      setTimeout(() => {
+        setErrorNotification(false);
+      }, 3000);
+    }
   };
 
   const {
