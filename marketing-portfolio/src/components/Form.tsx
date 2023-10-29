@@ -8,7 +8,7 @@ import { GiConfirmed } from "react-icons/gi";
 import { BiErrorCircle } from "react-icons/bi";
 
 const Form = () => {
-  const [successNotification, setSuccessNotification] = useState(true);
+  const [successNotification, setSuccessNotification] = useState(false);
   const [errorNotification, setErrorNotification] = useState(true);
 
   const onSubmit = async (values, actions) => {
@@ -135,7 +135,8 @@ const Form = () => {
         disabled={isSubmitting}
         type="submit"
         title="Wyślij"
-        variant="btn_submit"
+        // variant="btn_submit"
+        variant={isSubmitting ? "btn_disabled" : "btn_submit"}
       />
     </form>
   );

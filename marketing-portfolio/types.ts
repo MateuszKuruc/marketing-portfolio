@@ -10,5 +10,5 @@ export type ButtonProps = {
   type: "button" | "submit";
   title: string;
   icon?: string;
-  variant: "btn_submit";
+  variant: "btn_submit" | "btn_disabled";
 };
