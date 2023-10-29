@@ -12,10 +12,6 @@ const Form = () => {
   const [errorNotification, setErrorNotification] = useState(true);
 
   const onSubmit = async (values, actions) => {
-    console.log(values.phone);
-    console.log(isSubmitting);
-    // await new Promise((resolve) => setTimeout(resolve, 5000));
-
     const response = await fetch("/api/sendEmail", {
       method: "POST",
       headers: {
