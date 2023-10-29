@@ -1,6 +1,9 @@
 import nodemailer from "nodemailer";
 import { NextResponse, NextRequest } from "next/server";
 
+const email = process.env.SEND_EMAIL;
+const password = process.env.EMAIL_PASSWORD;
+
 export async function POST(request: NextRequest) {
   try {
     const { name, email, phone, message } = await request.json();
@@ -12,20 +15,23 @@ export async function POST(request: NextRequest) {
 
       auth: {
         user: process.env.SEND_EMAIL,
-        password: process.env.EMAIL_PASSWORD,
+        pass: process.env.EMAIL_PASSWORD,
       },
     });
 
     const mailOptions = {
       from: process.env.SEND_EMAIL,
       to: process.env.SEND_EMAIL,
+      text: "This is a test string",
       subject: "Email sent test123",
       html: `
-    <h3>Hello Mati</h3>
+    <h3>Cześć Barti,</h3>
+    <p>Pięknego dnia i pysznej kawusi!</p>
+    <p>Masz nowe zgłoszenie ze swojej strony internetowej:</p>
     <li>name: ${name}</li>
-    <li>email: ${email}</li>
-    <li>${phone}</li>
-    <li>${message}</li>
+    <li>Email: ${email}</li>
+    <li>Telefon: ${phone}</li>
+    <li>Wiadomość: ${message}</li>
     `,
     };
 
@@ -36,8 +42,9 @@ export async function POST(request: NextRequest) {
       { status: 200 }
     );
   } catch (error) {
+    console.log(error);
     return NextResponse.json(
-      { message: "Failed to send email" },
+      { message: "sending email fails" },
       { status: 500 }
     );
   }
