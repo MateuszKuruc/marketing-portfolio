@@ -1,5 +1,5 @@
 "use client";
-import { useFormik } from "formik";
+import { FormikHelpers, useFormik } from "formik";
 import React from "react";
 import Button from "./Button";
 import { formSchema } from "@/schemas";
@@ -11,7 +11,7 @@ const Form = () => {
   const [successNotification, setSuccessNotification] = useState(false);
   const [errorNotification, setErrorNotification] = useState(true);
 
-  const onSubmit = async (values, actions) => {
+  const onSubmit = async (values, actions: FormikHelpers<FormValues>) => {
     const response = await fetch("/api/sendEmail", {
       method: "POST",
       headers: {
