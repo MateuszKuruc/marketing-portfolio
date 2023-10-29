@@ -6,12 +6,16 @@ import { formSchema } from "@/schemas";
 import { useState } from "react";
 import { GiConfirmed } from "react-icons/gi";
 import { BiErrorCircle } from "react-icons/bi";
+import { FormValues } from "../../types";
 
 const Form = () => {
   const [successNotification, setSuccessNotification] = useState(false);
   const [errorNotification, setErrorNotification] = useState(true);
 
-  const onSubmit = async (values, actions: FormikHelpers<FormValues>) => {
+  const onSubmit = async (
+    values: FormValues,
+    actions: FormikHelpers<FormValues>
+  ) => {
     const response = await fetch("/api/sendEmail", {
       method: "POST",
       headers: {
