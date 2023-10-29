@@ -14,7 +14,22 @@ const Form = () => {
   const onSubmit = async (values, actions) => {
     console.log(values.phone);
     console.log(isSubmitting);
-    await new Promise((resolve) => setTimeout(resolve, 5000));
+    // await new Promise((resolve) => setTimeout(resolve, 5000));
+
+    const response = await fetch("/api/sendEmail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: values.name,
+        email: values.email,
+        phone: values.phone,
+        message: values.message,
+      }),
+    });
+    console.log(await response.json());
+
     actions.resetForm();
   };
 
