@@ -15,7 +15,7 @@ const NavBar = () => {
           <Link
             href={link.href}
             key={link.key}
-            className="regular-16 text-gold-50 flexCenter cursor-pointer pb-1.5 hover:font-bold"
+            className="regular-16 text-white flexCenter cursor-pointer pb-1.5 hover:font-bold"
           >
             {link.label}
           </Link>
