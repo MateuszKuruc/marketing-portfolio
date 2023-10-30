@@ -10,14 +10,14 @@ import { Link as ScrollLink, Element } from "react-scroll";
 
 const NavBar = () => {
   return (
-    <nav id="home" className="opacity-95 sticky top-0 border-2 border-black flexAround glob max-container padding-container z-30 py-8 bg-gray-90">
+    <nav className="opacity-95 sticky top-0 border-2 border-black flexAround glob max-container padding-container z-30 py-8 bg-gray-90">
       <Link href="/">
         <Image src="/boostguru.png" alt="home_logo" width={70} height={46} />
       </Link>
       <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map((link) => (
           <li key={link.key}>
-            <Link href={link.href} passHref>
+            {/* <Link href={link.href} passHref> */}
               <ScrollLink
                 to={link.href}
                 spy={true}
@@ -28,7 +28,7 @@ const NavBar = () => {
               >
                 {link.label}
               </ScrollLink>
-            </Link>
+            {/* </Link> */}
           </li>
         ))}
       </ul>
