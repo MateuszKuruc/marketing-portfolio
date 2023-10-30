@@ -14,9 +14,6 @@ module.exports = {
         },
         red: {
           50: "#DC143C",
-          // 50: "#CE2029",
-          // 50: "#CD5C5C",
-          // 50: "#BC8F8F",
         },
         gray: {
           10: "#EEEEEE",
@@ -24,11 +21,6 @@ module.exports = {
           30: "#7B7B7B",
           50: "#585858",
           90: "#141414",
-        },
-        gold: {
-          // 50: "#ffbf00",
-          // 50: "#BF40BF",
-          // 50: "#ffffff",
         },
       },
       backgroundImage: {
