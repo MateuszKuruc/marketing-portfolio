@@ -11,15 +11,12 @@ import Image from "next/image";
 const CarouselItem2 = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 1024 },
-      items: 4,
-    //   partialVisibilityGutter: 25,
+      items: 5,
     },
     desktop: {
       breakpoint: { max: 1024, min: 800 },
       items: 5,
-    //   partialVisibilityGutter: 25,
     },
     tablet: {
       breakpoint: { max: 800, min: 464 },
@@ -46,7 +43,7 @@ const CarouselItem2 = () => {
         ssr={true}
         // partialVisbile={true}
         centerMode={true}
-        // renderButtonGroupOutside={true}
+        // focusOnSelect={true}
       >
         {CAROUSEL_DATA.map((item) => (
           <div key={item.name} className="mx-1">
