@@ -33,11 +33,11 @@ export const ACCORDION_DATA = [
 ];
 
 export const CAROUSEL_DATA = [
-  // {
-  //   name: "Mary Kay",
-  //   img: "/logo1.png",
-  //   info: "firma jakas tam",
-  // },
+  {
+    name: "Mary Kay",
+    img: "/logo1.png",
+    info: "firma jakas tam",
+  },
   {
     name: "Credit Agricole",
     img: "/logo2.jpg",
