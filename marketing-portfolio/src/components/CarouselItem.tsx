@@ -36,8 +36,8 @@ const CarouselItem = () => {
         responsive={responsive}
         showDots={true}
         slidesToSlide={2}
-        // autoPlay={true}
-        // autoPlaySpeed={1000}
+        autoPlay={true}
+        autoPlaySpeed={3000}
         infinite={true}
         ssr={true}
         // partialVisbile={true}
