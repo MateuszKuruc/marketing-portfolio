@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <section className="border-t-4 bg-gradient-to-b from-gray-90 py-0 max-container">
-      <div className="flex flex-col md:items-center relative w-full bg-gradient-to-t from-gray-90 to-gray-90">
+    <section className="border-t-4 bg- py-0 max-container bg-radial-gradient">
+      <div className="flex flex-col md:items-center relative w-full">
         <h1 className="bold-52 mt-8 lg:bold-70 text-blue-50">Kontakt</h1>
         <p className="regular-20 text-white">
           Uzupelnij formularz i daj znac czego potrzebujesz

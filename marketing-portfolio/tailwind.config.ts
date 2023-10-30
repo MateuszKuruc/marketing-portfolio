@@ -37,6 +37,7 @@ module.exports = {
         "feature-bg": "url('/feature-bg.png')",
         pattern: "url('/pattern.png')",
         "pattern-2": "url('/pattern-bg.png')",
+        "radial-gradient": "radial-gradient(circle, #585858, #141414)",
       },
       borderWidth: {
         "2.5": "2.5px",
