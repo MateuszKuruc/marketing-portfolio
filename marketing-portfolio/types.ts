@@ -18,6 +18,6 @@ export type ButtonProps = {
 export interface FormValues {
   name: string;
   email: string;
-  phone?: number;
+  phone?: number | string;
   message: string;
 }

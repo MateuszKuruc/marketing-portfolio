@@ -13,9 +13,10 @@ const Form = () => {
   const [errorNotification, setErrorNotification] = useState(false);
 
   const onSubmit = async (
-    values: { name: any; email: any; phone: any; message: any },
+    values: FormValues,
     actions: { resetForm: () => void }
   ) => {
+    console.log("values", values);
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
