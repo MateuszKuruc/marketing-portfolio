@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="border-b-4 border-white skew-y-3 bg-gradient-to-t from-gray-90 max-container padding-container flex flex-col flexCenter gap-20 py-10 pb-32 md:gap-28 lg:py-20">
+    <section id="hero" className="border-b-4 border-white skew-y-3 bg-gradient-to-t from-gray-90 max-container padding-container flex flex-col flexCenter gap-20 py-10 pb-32 md:gap-28 lg:py-20">
       <div className="-skew-y-3 lg:flex gap-10 border-5 border-slate-200">
         <Image src="/expert2.jpg" width={350} height={350} alt="expert photo" />
         <header>

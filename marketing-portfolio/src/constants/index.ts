@@ -1,6 +1,6 @@
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: "home", key: "home", label: "Strona główna" },
+  { href: "hero", key: "home", label: "Strona główna" },
   { href: "about", key: "about", label: "O mnie" },
   { href: "portfolio", key: "portfolio", label: "Portfolio" },
   { href: "contact", key: "contact ", label: "Kontakt " },
