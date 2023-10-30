@@ -13,7 +13,7 @@ const CarouselItem2 = () => {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 1024 },
-      items: 6,
+      items: 5,
     },
     desktop: {
       breakpoint: { max: 1024, min: 800 },
@@ -21,11 +21,11 @@ const CarouselItem2 = () => {
     },
     tablet: {
       breakpoint: { max: 800, min: 464 },
-      items: 3,
+      items: 4,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 2,
+      items: 3,
     },
   };
 
@@ -34,7 +34,13 @@ const CarouselItem2 = () => {
       <h1 className="text-blue-50 bold-52 lg:bold-70 mb-5">
         Klienci, którzy mi zaufali:
       </h1>
-      <Carousel responsive={responsive} className="border-4 border-red-50">
+      <Carousel
+        responsive={responsive}
+        showDots={true}
+        // autoPlay={true}
+        // autoPlaySpeed={1000}
+        infinite={true}
+      >
         {CAROUSEL_DATA.map((item) => (
           <div key={item.name} className="mx-1">
             <Image
