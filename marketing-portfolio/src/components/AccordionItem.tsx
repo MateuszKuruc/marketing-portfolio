@@ -12,7 +12,7 @@ const AccordionItem = ({
   return (
     <div className="bg-blue-50">
       <div className="bg-gray-90 border-2 p-10 flex flexBetween" onClick={toggleAccordion}>
-        <p className="text-gold-50 bold-32">{title}</p>
+        <p className="text-white bold-32">{title}</p>
         <div>
           {open ? (
             <AiFillMinusCircle color="white" size={50} />

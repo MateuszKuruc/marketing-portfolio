@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="flexCenter mb-0 bg-gray-90 py-10 max-container border-t-4">
       <div className="flex flex-col gap-8 md:flex-row md:gap-12">
         <div className="flex flex-col items-center gap-2">
-          <p className="text-gold-50 bold-20">Kontakt</p>
+          <p className="text-white bold-20">Kontakt</p>
           <p className="text-white regular-16">
             Email:{" "}
             <Link
@@ -28,7 +28,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex flex-col items-center gap-4">
-          <p className="text-gold-50 bold-20">Social</p>
+          <p className="text-white bold-20">Social</p>
           <div className="flex ">
             <Link href="placeholder">
               <AiOutlineFacebook color="white" size="50" />
