@@ -36,23 +36,45 @@ export const CAROUSEL_DATA = [
   {
     name: "Mary Kay",
     img: "/logo1.png",
-    info: "firma jakas tam",
   },
   {
     name: "Credit Agricole",
     img: "/logo2.jpg",
-    info: "fest duza firma",
   },
   {
     name: "Cabrio Poland",
     img: "/logo3.jpg",
-    info: "git firma",
   },
   {
     name: "Prof Energy",
     img: "/logo4.jpg",
-    info: "spoko firma",
   },
+  {
+    name: "Wany",
+    img: "/logo6.jpg",
+  },
+  {
+    name: "Cargo Expert",
+    img: "/logo7.jpg",
+  },
+  {
+    name: "Okee",
+    img: "/logo8.png",
+  },
+  {
+    name: "Strefa Serwisowa",
+    img: "/logo9.jpg",
+  },
+  {
+    name: "DomOgrodIMy",
+    img: "/logo10.png",
+  },
+  {
+    name: "Okna Debow",
+    img: "/logo11.png",
+  },
+ 
+ 
 ];
 
 // CAMP SECTION
