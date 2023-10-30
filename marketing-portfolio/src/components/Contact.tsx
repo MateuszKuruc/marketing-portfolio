@@ -5,7 +5,10 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <section className="border-t-4 py-0 max-container bg-radial-gradient">
+    <section
+      id="contact"
+      className="border-t-4 py-0 max-container bg-radial-gradient"
+    >
       <div className="flex flex-col relative w-full md:items-center">
         {/* <div className="flex flex-col items-center justify-center"> */}
 
