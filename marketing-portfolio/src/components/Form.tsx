@@ -1,5 +1,5 @@
 "use client";
-import { FormikHelpers, useFormik } from "formik";
+import { useFormik } from "formik";
 import React from "react";
 import Button from "./Button";
 import { formSchema } from "@/schemas";
@@ -16,7 +16,6 @@ const Form = () => {
     values: FormValues,
     actions: { resetForm: () => void }
   ) => {
-    console.log("values", values);
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
@@ -69,65 +68,6 @@ const Form = () => {
     onSubmit,
     validationSchema: formSchema,
   });
-
-  // const onSubmit = (values, actions) => {
-
-  //     try {
-  //       const response = await fetch("/api/sendEmail", {
-  //         method: "POST",
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify({
-  //           name: values.name,
-  //           email: values.email,
-  //           phone: values.phone,
-  //           message: values.message,
-  //         }),
-  //       });
-  //       console.log(await response.json());
-
-  //       if (response.ok) {
-  //         setSuccessNotification(true);
-  //         setTimeout(() => {
-  //           setSuccessNotification(false);
-  //         }, 3000);
-  //       } else {
-  //         setErrorNotification(true);
-  //         setTimeout(() => {
-  //           setErrorNotification(false);
-  //         }, 3000);
-  //       }
-
-  //       actions.resetForm();
-  //     } catch (error) {
-  //       setErrorNotification(true);
-  //       setTimeout(() => {
-  //         setErrorNotification(false);
-  //       }, 3000);
-  //     }
-  //   });
-
-  // const {
-  //   values,
-  //   errors,
-  //   touched,
-  //   isSubmitting,
-  //   handleChange,
-  //   handleBlur,
-  //   handleSubmit,
-  // } = useFormik({
-  //   initialValues: {
-  //     name: "",
-  //     email: "",
-  //     phone: undefined,
-  //     message: "",
-  //   },
-  //   onSubmit,
-  //   validationSchema: formSchema,
-  // });
-
-  console.log(isSubmitting);
 
   return (
     <form
