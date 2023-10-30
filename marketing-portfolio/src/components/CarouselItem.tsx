@@ -35,6 +35,7 @@ const CarouselItem = () => {
         className="pb-10"
         responsive={responsive}
         showDots={true}
+        slidesToSlide={2}
         // autoPlay={true}
         // autoPlaySpeed={1000}
         infinite={true}
