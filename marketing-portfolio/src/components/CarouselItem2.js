@@ -13,11 +13,13 @@ const CarouselItem2 = () => {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 1024 },
-      items: 5,
+      items: 4,
+    //   partialVisibilityGutter: 25,
     },
     desktop: {
       breakpoint: { max: 1024, min: 800 },
       items: 5,
+    //   partialVisibilityGutter: 25,
     },
     tablet: {
       breakpoint: { max: 800, min: 464 },
@@ -35,11 +37,16 @@ const CarouselItem2 = () => {
         Klienci, którzy mi zaufali:
       </h1>
       <Carousel
+        className="pb-10"
         responsive={responsive}
         showDots={true}
         // autoPlay={true}
         // autoPlaySpeed={1000}
         infinite={true}
+        ssr={true}
+        // partialVisbile={true}
+        centerMode={true}
+        // renderButtonGroupOutside={true}
       >
         {CAROUSEL_DATA.map((item) => (
           <div key={item.name} className="mx-1">
