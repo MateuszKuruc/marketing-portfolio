@@ -1,9 +1,9 @@
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: "/", key: "home", label: "Strona główna" },
-  { href: "#about", key: "about", label: "O mnie" },
-  { href: "#portfolio", key: "portfolio", label: "Portfolio" },
-  { href: "#contact", key: "contact ", label: "Kontakt " },
+  { href: "home", key: "home", label: "Strona główna" },
+  { href: "about", key: "about", label: "O mnie" },
+  { href: "portfolio", key: "portfolio", label: "Portfolio" },
+  { href: "contact", key: "contact ", label: "Kontakt " },
 ];
 
 // Clients for accordion
