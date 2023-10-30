@@ -31,9 +31,9 @@ const CarouselItem2 = () => {
 
   return (
     <div 
-    className="max-container padding-container"
+    className="max-container padding-container bg-pink-50 p-10"
     >
-      <h1 className="text-blue-50 bold-52 lg:bold-70">Klienci, którzy mi zaufali:</h1>
+      <h1 className="text-blue-50 bold-52 lg:bold-70 mb-5">Klienci, którzy mi zaufali:</h1>
       <Carousel responsive={responsive}>
         {CAROUSEL_DATA.map((item) => (
           <div key={item.name}>
