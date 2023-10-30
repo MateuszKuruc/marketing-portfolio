@@ -1,5 +1,8 @@
 import Image from "next/image";
 import React from "react";
+import CarouselItem from "./CarouselItem";
+
+
 
 const Hero = () => {
   return (
@@ -16,6 +19,7 @@ const Hero = () => {
             na dole, tutaj tylko wstep. Bedzie spoko strona z tego.
           </p>
         </header>
+      <CarouselItem />
       </div>
     </section>
   );

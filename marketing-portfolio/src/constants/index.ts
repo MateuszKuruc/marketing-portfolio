@@ -32,6 +32,29 @@ export const ACCORDION_DATA = [
   },
 ];
 
+export const CAROUSEL_DATA = [
+  {
+    name: "Mary Kay",
+    img: "/logo1.png",
+    info: "firma jakas tam",
+  },
+  {
+    name: "Credit Agricole",
+    img: "/logo2.jpg",
+    info: "fest duza firma",
+  },
+  {
+    name: "Cabrio Poland",
+    img: "/logo3.jpg",
+    info: "git firma",
+  },
+  {
+    name: "Prof Energy",
+    img: "/logo4.jpg",
+    info: "spoko firma",
+  },
+];
+
 // CAMP SECTION
 export const PEOPLE_URL = [
   "/person-1.png",
