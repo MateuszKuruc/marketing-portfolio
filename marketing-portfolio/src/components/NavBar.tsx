@@ -57,8 +57,8 @@ const NavBar = () => {
   });
 
   return (
-    <section className="bg-gray-90 sticky top-0 z-30">
-      <nav className="opacity-95 sticky top-0 border-2 border-black flexAround glob max-container padding-container py-8 bg-gray-90">
+    <section className="sticky top-0 z-30 opacity-95">
+      <nav className="border-2 border-black flexAround glob max-container padding-container py-8 bg-gray-90">
         <Link href="/">
           <Image src="/boostguru.png" alt="home_logo" width={70} height={46} />
         </Link>
