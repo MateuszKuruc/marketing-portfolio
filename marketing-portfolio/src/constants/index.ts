@@ -3,7 +3,7 @@ export const NAV_LINKS = [
   { href: "hero", key: "home", label: "Strona główna" },
   { href: "about", key: "about", label: "O mnie" },
   { href: "portfolio", key: "portfolio", label: "Portfolio" },
-  { href: "contact", key: "contact ", label: "Kontakt " },
+  { href: "contact", key: "contact", label: "Kontakt " },
 ];
 
 // Clients for accordion

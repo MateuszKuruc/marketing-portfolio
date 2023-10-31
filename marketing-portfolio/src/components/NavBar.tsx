@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useEffect } from "react";
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,9 +13,44 @@ import { Link as ScrollLink } from "react-scroll";
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
 
-  const handleLinkClick = (linkKey) => {
+  const handleLinkClick = (linkKey: string) => {
     setActiveLink(linkKey);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      const offsets: {
+        [key: string]: number;
+      } = {
+        home: 0,
+        about: 400,
+        portfolio: 950,
+        contact: 1700,
+      };
+
+      let activeSection = null;
+
+      for (const key in offsets) {
+        if (scrollY >= offsets[key]) {
+          activeSection = key;
+        }
+      }
+
+      console.log("scrollY:", scrollY);
+      console.log("activeSection:", activeSection);
+
+      if (activeSection) {
+        setActiveLink(activeSection);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav className="opacity-95 sticky top-0 border-2 border-black flexAround glob max-container padding-container z-30 py-8 bg-gray-90">
