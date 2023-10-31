@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { NAV_LINKS, OFFSETS_DESKTOP, OFFSETS_MOBILE } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link as ScrollLink } from "react-scroll";
 
 const NavBar = () => {
@@ -87,12 +87,19 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-
-        <AiOutlineMenu
-          color="white"
-          onClick={() => setShowMobileMenu(!showMobileMenu)}
-          className="bold-32 lg:hidden"
-        />
+        {showMobileMenu ? (
+          <AiOutlineClose
+            color="white"
+            onClick={() => setShowMobileMenu(!showMobileMenu)}
+            className="bold-32"
+          />
+        ) : (
+          <AiOutlineMenu
+            color="white"
+            onClick={() => setShowMobileMenu(!showMobileMenu)}
+            className="bold-32 lg:hidden"
+          />
+        )}
       </nav>
       {showMobileMenu && (
         <div className="bg-blue-50 p-10 flex flex-col max-container">
