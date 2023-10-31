@@ -6,6 +6,24 @@ export const NAV_LINKS = [
   { href: "contact", key: "contact", label: "Kontakt " },
 ];
 
+export const OFFSETS: {
+  [key: string]: number;
+} = {
+  home: 0,
+  about: 400,
+  portfolio: 950,
+  contact: 1700,
+};
+
+// const offsets: {
+//   [key: string]: number;
+// } = {
+//   home: 0,
+//   about: 400,
+//   portfolio: 950,
+//   contact: 1700,
+// };
+
 // Clients for accordion
 
 export const ACCORDION_DATA = [

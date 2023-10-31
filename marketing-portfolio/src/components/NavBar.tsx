@@ -9,6 +9,8 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 import { Link as ScrollLink } from "react-scroll";
 
+import { OFFSETS } from "@/constants";
+
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState(() => {
     return localStorage.getItem("activeLink") || "home";
@@ -26,19 +28,19 @@ const NavBar = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
 
-      const offsets: {
-        [key: string]: number;
-      } = {
-        home: 0,
-        about: 400,
-        portfolio: 950,
-        contact: 1700,
-      };
+      // const offsets: {
+      //   [key: string]: number;
+      // } = {
+      //   home: 0,
+      //   about: 400,
+      //   portfolio: 950,
+      //   contact: 1700,
+      // };
 
       let activeSection = null;
 
-      for (const key in offsets) {
-        if (scrollY >= offsets[key]) {
+      for (const key in OFFSETS) {
+        if (scrollY >= OFFSETS[key]) {
           activeSection = key;
         }
       }
@@ -78,7 +80,7 @@ const NavBar = () => {
               to={link.href}
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-85}
               duration={700}
               className={`regular-16 text-white flexCenter cursor-pointer pb-1.5 hover:font-bold ${
                 activeLink === link.key ? "border-b-3 border-purple-500" : ""
