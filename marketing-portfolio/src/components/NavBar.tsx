@@ -1,15 +1,11 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { NAV_LINKS } from "@/constants";
+import { NAV_LINKS, OFFSETS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-
 import { Link as ScrollLink } from "react-scroll";
-
-import { OFFSETS } from "@/constants";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState(() => {
@@ -27,15 +23,6 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-
-      // const offsets: {
-      //   [key: string]: number;
-      // } = {
-      //   home: 0,
-      //   about: 400,
-      //   portfolio: 950,
-      //   contact: 1700,
-      // };
 
       let activeSection = null;
 
