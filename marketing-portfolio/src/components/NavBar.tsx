@@ -10,12 +10,15 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { Link as ScrollLink } from "react-scroll";
 
 const NavBar = () => {
-  const [activeLink, setActiveLink] = useState("home");
+  const [activeLink, setActiveLink] = useState(() => {
+    return localStorage.getItem("activeLink") || "home";
+  });
   const autoScrolling = useRef(false);
 
   const handleLinkClick = (linkKey: string) => {
     if (autoScrolling.current) {
       setActiveLink(linkKey);
+      localStorage.setItem("activeLink", linkKey);
     }
   };
 
@@ -40,11 +43,12 @@ const NavBar = () => {
         }
       }
 
-      console.log("scrollY:", scrollY);
-      console.log("activeSection:", activeSection);
+      // console.log("scrollY:", scrollY);
+      // console.log("activeSection:", activeSection);
 
       if (activeSection && !autoScrolling.current) {
         setActiveLink(activeSection);
+        localStorage.setItem("activeLink", activeSection);
       }
     };
     window.addEventListener("scroll", handleScroll);
