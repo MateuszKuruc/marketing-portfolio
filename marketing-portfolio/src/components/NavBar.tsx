@@ -61,7 +61,7 @@ const NavBar = () => {
 
   return (
     <section className="sticky top-0 z-30 opacity-95">
-      <nav className="border-2 border-black flexAround glob max-container padding-container py-8 bg-gray-90">
+      <nav className="border-2 border-black flexAround glob max-container padding-container py-4 lg:py-8 bg-gray-90">
         <Link href="/">
           <Image src="/boostguru.png" alt="home_logo" width={70} height={46} />
         </Link>
@@ -102,8 +102,8 @@ const NavBar = () => {
         )}
       </nav>
       {showMobileMenu && (
-        <div className="bg-blue-50 p-10 flex flex-col max-container">
-          <ul className="h-full gap-12">
+        <div className="bg-blue-50 p-8 flex flex-col max-container border-b-4 border-t-4 border-white">
+          <ul className="h-full flex flex-col gap-4">
             {NAV_LINKS.map((link) => (
               <li key={link.key}>
                 <ScrollLink
@@ -130,6 +130,8 @@ const NavBar = () => {
           </ul>
         </div>
       )}
+
+     
     </section>
   );
 };
