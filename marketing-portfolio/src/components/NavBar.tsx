@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,9 +11,12 @@ import { Link as ScrollLink } from "react-scroll";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
+  const autoScrolling = useRef(false);
 
   const handleLinkClick = (linkKey: string) => {
-    setActiveLink(linkKey);
+    if (autoScrolling.current) {
+      setActiveLink(linkKey);
+    }
   };
 
   useEffect(() => {
@@ -41,7 +43,7 @@ const NavBar = () => {
       console.log("scrollY:", scrollY);
       console.log("activeSection:", activeSection);
 
-      if (activeSection) {
+      if (activeSection && !autoScrolling.current) {
         setActiveLink(activeSection);
       }
     };
@@ -51,6 +53,14 @@ const NavBar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    if (autoScrolling.current) {
+      setTimeout(() => {
+        autoScrolling.current = false;
+      }, 1000);
+    }
+  });
 
   return (
     <nav className="opacity-95 sticky top-0 border-2 border-black flexAround glob max-container padding-container z-30 py-8 bg-gray-90">
@@ -69,7 +79,10 @@ const NavBar = () => {
               className={`regular-16 text-white flexCenter cursor-pointer pb-1.5 hover:font-bold ${
                 activeLink === link.key ? "border-b-3 border-purple-500" : ""
               }`}
-              onClick={() => handleLinkClick(link.key)}
+              onClick={() => {
+                autoScrolling.current = true;
+                handleLinkClick(link.key);
+              }}
             >
               {link.label}
             </ScrollLink>
