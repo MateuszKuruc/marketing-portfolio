@@ -14,6 +14,8 @@ const NavBar = () => {
   });
   const autoScrolling = useRef(false);
 
+  const isMobile = window.innerWidth <= 768;
+
   const handleLinkClick = (linkKey: string) => {
     if (autoScrolling.current) {
       setActiveLink(linkKey);
@@ -26,15 +28,16 @@ const NavBar = () => {
       const scrollY = window.scrollY;
 
       let activeSection = null;
+      const offsets = isMobile ? OFFSETS_MOBILE : OFFSETS_DESKTOP;
 
-      for (const key in OFFSETS_DESKTOP) {
-        if (scrollY >= OFFSETS_DESKTOP[key]) {
+      for (const key in offsets) {
+        if (scrollY >= offsets[key]) {
           activeSection = key;
         }
       }
 
-      // console.log("scrollY:", scrollY);
-      // console.log("activeSection:", activeSection);
+      console.log("scrollY:", scrollY);
+      console.log("activeSection:", activeSection);
 
       if (activeSection && !autoScrolling.current) {
         setActiveLink(activeSection);
@@ -92,7 +95,7 @@ const NavBar = () => {
         />
       </nav>
       {showMobileMenu && (
-        <div className="bg-blue-50 p-10 flex flex-col">
+        <div className="bg-blue-50 p-10 flex flex-col max-container">
           <ul className="h-full gap-12">
             {NAV_LINKS.map((link) => (
               <li key={link.key}>
@@ -100,7 +103,7 @@ const NavBar = () => {
                   to={link.href}
                   spy={true}
                   smooth={true}
-                  offset={-85}
+                  offset={-320}
                   duration={700}
                   className={`medium-18 text-black flexCenter cursor-pointer pb-1.5 hover:font-bold ${
                     activeLink === link.key
