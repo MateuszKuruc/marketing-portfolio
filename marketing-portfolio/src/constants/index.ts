@@ -6,7 +6,9 @@ export const NAV_LINKS = [
   { href: "contact", key: "contact", label: "Kontakt " },
 ];
 
-export const OFFSETS: {
+// offsets for desktop
+
+export const OFFSETS_DESKTOP: {
   [key: string]: number;
 } = {
   home: 0,
@@ -15,14 +17,17 @@ export const OFFSETS: {
   contact: 1700,
 };
 
-// const offsets: {
-//   [key: string]: number;
-// } = {
-//   home: 0,
-//   about: 400,
-//   portfolio: 950,
-//   contact: 1700,
-// };
+// offsets for mobile
+
+export const OFFSETS_MOBILE: {
+  [key: string]: number;
+} = {
+  home: -70,
+  about: 200,
+  portfolio: 450,
+  contact: 700,
+};
+
 
 // Clients for accordion
 

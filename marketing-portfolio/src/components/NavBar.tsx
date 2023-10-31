@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { NAV_LINKS, OFFSETS } from "@/constants";
+import { NAV_LINKS, OFFSETS_DESKTOP, OFFSETS_MOBILE } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -27,8 +27,8 @@ const NavBar = () => {
 
       let activeSection = null;
 
-      for (const key in OFFSETS) {
-        if (scrollY >= OFFSETS[key]) {
+      for (const key in OFFSETS_DESKTOP) {
+        if (scrollY >= OFFSETS_DESKTOP[key]) {
           activeSection = key;
         }
       }
