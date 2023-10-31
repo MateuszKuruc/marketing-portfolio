@@ -91,7 +91,7 @@ const NavBar = () => {
           <AiOutlineClose
             color="white"
             onClick={() => setShowMobileMenu(!showMobileMenu)}
-            className="bold-32"
+            className="bold-32 lg:hidden"
           />
         ) : (
           <AiOutlineMenu
