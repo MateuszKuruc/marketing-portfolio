@@ -8,7 +8,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link as ScrollLink } from "react-scroll";
 
 const NavBar = () => {
-  const [showMobileMenu, setShowMobileMenu] = useState(true);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [activeLink, setActiveLink] = useState(() => {
     return localStorage.getItem("activeLink") || "home";
   });
@@ -44,12 +44,20 @@ const NavBar = () => {
         localStorage.setItem("activeLink", activeSection);
       }
     };
+
+    const handleResize = () => {
+      if (window.innerWidth > 768 && showMobileMenu) {
+        setShowMobileMenu(false);
+      }
+    };
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [showMobileMenu]);
 
   useEffect(() => {
     if (autoScrolling.current) {
@@ -102,8 +110,8 @@ const NavBar = () => {
         )}
       </nav>
       {showMobileMenu && (
-        <div className="bg-blue-50 p-8 flex flex-col max-container border-b-4 border-t-4 border-white">
-          <ul className="h-full flex flex-col gap-4">
+        <div className="bg-blue-50 p-8 max-container border-b-4 border-t-4 border-white">
+          <ul className="flex flex-col gap-4">
             {NAV_LINKS.map((link) => (
               <li key={link.key}>
                 <ScrollLink
@@ -112,7 +120,7 @@ const NavBar = () => {
                   smooth={true}
                   offset={-320}
                   duration={700}
-                  className={`medium-18 text-black flexCenter cursor-pointer pb-1.5 hover:font-bold ${
+                  className={`medium-18 text-black flexCenter pb-1.5 hover:font-bold ${
                     activeLink === link.key
                       ? "border-b-3 border-purple-500"
                       : ""
@@ -130,8 +138,6 @@ const NavBar = () => {
           </ul>
         </div>
       )}
-
-     
     </section>
   );
 };
