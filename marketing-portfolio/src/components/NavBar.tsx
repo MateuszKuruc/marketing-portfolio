@@ -36,8 +36,8 @@ const NavBar = () => {
         }
       }
 
-      console.log("scrollY:", scrollY);
-      console.log("activeSection:", activeSection);
+      // console.log("scrollY:", scrollY);
+      // console.log("activeSection:", activeSection);
 
       if (activeSection && !autoScrolling.current) {
         setActiveLink(activeSection);
