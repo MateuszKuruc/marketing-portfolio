@@ -1,9 +1,6 @@
 import nodemailer from "nodemailer";
 import { NextResponse, NextRequest } from "next/server";
 
-const email = process.env.SEND_EMAIL;
-const password = process.env.EMAIL_PASSWORD;
-
 export async function POST(request: NextRequest) {
   try {
     const { name, email, phone, message } = await request.json();
