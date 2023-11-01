@@ -9,8 +9,8 @@ export default function Home() {
     <>
       <Hero />
       <About />
-      <CarouselItem />
       <Portfolio />
+      <CarouselItem />
       <Contact />
     </>
   );

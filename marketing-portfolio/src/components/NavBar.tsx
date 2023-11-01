@@ -9,12 +9,11 @@ import { Link as ScrollLink } from "react-scroll";
 
 const NavBar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [activeLink, setActiveLink] = useState(() => {
-    return localStorage.getItem("activeLink") || "home";
-  });
+  // const [activeLink, setActiveLink] = useState(() => {
+  //   return localStorage.getItem("activeLink") || "home";
+  // });
+  const [activeLink, setActiveLink] = useState("home");
   const autoScrolling = useRef(false);
-
-  const isMobile = window.innerWidth <= 768;
 
   const handleLinkClick = (linkKey: string) => {
     if (autoScrolling.current) {
@@ -24,8 +23,23 @@ const NavBar = () => {
   };
 
   useEffect(() => {
+    // Check if localStorage is available (on the client side)
+    if (typeof window !== "undefined") {
+      const storedActiveLink = localStorage.getItem("activeLink");
+      if (storedActiveLink) {
+        setActiveLink(storedActiveLink);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
+
+      let isMobile = null;
+      typeof window !== "undefined"
+        ? (isMobile = window.innerWidth <= 768)
+        : null;
 
       let activeSection = null;
       const offsets = isMobile ? OFFSETS_MOBILE : OFFSETS_DESKTOP;
@@ -71,7 +85,7 @@ const NavBar = () => {
     <section className="sticky top-0 z-30 opacity-95">
       <nav className="border-2 border-black flexAround glob max-container padding-container py-4 lg:py-8 bg-gray-90">
         <Link href="/">
-          <Image src="/boostguru.png" alt="home_logo" width={70} height={46} />
+          <Image src="/logo1.png" alt="home_logo" width={70} height={70} />
         </Link>
         <ul className="hidden h-full gap-12 lg:flex">
           {NAV_LINKS.map((link) => (
