@@ -1,7 +1,7 @@
 import React from "react";
-import { AccordionItemProps } from "../../types";
+import { CaseStudyProps } from "../../types";
 
-const CaseStudy = ({ details, name }: AccordionItemProps) => {
+const CaseStudy = ({ details, name }: CaseStudyProps) => {
   return <div>CaseStudy</div>;
 };
 

@@ -9,6 +9,13 @@ export interface AccordionItemProps {
   name: string;
 }
 
+export interface CaseStudyProps {
+  title: string;
+  description: string;
+  details: string;
+  name: string;
+}
+
 export type ButtonProps = {
   disabled: boolean;
   type: "button" | "submit";

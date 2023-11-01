@@ -31,7 +31,12 @@ const AccordionItem = ({
       <Collapse className="ReactCollapse--collapse" isOpened={open}>
         <div className="medium-18 p-5">
           {description}
-          <CaseStudy details={details} name={name} />
+          <CaseStudy
+            title={title}
+            description={description}
+            details={details}
+            name={name}
+          />
         </div>
       </Collapse>
     </div>
