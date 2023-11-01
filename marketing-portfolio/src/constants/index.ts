@@ -35,16 +35,23 @@ export const ACCORDION_DATA = [
     title: "Client 1 - Microsoft",
     description:
       "Dla tego klienta przygotowalem niezle gowno, zrobilismy fajna kampanie pod kliki na fb i prowadzilem im jeszcze profile na wszystkich social mediach. sadsadsa sadsadsad sadsadsad sadsadsad sadsadd",
+    details: " client 1 case study text dwqewqewqewqewqewqewqewqewqewqewqewqeq",
+    name: "Microsoft",
   },
   {
     title: "Client 2 - Google",
     description:
       "Tutaj robilismy kampanie google ads i nagrywalismy tiktoki. Do tego pracowalismy nad podniesienem ruchu na stronie, zanotowalismy wzrost 500%. sadsadsadsadsa sadsadsadsa sdsadsadsad sadsadsadsadas",
+    details:
+      "client 2 case study text weqeqwewqeqwewqewqewqewqewqewqewqewqewqeqweqw",
+    name: "Google",
   },
   {
     title: "Client 3 - Apple",
     description:
       "Prowadzilem konsultacje marketingowe dla klienta w branzy bankowej. Tematyka dotyczyla doboru grafik przy prowadzeniu profilow w social media. adasdasdsadsa sadasdasdsadas dsadsadsadsad sadsadsadsa",
+    details: "client 3 case study text wqewqewqewqewqrdsfsdfsdfsdds",
+    name: "Apple",
   },
 ];
 

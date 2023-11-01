@@ -2,6 +2,7 @@ import React from "react";
 import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
 import { Collapse } from "react-collapse";
 import { AccordionItemProps } from "../../types";
+import CaseStudy from "./CaseStudy";
 
 const AccordionItem = ({
   open,
@@ -23,7 +24,10 @@ const AccordionItem = ({
       </div>
 
       <Collapse className="ReactCollapse--collapse" isOpened={open}>
-        <div className="medium-18 p-5">{description}</div>
+        <div className="medium-18 p-5">
+          {description}
+          <CaseStudy />
+          </div>
       </Collapse>
     </div>
   );
