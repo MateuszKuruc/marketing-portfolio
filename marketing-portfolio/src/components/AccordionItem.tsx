@@ -9,10 +9,15 @@ const AccordionItem = ({
   toggleAccordion,
   title,
   description,
+  details,
+  name,
 }: AccordionItemProps) => {
   return (
     <div className="bg-blue-50">
-      <div className="bg-gray-90 border-2 p-10 flex flexBetween" onClick={toggleAccordion}>
+      <div
+        className="bg-gray-90 border-2 p-10 flex flexBetween"
+        onClick={toggleAccordion}
+      >
         <p className="text-white bold-32">{title}</p>
         <div>
           {open ? (
@@ -26,8 +31,8 @@ const AccordionItem = ({
       <Collapse className="ReactCollapse--collapse" isOpened={open}>
         <div className="medium-18 p-5">
           {description}
-          <CaseStudy />
-          </div>
+          <CaseStudy details={details} name={name} />
+        </div>
       </Collapse>
     </div>
   );
