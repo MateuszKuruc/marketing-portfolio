@@ -124,7 +124,7 @@ const NavBar = () => {
         )}
       </nav>
       {showMobileMenu && (
-        <div className="bg-blue-50 p-8 max-container border-b-4 border-t-4 border-white">
+        <div className="bg-blue-50 font-standard p-8 max-container border-b-4 border-t-4 border-white">
           <ul className="flex flex-col gap-4">
             {NAV_LINKS.map((link) => (
               <li key={link.key}>
@@ -134,7 +134,7 @@ const NavBar = () => {
                   smooth={true}
                   offset={-320}
                   duration={700}
-                  className={`medium-18 text-black flexCenter pb-1.5 hover:font-bold ${
+                  className={`medium-18 text-black flexCenter pb-1.5 ${
                     activeLink === link.key ? "border-b-3 border-coral-50" : ""
                   }`}
                   onClick={() => {
