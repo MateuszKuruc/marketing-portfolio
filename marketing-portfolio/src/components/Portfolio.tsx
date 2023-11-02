@@ -18,7 +18,7 @@ const Portfolio = () => {
   return (
     <section
       id="portfolio"
-      className=" border-t-4 border-white max-container padding-container bg-gradient-to-t from-gray-90 py-10 lg:py-20 md:gap-28"
+      className=" border-t-4 border-white max-container padding-container bg-gradient-to-t from-gray-30 to-gray-90 py-10 lg:py-20 md:gap-28"
     >
       <header className="mb-10 padding container max-container flex flex-col items-center px-24">
         <h1 className="bold-64 lg:bold-88 text-blue-50">Case study</h1>

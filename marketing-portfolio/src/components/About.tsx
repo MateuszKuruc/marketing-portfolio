@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="border-t-4 border-white my-10 skew-y-3 bg-gradient-to-b from-gray-90 max-container padding-container py-10 md:gap-28 lg:py-20 gap-20"
+      className="border-t-4 border-white my-10 skew-y-3 bg-gradient-to-b from-gray-30 to-gray-90 max-container padding-container py-10 md:gap-28 lg:py-20 gap-20"
     >
       <div className="-skew-y-3 flex gap-10 justify-around padding-container">
         <header>
