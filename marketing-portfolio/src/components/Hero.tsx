@@ -10,12 +10,12 @@ const Hero = () => {
         <div className="lg:ml-12">
           <header>
             <h1 className="hidden md:block mt-6 bold-64 lg:bold-88 text-blue-50">
-              Social media ekspert
+              Facebook Ads - razem zrobimy z tego hit!
             </h1>
             <p className="regular-24 mt-6 text-white xl:max-w-[520px]">
-              Ogarnij se social media, cokolwiek robisz to barti ogarnie, bedzie
-              git. Marketing jest super wazny bo wiadomo. Jak cos to wiecej info
-              na dole, tutaj tylko wstep. Bedzie spoko strona z tego.
+              Nie wiesz, jak zdominować świat Facebook Ads? Trafiłeś w
+              dziesiątkę! Odkryj strategie mistrza reklam, które przekształcą
+              Twoje kampanie w sukcesy. To Twój czas na przełom w marketingu.
             </p>
           </header>
         </div>
