@@ -30,31 +30,73 @@ export const OFFSETS_MOBILE: {
 
 // Clients for accordion
 
+export const CLIENT_DATA = [
+  {
+    id: 1,
+    clientName: "Microsoft",
+    shortDescription:
+      "testowy opis krotki klient 1 qwheqewhjkqwhejkqw wqhekjqhwejkqwhejkqw qhjrlqwrjhlkqwhrjkqlwr wqnehklwqhejkqwheqwjke wqhejklqwheqwjkehqwjkeqw",
+    results:
+      "klient 1 wyniki tarararararararaekqjwjeh qwehkjqwheqwjke wqhekqwhekjqwhejwkq qhekjqwhejkqwhejkqwe qhwejkqwhekjqhejkqwehjkqw wqhekqwhekjqwhejkqwe wqhekjqwhejkqwewq",
+    summary:
+      "klient 1 krotkie podsumowanie bububububububuqbeywqgruiq qhreuqwheriwquhewqiu wqheuiwqhewquieq qweiuqwheiuqwheqiuw heuiqwheuiqwheuiwq qwheuiqwheiuwq",
+  },
+  {
+    id: 2,
+    clientName: "Google",
+    shortDescription:
+      "testowy opis krotki klient 2 nrwqjjhejwqheqwkjehqwkehqkwjhejkqwhekjqwhek hwqkejh qwkehkwqh ekjqwhe kjqwh ekjhqwke jhqwkewqh kjehqwkej hqwkej qhwkj ehqwkj ehqwkjehqwkjehqwkjehqwkje qw",
+    results:
+      "klient 2 wyniki wqhkeqwhejkqwhejkhqwjkehkj hqwkjehkwqhekjwqhejkhwqkje hqwjkehjkwqhekjqwheqjkwehkjh jkqwhekjqwhejkwqhekjqwhekqjwhe kjqwhejkwqhejkqwhejkqwhekjqwhejk hjqwhejkqwjhejkqwhejkqwhekjqw",
+    summary:
+      "klient 2 krotkie podsumowanie hwqjehwqjkehqjkehwqkjeh ewkjqhjkehjkwhqejkhqwekjqh  wkjqhekjqwjhekjqhejkqwhekqj ewqjkehwjkqehjkqwehjkqw wqjkehwqjekqwhejkqwjheqwjkehwq",
+  },
+  {
+    id: 3,
+    clientName: "Apple",
+    shortDescription:
+      "testowy opis krotki klient 3 nrwqjjhejwqheqwkjehqwkehqkwjhejkqwhekjqwhek hwqkejh qwkehkwqh ekjqwhe kjqwh ekjhqwke jhqwkewqh kjehqwkej hqwkej qhwkj ehqwkj ehqwkjehqwkjehqwkjehqwkje qw",
+    results:
+      "klient 3 wyniki wqhkeqwhejkqwhejkhqwjkehkj hqwkjehkwqhekjwqhejkhwqkje hqwjkehjkwqhekjqwheqjkwehkjh jkqwhekjqwhejkwqhekjqwhekqjwhe kjqwhejkwqhejkqwhejkqwhekjqwhejk hjqwhejkqwjhejkqwhejkqwhekjqw",
+    summary:
+      "klient 3 krotkie podsumowanie hwqjehwqjkehqjkehwqkjeh ewkjqhjkehjkwhqejkhqwekjqh  wkjqhekjqwjhekjqhejkqwhekqj ewqjkehwjkqehjkqwehjkqw wqjkehwqjekqwhejkqwjheqwjkehwq",
+  },
+  {
+    id: 4,
+    clientName: "Samsung",
+    shortDescription:
+      "testowy opis krotki klient 4 nrwqjjhejwqheqwkjehqwkehqkwjhejkqwhekjqwhek hwqkejh qwkehkwqh ekjqwhe kjqwh ekjhqwke jhqwkewqh kjehqwkej hqwkej qhwkj ehqwkj ehqwkjehqwkjehqwkjehqwkje qw",
+    results:
+      "klient 4 wyniki wqhkeqwhejkqwhejkhqwjkehkj hqwkjehkwqhekjwqhejkhwqkje hqwjkehjkwqhekjqwheqjkwehkjh jkqwhekjqwhejkwqhekjqwhekqjwhe kjqwhejkwqhejkqwhejkqwhekjqwhejk hjqwhejkqwjhejkqwhejkqwhekjqw",
+    summary:
+      "klient 4 krotkie podsumowanie hwqjehwqjkehqjkehwqkjeh ewkjqhjkehjkwhqejkhqwekjqh  wkjqhekjqwjhekjqhejkqwhekqj ewqjkehwjkqehjkqwehjkqw wqjkehwqjekqwhejkqwjheqwjkehwq",
+  },
+];
+
 export const ACCORDION_DATA = [
   {
     id: 1,
     title: "Client 1 - Microsoft",
     description:
       "Dla tego klienta przygotowalem niezle gowno, zrobilismy fajna kampanie pod kliki na fb i prowadzilem im jeszcze profile na wszystkich social mediach. sadsadsa sadsadsad sadsadsad sadsadsad sadsadd",
-    details: " client 1 case study text dwqewqewqewqewqewqewqewqewqewqewqewqeq",
-    name: "Microsoft",
   },
   {
     id: 2,
     title: "Client 2 - Google",
     description:
       "Tutaj robilismy kampanie google ads i nagrywalismy tiktoki. Do tego pracowalismy nad podniesienem ruchu na stronie, zanotowalismy wzrost 500%. sadsadsadsadsa sadsadsadsa sdsadsadsad sadsadsadsadas",
-    details:
-      "client 2 case study text weqeqwewqeqwewqewqewqewqewqewqewqewqewqeqweqw",
-    name: "Google",
   },
   {
     id: 3,
     title: "Client 3 - Apple",
     description:
       "Prowadzilem konsultacje marketingowe dla klienta w branzy bankowej. Tematyka dotyczyla doboru grafik przy prowadzeniu profilow w social media. adasdasdsadsa sadasdasdsadas dsadsadsadsad sadsadsadsa",
-    details: "client 3 case study text wqewqewqewqewqrdsfsdfsdfsdds",
-    name: "Apple",
+  },
+  {
+    id: 4,
+    title: "Client 4 - Samsung",
+    description:
+      "Fajowa wspolpraca owocujaca w turbo wyniki. sadjaskdsakjdjhasjkdas dashdashjldkhaskdhaskjd sadjaslkdjaslkdkhaldkas ahdklashdjlkasdhjaksldhsakj",
   },
 ];
 
