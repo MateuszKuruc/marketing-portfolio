@@ -27,7 +27,7 @@ const CarouselItem = () => {
   };
 
   return (
-    <div className="max-container padding-container bg-white p-10">
+    <div className="max-container padding-container bg-slate-200 p-10">
       <div className="flex items-center justify-center mb-12">
         <h1 className=" font-header text-coral-50 bold-40 lg:bold-52">
           Zaufali mi:
