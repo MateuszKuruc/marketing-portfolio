@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="-skew-y-3 gap-10 border-5 border-slate-200 flex flex-col-reverse lg:flex-row">
         <div className="lg:ml-12">
           <header>
-            <h1 className="mt-6 bold-64 lg:bold-88 text-blue-50">
+            <h1 className="hidden md:block mt-6 bold-64 lg:bold-88 text-blue-50">
               Social media ekspert
             </h1>
             <p className="regular-24 mt-6 text-white xl:max-w-[520px]">
