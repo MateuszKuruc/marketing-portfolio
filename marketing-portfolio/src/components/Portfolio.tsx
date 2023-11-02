@@ -21,7 +21,9 @@ const Portfolio = () => {
       className=" border-t-4 border-white max-container padding-container bg-gradient-to-t from-gray-30 to-gray-90 py-10 lg:py-20 md:gap-28"
     >
       <header className="mb-10 padding container max-container flex flex-col items-center px-24">
-        <h1 className="bold-64 lg:bold-88 text-blue-50">Case study</h1>
+        <h1 className="font-header bold-40 lg:bold-52 text-blue-50">
+          Case study
+        </h1>
         {/* <p className="regular-24 text-white mt-6">
           Sprawdz jak poprawilem marketingowe wskazniki u moich klientow i
           wynioslem ich marketing na jakis kosmiczny poziom ze hej

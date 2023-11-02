@@ -12,12 +12,12 @@ const AccordionItem = ({
   description,
 }: AccordionItemProps) => {
   return (
-    <div className="bg-blue-50">
+    <div className="bg-blue-30">
       <div
         className="bg-gray-90 border-2 p-10 flex flexBetween border-coral-50"
         onClick={toggleAccordion}
       >
-        <p className="text-white bold-32">{title}</p>
+        <p className="font-header text-white bold-32">{title}</p>
         <div>
           {open ? (
             <AiFillMinusCircle color="white" size={50} />
@@ -28,12 +28,14 @@ const AccordionItem = ({
       </div>
 
       <Collapse className="ReactCollapse--collapse" isOpened={open}>
-        <div className="regular-18 p-5 flex flex-col gap-4">
-          <p>
-
-          {description} 
-          </p>
-        <Link className="text-gray-30 medium-18" href={`/portfolio/${id}`}>Zobacz więcej...</Link>
+        <div className="font-standard regular-20 p-5 flex flex-col gap-4">
+          <p>{description}</p>
+          <Link
+            className="font-bold text-slate-500 regular-20"
+            href={`/portfolio/${id}`}
+          >
+            Zobacz więcej...
+          </Link>
         </div>
       </Collapse>
     </div>
