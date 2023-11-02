@@ -52,7 +52,7 @@ body {
   }
 
   .btn_submit {
-    @apply border-white font-medium border-2 bg-blue-50 px-8 py-5 transition-all hover:bg-blue-70 cursor-pointer hover:scale-105;
+    @apply border-white font-medium border-2 bg-coral-50 px-8 py-5 transition-all hover:bg-coral-70 cursor-pointer hover:scale-105;
   }
 
   .btn_disabled {

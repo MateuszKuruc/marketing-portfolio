@@ -19,6 +19,7 @@ module.exports = {
         },
         coral: {
           50: "#ff6b6b",
+          70: "#e64c4c",
         },
         gray: {
           10: "#EEEEEE",
