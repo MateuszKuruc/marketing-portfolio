@@ -15,6 +15,9 @@ module.exports = {
         red: {
           50: "#DC143C",
         },
+        coral: {
+          50: "#e94f37"
+        },
         gray: {
           10: "#EEEEEE",
           20: "#A2A2A2",

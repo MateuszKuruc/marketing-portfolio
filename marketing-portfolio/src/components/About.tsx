@@ -9,7 +9,7 @@ const About = () => {
     >
       <div className="-skew-y-3 flex gap-10 justify-around padding-container">
         <header>
-          <h1 className="bold-64 ll:bold-88 text-blue-50">O mnie</h1>
+          <h1 className="bold-64 lg:bold-88 text-blue-50">O mnie</h1>
           <p className="regular-24 mt-6 xl:max-w-[520px] text-white">
             Jestem fajowym marketingowcem, zrobie ci graficzke i zmontuje teksty
             reklamowe. Zajmuje sie tym 20 lat co najmniej. Co bys jeszcze
