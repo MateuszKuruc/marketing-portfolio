@@ -28,7 +28,7 @@ const AccordionItem = ({
       </div>
 
       <Collapse className="ReactCollapse--collapse" isOpened={open}>
-        <div className="medium-18 p-5 flex flex-col gap-4">
+        <div className="regular-18 p-5 flex flex-col gap-4">
           <p>
 
           {description} 

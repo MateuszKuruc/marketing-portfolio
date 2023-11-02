@@ -76,15 +76,15 @@ export const CLIENT_DATA = [
 export const ACCORDION_DATA = [
   {
     id: 1,
-    title: "Client 1 - Microsoft",
+    title: "5 ZŁ ZA LEADA",
     description:
-      "Dla tego klienta przygotowalem niezle gowno, zrobilismy fajna kampanie pod kliki na fb i prowadzilem im jeszcze profile na wszystkich social mediach. sadsadsa sadsadsad sadsadsad sadsadsad sadsadd",
+      "Kampania Facebook Ads dla firmy pozyskującej kredyty dla spółek, osiągnęliśmy wyniki na poziomie 5zł za leada. Stworzenie precyzyjnej segmentacji, angażujących kreacji i stała optymalizacja stały się kluczem do sukcesu.",
   },
   {
     id: 2,
-    title: "Client 2 - Google",
+    title: "ROAS 30 000%",
     description:
-      "Tutaj robilismy kampanie google ads i nagrywalismy tiktoki. Do tego pracowalismy nad podniesienem ruchu na stronie, zanotowalismy wzrost 500%. sadsadsadsadsa sadsadsadsa sdsadsadsad sadsadsadsadas",
+      `Stworzyliśmy wielopoziomowy lejek sprzedażowy dla sklepu e-commerce sprzedającego odzież damską. Gdy przejmowałem konto ROAS stał na poziomie 800%, wyskalowałem go do poziomu 30 000% zwiększając przy tym budżet dwukrotnie.`,
   },
   {
     id: 3,
