@@ -27,9 +27,9 @@ const CarouselItem = () => {
   };
 
   return (
-    <div className="max-container padding-container bg-pink-50 p-10">
+    <div className="max-container padding-container bg-white p-10">
       <div className="flex items-center justify-center mb-12">
-        <h1 className="text-blue-50 bold-64 lg:bold-88">Zaufali mi:</h1>
+        <h1 className="text-coral-50 bold-64 lg:bold-88">Zaufali mi:</h1>
       </div>
       <Carousel
         className="pb-10"
@@ -51,7 +51,7 @@ const CarouselItem = () => {
               width={300}
               height={300}
               alt={item.name}
-              className="border-4 border-blue-50 rounded-full"
+              className="border-4 border-coral-50 rounded-full"
             />
           </div>
         ))}

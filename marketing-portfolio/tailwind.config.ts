@@ -11,12 +11,13 @@ module.exports = {
         blue: {
           50: "#2de1fc",
           70: "#1ac7e5",
+          90: "#000066"
         },
         red: {
           50: "#DC143C",
         },
         coral: {
-          50: "#e94f37"
+          50: "#ff6b6b"
         },
         gray: {
           10: "#EEEEEE",

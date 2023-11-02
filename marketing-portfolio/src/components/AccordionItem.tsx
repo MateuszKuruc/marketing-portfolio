@@ -14,7 +14,7 @@ const AccordionItem = ({
   return (
     <div className="bg-blue-50">
       <div
-        className="bg-gray-90 border-2 p-10 flex flexBetween"
+        className="bg-gray-90 border-2 p-10 flex flexBetween border-coral-50"
         onClick={toggleAccordion}
       >
         <p className="text-white bold-32">{title}</p>
@@ -33,7 +33,7 @@ const AccordionItem = ({
 
           {description} 
           </p>
-        <Link className="text-purple-500 medium-18" href={`/portfolio/${id}`}>Zobacz więcej...</Link>
+        <Link className="text-gray-30 medium-18" href={`/portfolio/${id}`}>Zobacz więcej...</Link>
         </div>
       </Collapse>
     </div>
