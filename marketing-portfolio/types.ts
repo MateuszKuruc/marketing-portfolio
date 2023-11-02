@@ -5,8 +5,6 @@ export interface AccordionItemProps {
   toggleAccordion: () => void;
   title: string;
   description: string;
-  details: string;
-  name: string;
 }
 
 export type ButtonProps = {

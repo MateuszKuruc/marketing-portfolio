@@ -8,8 +8,6 @@ const AccordionItem = ({
   toggleAccordion,
   title,
   description,
-  details,
-  name,
 }: AccordionItemProps) => {
   return (
     <div className="bg-blue-50">

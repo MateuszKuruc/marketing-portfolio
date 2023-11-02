@@ -35,8 +35,6 @@ const Portfolio = () => {
               open={index === open}
               title={data.title}
               description={data.description}
-              details={data.details}
-              name={data.name}
               toggleAccordion={() => toggleAccordion(index)}
             />
           );
