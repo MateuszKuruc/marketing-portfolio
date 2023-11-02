@@ -27,7 +27,7 @@ const CarouselItem = () => {
   };
 
   return (
-    <section className="max-container padding-container bg-slate-200 p-10 border-2 border-red-500">
+    <section className="max-container padding-container bg-slate-200 p-10 border-y-4 border-white mt-12">
       <div className="flex items-center justify-center mb-12">
         <h1 className=" font-header text-coral-50 bold-40 lg:bold-52">
           Zaufali mi:
