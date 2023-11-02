@@ -36,7 +36,10 @@ const Footer = () => {
             <Link href="placeholderlink">
               <AiOutlineInstagram color="white" size="50" />
             </Link>
-            <Link href="placeholderlink">
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com/in/bartoszkuruc/"
+            >
               <AiOutlineLinkedin color="white" size="50" />
             </Link>
           </div>
