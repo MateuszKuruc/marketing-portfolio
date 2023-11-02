@@ -28,9 +28,12 @@ const CarouselItem = () => {
 
   return (
     <div className="max-container padding-container bg-pink-50 p-10">
-      <h1 className="text-blue-50 bold-52 lg:bold-70 mb-5">
-        Klienci, którzy mi zaufali:
+      <div className="flex items-center justify-center mb-12">
+
+      <h1 className="text-blue-50 bold-64 lg:bold-88">
+        Zaufali mi:
       </h1>
+      </div>
       <Carousel
         className="pb-10"
         responsive={responsive}
