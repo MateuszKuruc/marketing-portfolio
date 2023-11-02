@@ -1,5 +1,5 @@
 import React from "react";
-import { ACCORDION_DATA } from "@/constants";
+import { CLIENT_DATA } from "@/constants";
 
 type Params = {
   params: {
@@ -11,16 +11,20 @@ const Project = ({params}: Params) => {
 const id = params.projectId;
 
 
-  return <div>
-    <>
-   {ACCORDION_DATA.map(client => client.id.toString() === id ? (
+  return <div className="py-8 max-container padding-container bg-gradient-to-br from-gray-90">
+    
+   {CLIENT_DATA.map(client => client.id.toString() === id ? (
     <>
     
-    <h1>{client.name}</h1>
-    <p>{client.description}</p>
+    <h1 className="text-blue-50 bold-52 lg:bold-70 mb-4">{client.clientName}</h1>
+    <p className="text-white regular-20">{client.shortDescription}</p>
+    <h2 className="text-blue-50 bold-40 lg:bold-52 my-4">Wyniki</h2>
+    <p className="text-white regular-20">{client.results}</p>
+    <h2 className="text-blue-50 bold-40 lg:bold-52 my-5">Podsumowanie</h2>
+    <p className="text-white regular-20">{client.summary}</p>
    </>
    ): null)}
-    </>
+    
   </div>;
 };
 
