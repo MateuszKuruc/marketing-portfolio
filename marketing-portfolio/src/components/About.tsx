@@ -9,12 +9,14 @@ const About = () => {
     >
       <div className="-skew-y-3 flex gap-10 justify-around padding-container">
         <header>
-          <h1 className="bold-64 lg:bold-88 text-blue-50">O mnie</h1>
-          <p className="regular-24 mt-6 xl:max-w-[520px] text-white">
+          <h1 className="font-header bold-40 lg:bold-52 text-blue-50">
+            O mnie
+          </h1>
+          <p className="font-standard regular-20 mt-6 xl:max-w-[520px] text-white">
             Ekspert w dziedzinie marketingu cyfrowego oferujący ekskluzywne
             usługi dla wyjątkowych klientów.
           </p>
-          <ul className="list-disc text-white regular-24">
+          <ul className="font-standard list-disc text-white regular-20">
             <li className="mt-3">Kampanie Facebook Ads</li>
             <li>Audyty kont Facebook Ads</li>
             <li>Google Ads</li>
