@@ -82,7 +82,7 @@ export const ACCORDION_DATA = [
   },
   {
     id: 2,
-    title: "ROAS 16 000%",
+    title: "ROAS 16000%",
     description:
       "Stworzyliśmy wielopoziomowy lejek sprzedażowy dla sklepu e-commerce sprzedającego odzież damską. Gdy przejmowałem konto ROAS stał na poziomie 800%, wyskalowałem go do poziomu 16 000% zwiększając przy tym budżet dwukrotnie.",
   },

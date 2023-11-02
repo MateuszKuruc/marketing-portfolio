@@ -9,15 +9,15 @@ const Hero = () => {
       <div className="-skew-y-3 gap-10 border-5 border-slate-200 flex flex-col-reverse lg:flex-row">
         <div className="lg:ml-12">
           <header>
-            <h1 className="font-header hidden md:block mt-6 bold-40 lg:bold-52 text-blue-50">
+            <h1 className="font-header hidden lg:block mt-6 bold-40 lg:bold-52 text-blue-50">
               Facebook Ads - razem zrobimy z tego hit!
             </h1>
             <p className="font-standard regular-20 mt-6 text-white xl:max-w-[520px]">
               Nie wiesz, jak zdominować świat{" "}
-              <strong>Facebook Ads</strong>? Trafiłeś w
+              <span className="font-medium">Facebook Ads</span>? Trafiłeś w
               dziesiątkę! Odkryj strategie mistrza reklam, które przekształcą
               Twoje kampanie w sukcesy.{" "}
-              <span className="text-white">
+              <span className="font-medium">
                 To Twój czas na przełom w marketingu.
               </span>
             </p>

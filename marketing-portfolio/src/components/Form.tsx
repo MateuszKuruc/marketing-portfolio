@@ -164,7 +164,7 @@ const Form = () => {
       <Button
         disabled={isSubmitting}
         type="submit"
-        title="Wyślij"
+        title="WYŚLIJ"
         variant={isSubmitting ? "btn_disabled" : "btn_submit"}
       />
     </form>
