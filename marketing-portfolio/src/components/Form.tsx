@@ -71,7 +71,7 @@ const Form = () => {
 
   return (
     <form
-      className={`md:my-8 bg-gray-90 p-5 md:p-10 flex flex-col gap-2 md:w-[520px] rounded-md relative  ${
+      className={`md:mb-8 md:mt-2 xs:mb-4 bg-gray-90 p-5 md:p-10 flex flex-col gap-2 md:w-[520px] rounded-md relative  ${
         isSubmitting ? "opacity-50" : "opacity-100"
       }  `}
       onSubmit={handleSubmit}
