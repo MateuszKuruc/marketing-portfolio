@@ -2,10 +2,12 @@ import React from "react";
 import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
 import { Collapse } from "react-collapse";
 import { AccordionItemProps } from "../../types";
+import Link from "next/link";
 
 const AccordionItem = ({
   open,
   toggleAccordion,
+  id,
   title,
   description,
 }: AccordionItemProps) => {
@@ -26,7 +28,7 @@ const AccordionItem = ({
       </div>
 
       <Collapse className="ReactCollapse--collapse" isOpened={open}>
-        <div className="medium-18 p-5">{description}</div>
+        <div className="medium-18 p-5">{description} <Link href={`/portfolio/${id}`}>Czytaj dalej...</Link></div>
       </Collapse>
     </div>
   );

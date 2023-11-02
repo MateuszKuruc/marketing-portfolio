@@ -33,6 +33,7 @@ const Portfolio = () => {
             <AccordionItem
               key={index}
               open={index === open}
+              id={data.id}
               title={data.title}
               description={data.description}
               toggleAccordion={() => toggleAccordion(index)}
