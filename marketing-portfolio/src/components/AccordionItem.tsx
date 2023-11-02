@@ -28,7 +28,13 @@ const AccordionItem = ({
       </div>
 
       <Collapse className="ReactCollapse--collapse" isOpened={open}>
-        <div className="medium-18 p-5">{description} <Link href={`/portfolio/${id}`}>Czytaj dalej...</Link></div>
+        <div className="medium-18 p-5 flex flex-col gap-4">
+          <p>
+
+          {description} 
+          </p>
+        <Link className="text-purple-500 medium-18" href={`/portfolio/${id}`}>Zobacz więcej...</Link>
+        </div>
       </Collapse>
     </div>
   );
