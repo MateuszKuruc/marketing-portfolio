@@ -24,7 +24,7 @@ const Hero = () => {
           </header>
         </div>
         <Image
-          src="/bartosz_kuruc.png"
+          src="/bartosz_large.png"
           width={500}
           height={350}
           alt="Bartosz Kuruc"
