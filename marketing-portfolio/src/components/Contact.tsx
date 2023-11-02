@@ -13,8 +13,8 @@ const Contact = () => {
         <h1 className="font-header self-center bold-40 mt-8 lg:bold-52 text-blue-50">
           Kontakt
         </h1>
-        <p className="font-standard p-4 regular-20 text-white ">
-          Uzupelnij formularz i daj znac czego potrzebujesz
+        <p className="font-standard p-4 regular-20 text-white flex flex-col items-center">
+          Uzupełnij formularz lub zadzwoń: <span className="font-medium">{process.env.CONTACT_NUMBER}</span>
         </p>
 
         <Image
