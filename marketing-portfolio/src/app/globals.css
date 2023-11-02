@@ -3,8 +3,15 @@
 @font-face {
   font-family: "GoodTimes";
   src: url("/fonts/good_times_rg.otf");
-  font-weight: normal;
-  font-style: normal;
+  /* font-weight: normal;
+  font-style: normal; */
+}
+
+@font-face {
+  font-family: "RobotoLight";
+  src: url("/fonts/roboto_light.ttf");
+  /* font-weight: normal;
+  font-style: normal; */
 }
 
 @tailwind base;
@@ -24,6 +31,10 @@ body {
 
 .font-header {
   font-family: GoodTimes;
+}
+
+.font-standard {
+  font-family: RobotoLight;
 }
 
 @layer utilities {
