@@ -96,7 +96,7 @@ const NavBar = () => {
                 smooth={true}
                 offset={-85}
                 duration={700}
-                className={`regular-16 text-white flexCenter cursor-pointer pb-1.5 hover:font-bold ${
+                className={`regular-18 font-standard text-white flexCenter cursor-pointer pb-1.5 hover:text-coral-50 ${
                   activeLink === link.key ? "border-b-3 border-coral-50" : ""
                 }`}
                 onClick={() => {
@@ -135,9 +135,7 @@ const NavBar = () => {
                   offset={-320}
                   duration={700}
                   className={`medium-18 text-black flexCenter pb-1.5 hover:font-bold ${
-                    activeLink === link.key
-                      ? "border-b-3 border-coral-50"
-                      : ""
+                    activeLink === link.key ? "border-b-3 border-coral-50" : ""
                   }`}
                   onClick={() => {
                     autoScrolling.current = true;
