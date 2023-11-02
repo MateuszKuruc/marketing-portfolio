@@ -32,6 +32,7 @@ export const OFFSETS_MOBILE: {
 
 export const ACCORDION_DATA = [
   {
+    id: 1,
     title: "Client 1 - Microsoft",
     description:
       "Dla tego klienta przygotowalem niezle gowno, zrobilismy fajna kampanie pod kliki na fb i prowadzilem im jeszcze profile na wszystkich social mediach. sadsadsa sadsadsad sadsadsad sadsadsad sadsadd",
@@ -39,6 +40,7 @@ export const ACCORDION_DATA = [
     name: "Microsoft",
   },
   {
+    id: 2,
     title: "Client 2 - Google",
     description:
       "Tutaj robilismy kampanie google ads i nagrywalismy tiktoki. Do tego pracowalismy nad podniesienem ruchu na stronie, zanotowalismy wzrost 500%. sadsadsadsadsa sadsadsadsa sdsadsadsad sadsadsadsadas",
@@ -47,6 +49,7 @@ export const ACCORDION_DATA = [
     name: "Google",
   },
   {
+    id: 3,
     title: "Client 3 - Apple",
     description:
       "Prowadzilem konsultacje marketingowe dla klienta w branzy bankowej. Tematyka dotyczyla doboru grafik przy prowadzeniu profilow w social media. adasdasdsadsa sadasdasdsadas dsadsadsadsad sadsadsadsa",

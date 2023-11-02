@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillMinusCircle, AiFillPlusCircle } from "react-icons/ai";
 import { Collapse } from "react-collapse";
 import { AccordionItemProps } from "../../types";
-import CaseStudy from "./CaseStudy";
+import CaseStudy from "./Portfolio/[id]/CaseStudy";
 
 const AccordionItem = ({
   open,
