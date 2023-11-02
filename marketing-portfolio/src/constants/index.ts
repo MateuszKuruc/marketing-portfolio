@@ -82,21 +82,21 @@ export const ACCORDION_DATA = [
   },
   {
     id: 2,
-    title: "ROAS 30 000%",
+    title: "ROAS 16 000%",
     description:
-      `Stworzyliśmy wielopoziomowy lejek sprzedażowy dla sklepu e-commerce sprzedającego odzież damską. Gdy przejmowałem konto ROAS stał na poziomie 800%, wyskalowałem go do poziomu 30 000% zwiększając przy tym budżet dwukrotnie.`,
+      "Stworzyliśmy wielopoziomowy lejek sprzedażowy dla sklepu e-commerce sprzedającego odzież damską. Gdy przejmowałem konto ROAS stał na poziomie 800%, wyskalowałem go do poziomu 16 000% zwiększając przy tym budżet dwukrotnie.",
   },
   {
     id: 3,
-    title: "Client 3 - Apple",
+    title: "300 KLIENTÓW MLM",
     description:
-      "Prowadzilem konsultacje marketingowe dla klienta w branzy bankowej. Tematyka dotyczyla doboru grafik przy prowadzeniu profilow w social media. adasdasdsadsa sadasdasdsadas dsadsadsadsad sadsadsadsa",
+      "Stworzyłem kampanię skupioną na rolki w branży BEAUTY MLM, po 2 miesiącach działania zyskaliśmy 350 nowych komentarzy co przełożyło się na 300 klientów przy budżecie miesięcznym na poziomie 1000zł.",
   },
   {
     id: 4,
-    title: "Client 4 - Samsung",
+    title: "ROAS 700% NA EBOOKU",
     description:
-      "Fajowa wspolpraca owocujaca w turbo wyniki. sadjaskdsakjdjhasjkdas dashdashjldkhaskdhaskjd sadjaslkdjaslkdkhaldkas ahdklashdjlkasdhjaksldhsakj",
+      "Klientka sprzedawała ebooka, produkt w pełni cyfrowy. Udało się wykręcić ceny za zakup na poziomie 6-7zł, co dawało REALNY ROAS 700%. Na każdym sprzedanym produkcie zarabiała około 30zł. Branża - poradniki dla rodziców.",
   },
 ];
 
