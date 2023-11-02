@@ -31,7 +31,7 @@ const AccordionItem = ({
         <div className="font-standard regular-20 p-5 flex flex-col gap-4">
           <p>{description}</p>
           <Link
-            className="font-bold text-slate-500 regular-20"
+            className="font-medium text-slate-500 regular-20"
             href={`/portfolio/${id}`}
           >
             Zobacz więcej...

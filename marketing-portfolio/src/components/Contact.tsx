@@ -10,10 +10,10 @@ const Contact = () => {
       className="border-t-4 py-0 max-container bg-radial-gradient"
     >
       <div className="flex flex-col relative w-full md:items-center">
-        <h1 className="self-center bold-52 mt-8 lg:bold-70 text-blue-50">
+        <h1 className="font-header self-center bold-40 mt-8 lg:bold-52 text-blue-50">
           Kontakt
         </h1>
-        <p className="p-4 regular-20 text-white ">
+        <p className="font-standard p-4 regular-20 text-white ">
           Uzupelnij formularz i daj znac czego potrzebujesz
         </p>
 

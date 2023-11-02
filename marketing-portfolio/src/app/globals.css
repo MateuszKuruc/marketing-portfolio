@@ -38,7 +38,7 @@ body {
   font-family: RobotoLight;
 }
 
-.font-bold {
+.font-medium {
   font-family: RobotoBold;
 }
 
@@ -52,11 +52,11 @@ body {
   }
 
   .btn_submit {
-    @apply border-white border-2 bg-blue-50 px-8 py-5 transition-all hover:bg-blue-70 cursor-pointer hover:scale-105;
+    @apply border-white font-medium border-2 bg-blue-50 px-8 py-5 transition-all hover:bg-blue-70 cursor-pointer hover:scale-105;
   }
 
   .btn_disabled {
-    @apply border-gray-20 border-2 bg-gray-30 px-8 py-5 hover:scale-100 cursor-not-allowed;
+    @apply border-gray-20 font-medium border-2 bg-gray-30 px-8 py-5 hover:scale-100 cursor-not-allowed;
   }
 
   .ReactCollapse--collapse {

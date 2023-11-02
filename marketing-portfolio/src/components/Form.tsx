@@ -79,7 +79,7 @@ const Form = () => {
     >
       {successNotification && (
         <div className="px-4 py-3 mb-4 rounded-2xl bg-green-700 border-2 flex flexAround">
-          <p className="text-white regular-16">
+          <p className="font-standard text-white regular-20">
             Formularz został przesłany, dziękuję!
           </p>
           <GiConfirmed color="white" size="20" />
@@ -88,14 +88,14 @@ const Form = () => {
 
       {errorNotification && (
         <div className="px-4 py-3 mb-4 rounded-2xl bg-red-700 border-2 flex flexAround">
-          <p className="text-white regular-16">
+          <p className="font-standard text-white regular-20">
             Wystąpił problem, spróbuj ponownie!
           </p>
           <BiErrorCircle color="white" size="20" />
         </div>
       )}
 
-      <label className="text-blue-50 bold-20" htmlFor="name">
+      <label className="text-blue-50 font-medium regular-20" htmlFor="name">
         Imię i nazwisko
       </label>
       <input
@@ -110,7 +110,7 @@ const Form = () => {
         onBlur={handleBlur}
       />
       {errors.name && touched.name && <p className="error ">{errors.name}</p>}
-      <label className="text-blue-50 bold-20" htmlFor="email">
+      <label className="text-blue-50 font-medium regular-20" htmlFor="email">
         Email
       </label>
       <input
@@ -127,7 +127,7 @@ const Form = () => {
       {errors.email && touched.email && (
         <p className="error ">{errors.email}</p>
       )}
-      <label className="text-blue-50 bold-20" htmlFor="phone">
+      <label className="text-blue-50 font-medium regular-20" htmlFor="phone">
         Telefon
       </label>
       <input
@@ -144,7 +144,7 @@ const Form = () => {
       {errors.phone && touched.phone && (
         <p className="error ">{errors.phone}</p>
       )}
-      <label className="text-blue-50 bold-20" htmlFor="message">
+      <label className="text-blue-50 font-medium regular-20" htmlFor="message">
         Wiadomość
       </label>
       <textarea
