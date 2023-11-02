@@ -7,9 +7,9 @@ const About = () => {
       id="about"
       className="border-t-4 border-white my-10 skew-y-3 bg-gradient-to-b from-gray-90 max-container padding-container py-10 md:gap-28 lg:py-20 gap-20"
     >
-      <div className="-skew-y-3 flex gap-10 justify-around">
+      <div className="-skew-y-3 flex gap-10 justify-around padding-container">
         <header>
-          <h1 className="bold-64 lg:bold-88 text-blue-50">O mnie</h1>
+          <h1 className="bold-64 ll:bold-88 text-blue-50">O mnie</h1>
           <p className="regular-24 mt-6 xl:max-w-[520px] text-white">
             Jestem fajowym marketingowcem, zrobie ci graficzke i zmontuje teksty
             reklamowe. Zajmuje sie tym 20 lat co najmniej. Co bys jeszcze
@@ -25,16 +25,17 @@ const About = () => {
         <div className="flex flex-col gap-6 items-center justify-center">
 
         <Image
-          className="hidden lg:block"
+          className="hidden xl:block"
           src="/meta_cert.png"
           width={250}
-          height={350}
+          height={250}
           alt="Meta certification"
           />
         <Image
+        className="hidden xl:block"
           src="/google_cert.png"
           width={250}
-          height={350}
+          height={250}
           alt="Google certification"
           />
           </div>
