@@ -40,7 +40,9 @@ export const CLIENT_DATA = [
       "Efekty mojej pracy przerosły oczekiwania. W ciągu ostatnich pięciu miesięcy, nie tylko udało mi się stabilnie utrzymać koszt pozyskania leadu na poziomie 7 zł, ale również wygenerowałem dla klienta imponującą liczbę ponad 5000 leadów. Jest to wynik tym bardziej znaczący, że udało się osiągnąć go w pełni nowej przestrzeni reklamowej. Z sukcesem zaimplementowałem również optymalizację procesów dzięki integracji z Zapierem, co pozwoliło na jeszcze większą efektywność działań marketingowych.",
     summary: `Podsumowując, pomimo sceptycznego podejścia, które można spotkać w internecie, dotyczącego ryzyka "wypalenia budżetu" na świeżym koncie reklamowym lub wątpliwości co do możliwości efektywnego reklamowania bez gotowych grup odbiorców, mój projekt odniósł znaczący sukces. Począwszy od pierwszych tygodni kampanii, osiągnąłem imponujące rezultaty, zapewniając klientowi wysokiej jakości leady na bieżąco. 
  To doświadczenie pokazuje, że dobrze zaplanowana i sprawnie wykonana strategia marketingowa może przynieść znakomite wyniki, nawet bez początkowej bazy odbiorców.`,
+   img: "/client_1_results.jpeg"
   },
+  
   {
     id: 2,
     clientName: "Google",
