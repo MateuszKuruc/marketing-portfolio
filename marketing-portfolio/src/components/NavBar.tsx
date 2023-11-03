@@ -9,9 +9,6 @@ import { Link as ScrollLink } from "react-scroll";
 
 const NavBar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  // const [activeLink, setActiveLink] = useState(() => {
-  //   return localStorage.getItem("activeLink") || "home";
-  // });
   const [activeLink, setActiveLink] = useState("home");
   const autoScrolling = useRef(false);
   const mobileMenuRef = useRef<HTMLDivElement | null>(null);
@@ -75,9 +72,6 @@ const NavBar = () => {
           activeSection = key;
         }
       }
-
-      // console.log("scrollY:", scrollY);
-      // console.log("activeSection:", activeSection);
 
       if (activeSection && !autoScrolling.current) {
         setActiveLink(activeSection);
