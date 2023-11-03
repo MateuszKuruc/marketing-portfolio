@@ -124,7 +124,7 @@ const NavBar = () => {
         )}
       </nav>
       {showMobileMenu && (
-        <div className="bg-blue-50 font-standard p-8 max-container border-b-4 border-t-4 border-white">
+        <div className="absolute w-full bg-blue-50 font-standard p-8 max-container border-b-4 border-t-4 border-white">
           <ul className="flex flex-col gap-4">
             {NAV_LINKS.map((link) => (
               <li key={link.key}>
