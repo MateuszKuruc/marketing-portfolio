@@ -14,6 +14,32 @@ const NavBar = () => {
   // });
   const [activeLink, setActiveLink] = useState("home");
   const autoScrolling = useRef(false);
+  const mobileMenuRef = useRef<HTMLDivElement | null>(null);
+  const navRef = useRef<HTMLDivElement | null>(null);
+  const iconsRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      const target = event.target as Element;
+
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(target) &&
+        navRef.current &&
+        !navRef.current.contains(target)
+      ) {
+        setShowMobileMenu(false);
+      }
+    };
+
+    if (showMobileMenu) {
+      document.addEventListener("click", handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [showMobileMenu]);
 
   const handleLinkClick = (linkKey: string) => {
     if (autoScrolling.current) {
@@ -83,7 +109,10 @@ const NavBar = () => {
 
   return (
     <section className="sticky top-0 z-30 opacity-95">
-      <nav className="border-2 border-black flexAround glob max-container padding-container py-4 lg:py-8 bg-gray-90">
+      <nav
+        ref={navRef}
+        className="border-2 border-black flexAround glob max-container padding-container py-4 lg:py-8 bg-gray-90"
+      >
         <Link href="/">
           <Image src="/logo1.png" alt="home_logo" width={70} height={70} />
         </Link>
@@ -109,22 +138,28 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-        {showMobileMenu ? (
-          <AiOutlineClose
-            color="white"
-            onClick={() => setShowMobileMenu(!showMobileMenu)}
-            className="bold-32 lg:hidden"
-          />
-        ) : (
-          <AiOutlineMenu
-            color="white"
-            onClick={() => setShowMobileMenu(!showMobileMenu)}
-            className="bold-32 lg:hidden"
-          />
-        )}
+
+        <div ref={iconsRef}>
+          {showMobileMenu ? (
+            <AiOutlineClose
+              color="white"
+              onClick={() => setShowMobileMenu(!showMobileMenu)}
+              className="bold-32 lg:hidden"
+            />
+          ) : (
+            <AiOutlineMenu
+              color="white"
+              onClick={() => setShowMobileMenu(!showMobileMenu)}
+              className="bold-32 lg:hidden"
+            />
+          )}
+        </div>
       </nav>
       {showMobileMenu && (
-        <div className="absolute w-full bg-blue-50 font-standard p-8 max-container border-b-4 border-t-4 border-white">
+        <div
+          ref={mobileMenuRef}
+          className="absolute w-full bg-blue-50 font-standard p-8 max-container border-b-4 border-t-4 border-white"
+        >
           <ul className="flex flex-col gap-4">
             {NAV_LINKS.map((link) => (
               <li key={link.key}>
