@@ -13,7 +13,7 @@ const Hero = () => {
               Facebook Ads - razem zrobimy z tego hit!
             </h1>
             <p className="font-standard regular-20 my-4 text-white xl:max-w-[520px]">
-              Nie wiesz, jak zdominować świat{" "}
+              Nie wiesz jak zdominować świat{" "}
               <span className="font-medium">Facebook Ads</span>? Trafiłeś w
               dziesiątkę! Odkryj strategie mistrza reklam, które przekształcą
               Twoje kampanie w sukcesy.{" "}

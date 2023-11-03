@@ -33,13 +33,13 @@ export const OFFSETS_MOBILE: {
 export const CLIENT_DATA = [
   {
     id: 1,
-    clientName: "Microsoft",
+    title: "7 zł za leada w branży kredytowej",
     shortDescription:
-      "testowy opis krotki klient 1 qwheqewhjkqwhejkqw wqhekjqhwejkqwhejkqw qhjrlqwrjhlkqwhrjkqlwr wqnehklwqhejkqwheqwjke wqhejklqwheqwjkehqwjkeqw",
+      "Zlecenie klienta dotyczyło stworzenia strategii promocyjnej na Facebooku w branży kredytowej. Stanąłem przed wyzwaniem budowania obecności online od podstaw - nie istniała jeszcze ani strona fanpage, ani konto reklamowe. Moim celem była budowa skutecznej kampanii od zera, bez istniejących grup docelowych.",
     results:
-      "klient 1 wyniki tarararararararaekqjwjeh qwehkjqwheqwjke wqhekqwhekjqwhejwkq qhekjqwhejkqwhejkqwe qhwejkqwhekjqhejkqwehjkqw wqhekqwhekjqwhejkqwe wqhekjqwhejkqwewq",
-    summary:
-      "klient 1 krotkie podsumowanie bububububububuqbeywqgruiq qhreuqwheriwquhewqiu wqheuiwqhewquieq qweiuqwheiuqwheqiuw heuiqwheuiqwheuiwq qwheuiqwheiuwq",
+      "Efekty mojej pracy przerosły oczekiwania. W ciągu ostatnich pięciu miesięcy, nie tylko udało mi się stabilnie utrzymać koszt pozyskania leadu na poziomie 7 zł, ale również wygenerowałem dla klienta imponującą liczbę ponad 5000 leadów. Jest to wynik tym bardziej znaczący, że udało się osiągnąć go w pełni nowej przestrzeni reklamowej. Z sukcesem zaimplementowałem również optymalizację procesów dzięki integracji z Zapierem, co pozwoliło na jeszcze większą efektywność działań marketingowych.",
+    summary: `Podsumowując, pomimo sceptycznego podejścia, które można spotkać w internecie, dotyczącego ryzyka "wypalenia budżetu" na świeżym koncie reklamowym lub wątpliwości co do możliwości efektywnego reklamowania bez gotowych grup odbiorców, mój projekt odniósł znaczący sukces. Począwszy od pierwszych tygodni kampanii, osiągnąłem imponujące rezultaty, zapewniając klientowi wysokiej jakości leady na bieżąco. 
+ To doświadczenie pokazuje, że dobrze zaplanowana i sprawnie wykonana strategia marketingowa może przynieść znakomite wyniki, nawet bez początkowej bazy odbiorców.`,
   },
   {
     id: 2,
@@ -76,7 +76,7 @@ export const CLIENT_DATA = [
 export const ACCORDION_DATA = [
   {
     id: 1,
-    title: "5 ZŁ ZA LEADA",
+    title: "7 ZŁ ZA LEADA",
     description:
       "Kampania Facebook Ads dla firmy pozyskującej kredyty dla spółek, osiągnęliśmy wyniki na poziomie 5zł za leada. Stworzenie precyzyjnej segmentacji, angażujących kreacji i stała optymalizacja stały się kluczem do sukcesu.",
   },
