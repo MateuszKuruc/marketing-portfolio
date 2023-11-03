@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="mt-4 md:mt-10 border-b-4 border-white skew-y-3 bg-gradient-to-t from-gray-90 to-gray-30 max-container padding-container flex flex-col flexCenter xs:py-5 md:py-10 md:gap-28 lg:py-20"
+      className="mb-4 mt-4 md:mt-10 border-b-4 border-white skew-y-3 bg-gradient-to-t from-gray-90 to-gray-30 max-container padding-container flex flex-col flexCenter xs:pb-8 xs:pt-4 md:py-10 md:gap-28 lg:py-20"
     >
       <div className="-skew-y-3 md:gap-10 border-5 border-slate-200 flex flex-col-reverse lg:flex-row">
         <div className="lg:ml-12">
