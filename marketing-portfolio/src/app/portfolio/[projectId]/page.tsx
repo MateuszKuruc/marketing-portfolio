@@ -10,7 +10,7 @@ const Project = ({ params }: Params) => {
     <section className="bg-gradient-to-b from-gray-30 to-gray-90 py-8 max-container padding-container">
       {CLIENT_DATA.map((client) =>
         client.id.toString() === id ? (
-          <div className="padding-container flex flex-col items-center">
+          <div className="md:padding-container flex flex-col items-center">
             <h1 className="font-header text-blue-50 bold-40 lg:bold-52 text-center">
               {client.title}
             </h1>
@@ -32,7 +32,7 @@ const Project = ({ params }: Params) => {
               )}
             </div>
             <h2 className="font-header text-blue-50 bold-40 lg:bold-52 py-8">
-              Podsumowanie
+              Ocena
             </h2>
             <p className="font-standard text-white regular-20 mb-4">
               {client.summary_p1}
