@@ -50,7 +50,7 @@ export const CLIENT_DATA = [
 
   {
     id: 2,
-    clientName: "ROAS 16000%",
+    title: "ROAS 16000%",
     shortDescription:
       "Stałem przed wyzwaniem opracowania i realizacji strategii reklamowej dla sklepu odzieżowego eCommerce, który miał ambitne plany rozwoju swojej obecności w internecie. Celem było znaczące zwiększenie efektywności inwestycji w reklamę, co miałem zmierzyć wskaźnikiem ROAS (Return on Advertising Spend).",
     results_p1:
@@ -65,7 +65,7 @@ export const CLIENT_DATA = [
   },
   {
     id: 3,
-    clientName: "Samsung",
+    title: "300 KLIENTÓW MLM",
     shortDescription:
       "Zostałem poproszony o pomoc przez jedną z ambasadorek marki Mary Kay, działającą w systemie MLM w branży beauty. Zadaniem było stworzenie kampanii na Meta Ads, która wygeneruje silne zaangażowanie i przekształci obserwujących w klientów.",
     results_p1:
@@ -80,7 +80,7 @@ export const CLIENT_DATA = [
   },
   {
     id: 4,
-    clientName: "ROAS 700% NA EBOOKU",
+    title: "ROAS 700% NA EBOOKU",
     shortDescription:
       "Zostałem zatrudniony przez klientkę, która zajmowała się sprzedażą ebooków - produktów w pełni cyfrowych, dedykowanych rodzicom szukającym porad w wychowaniu dzieci. Moim zadaniem była optymalizacja kampanii reklamowej, aby zwiększyć rentowność sprzedaży jej poradników.",
     results_p1:
