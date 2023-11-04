@@ -119,7 +119,7 @@ const NavBar = () => {
         ref={navRef}
         className="border-2 border-black flexAround glob max-container padding-container py-4 lg:py-8 bg-gray-90"
       >
-        <Link href="/#portfolio">
+        <Link href="/">
           <Image src="/logo1.png" alt="home_logo" width={70} height={70} />
         </Link>
         {isOnHomePage() ? (
@@ -148,7 +148,31 @@ const NavBar = () => {
           ))}
         </ul>
 
-): null}
+): (
+  <ul className="hidden h-full gap-12 lg:flex">
+  {NAV_LINKS.map((link) => (
+    <li key={link.key}>
+      <Link
+        // to={"/#portfolio"}
+href={`/#${link.href}`}
+        // spy={true}
+        // smooth={true}
+        // offset={-85}
+        // duration={700}
+        className={`regular-18 font-standard text-white flexCenter cursor-pointer pb-1.5 hover:text-coral-50 ${
+          activeLink === link.key ? "border-b-3 border-coral-50" : ""
+        }`}
+        onClick={() => {
+          autoScrolling.current = true;
+          handleLinkClick(link.key);
+        }}
+      >
+        {link.label}
+      </Link>
+    </li>
+  ))}
+</ul>
+)}
 
         <div ref={iconsRef}>
           {showMobileMenu ? (
