@@ -34,15 +34,20 @@ export const CLIENT_DATA = [
   {
     id: 1,
     title: "7 zł za leada w branży kredytowej",
+   
     shortDescription:
       "Zlecenie klienta dotyczyło stworzenia strategii promocyjnej na Facebooku w branży kredytowej. Stanąłem przed wyzwaniem budowania obecności online od podstaw - nie istniała jeszcze ani strona fanpage, ani konto reklamowe. Moim celem była budowa skutecznej kampanii od zera, bez istniejących grup docelowych.",
-    results:
-      "Efekty mojej pracy przerosły oczekiwania. W ciągu ostatnich pięciu miesięcy, nie tylko udało mi się stabilnie utrzymać koszt pozyskania leadu na poziomie 7 zł, ale również wygenerowałem dla klienta imponującą liczbę ponad 5000 leadów. Jest to wynik tym bardziej znaczący, że udało się osiągnąć go w pełni nowej przestrzeni reklamowej. Z sukcesem zaimplementowałem również optymalizację procesów dzięki integracji z Zapierem, co pozwoliło na jeszcze większą efektywność działań marketingowych.",
-    summary: `Podsumowując, pomimo sceptycznego podejścia, które można spotkać w internecie, dotyczącego ryzyka "wypalenia budżetu" na świeżym koncie reklamowym lub wątpliwości co do możliwości efektywnego reklamowania bez gotowych grup odbiorców, mój projekt odniósł znaczący sukces. Począwszy od pierwszych tygodni kampanii, osiągnąłem imponujące rezultaty, zapewniając klientowi wysokiej jakości leady na bieżąco. 
- To doświadczenie pokazuje, że dobrze zaplanowana i sprawnie wykonana strategia marketingowa może przynieść znakomite wyniki, nawet bez początkowej bazy odbiorców.`,
-   img: "/client_1_results.jpeg"
+    results_p1:
+      "Efekty mojej pracy przerosły oczekiwania. W ciągu ostatnich pięciu miesięcy, nie tylko udało mi się stabilnie utrzymać koszt pozyskania leadu na poziomie 7 zł, ale również wygenerowałem dla klienta imponującą liczbę ponad 5000 leadów.",
+    results_p2:
+      "Jest to wynik tym bardziej znaczący, że udało się osiągnąć go w pełni nowej przestrzeni reklamowej. Z sukcesem zaimplementowałem również optymalizację procesów dzięki integracji z Zapierem, co pozwoliło na jeszcze większą efektywność działań marketingowych.",
+
+    summary_p1: `Podsumowując, pomimo sceptycznego podejścia, które można spotkać w internecie, dotyczącego ryzyka "wypalenia budżetu" na świeżym koncie reklamowym lub wątpliwości co do możliwości efektywnego reklamowania bez gotowych grup odbiorców, mój projekt odniósł znaczący sukces. Począwszy od pierwszych tygodni kampanii, osiągnąłem imponujące rezultaty, zapewniając klientowi wysokiej jakości leady na bieżąco.`,
+    summary_p2:
+      "To doświadczenie pokazuje, że dobrze zaplanowana i sprawnie wykonana strategia marketingowa może przynieść znakomite wyniki, nawet bez początkowej bazy odbiorców.",
+    img: "/client_1_results.jpeg",
   },
-  
+
   {
     id: 2,
     clientName: "Google",
