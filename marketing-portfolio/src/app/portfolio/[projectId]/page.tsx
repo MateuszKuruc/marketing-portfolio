@@ -1,12 +1,7 @@
 import React from "react";
 import { CLIENT_DATA } from "@/constants";
 import Image from "next/image";
-
-type Params = {
-  params: {
-    projectId: string;
-  };
-};
+import { Params } from "../../../../types";
 
 const Project = ({ params }: Params) => {
   const id = params.projectId;

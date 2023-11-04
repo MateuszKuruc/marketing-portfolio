@@ -22,3 +22,9 @@ export interface FormValues {
   phone?: number | string;
   message: string;
 }
+
+export type Params = {
+  params: {
+    projectId: string;
+  };
+};
