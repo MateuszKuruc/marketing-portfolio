@@ -183,23 +183,39 @@ const NavBar = () => {
           <ul className="flex flex-col gap-4">
             {NAV_LINKS.map((link) => (
               <li key={link.key}>
-                <ScrollLink
-                  to={link.href}
-                  spy={true}
-                  smooth={true}
-                  offset={-320}
-                  duration={700}
-                  className={`medium-18 text-black flexCenter pb-1.5 ${
-                    activeLink === link.key ? "border-b-3 border-coral-50" : ""
-                  }`}
-                  onClick={() => {
-                    autoScrolling.current = true;
-                    handleLinkClick(link.key);
-                    setShowMobileMenu(!showMobileMenu);
-                  }}
-                >
-                  {link.label}
-                </ScrollLink>
+                {isOnHomePage() ? (
+                  <ScrollLink
+                    to={link.href}
+                    spy={true}
+                    smooth={true}
+                    offset={-320}
+                    duration={700}
+                    className={`medium-18 text-black flexCenter pb-1.5 ${
+                      activeLink === link.key
+                        ? "border-b-3 border-coral-50"
+                        : ""
+                    }`}
+                    onClick={() => {
+                      autoScrolling.current = true;
+                      handleLinkClick(link.key);
+                      setShowMobileMenu(!showMobileMenu);
+                    }}
+                  >
+                    {link.label}
+                  </ScrollLink>
+                ) : (
+                  <Link
+                    href={`/#${link.href}`}
+                    className="medium-18 text-black flexCenter pb-1.5"
+                    onClick={() => {
+                      autoScrolling.current = true;
+                      handleLinkClick(link.key);
+                      setShowMobileMenu(!showMobileMenu);
+                    }}
+                  >
+                    {link.label}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
