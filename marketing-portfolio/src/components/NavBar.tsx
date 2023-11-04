@@ -120,7 +120,7 @@ const NavBar = () => {
         <Link href="/">
           <Image src="/logo1.png" alt="home_logo" width={70} height={70} />
         </Link>
-        {/* {isOnHomePage() ? ( */}
+
         <ul className="hidden h-full gap-12 lg:flex">
           {NAV_LINKS.map((link) => (
             <li key={link.key}>
@@ -158,26 +158,6 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-        {/* ) : (
-          <ul className="hidden h-full gap-12 lg:flex">
-            {NAV_LINKS.map((link) => (
-              <li key={link.key}>
-                <Link
-                  href={`/#${link.href}`}
-                  className={`regular-18 font-standard text-white flexCenter cursor-pointer pb-1.5 hover:text-coral-50 ${
-                    activeLink === link.key ? "border-b-3 border-coral-50" : ""
-                  }`}
-                  onClick={() => {
-                    autoScrolling.current = true;
-                    handleLinkClick(link.key);
-                  }}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        )} */}
 
         <div ref={iconsRef}>
           {showMobileMenu ? (
