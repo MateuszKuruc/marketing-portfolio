@@ -16,19 +16,19 @@ const Project = ({ params }: Params) => {
       {CLIENT_DATA.map((client) =>
         client.id.toString() === id ? (
           <div className="padding-container flex flex-col items-center">
-            <h1 className="font-header text-blue-50 bold-40 lg:bold-52 my-4 text-center">
+            <h1 className="font-header text-blue-50 bold-40 lg:bold-52 text-center">
               {client.title}
             </h1>
-            <p className="font-standard text-white regular-20">
+            <p className="font-standard text-white regular-20 py-8">
               {client.shortDescription}
             </p>
-            <h2 className="font-header text-blue-50 bold-40 lg:bold-52 my-4">
+            <h2 className="font-header text-blue-50 bold-40 lg:bold-52">
               Wyniki
             </h2>
-            <p className="font-standard text-white regular-20 mb-4">
+            <p className="font-standard text-white regular-20 pt-8 pb-4">
               {client.results_p1}
             </p>
-            <p className="font-standard text-white regular-20 mb-4">
+            <p className="font-standard text-white regular-20 mb-8">
               {client.results_p2}
             </p>
             <div>
@@ -36,13 +36,13 @@ const Project = ({ params }: Params) => {
                 <Image src={client.img} width={850} height={350} alt="wyniki" />
               )}
             </div>
-            <h2 className="font-header text-blue-50 bold-40 lg:bold-52 my-5">
+            <h2 className="font-header text-blue-50 bold-40 lg:bold-52 py-8">
               Podsumowanie
             </h2>
             <p className="font-standard text-white regular-20 mb-4">
               {client.summary_p1}
             </p>
-            <p className="font-standard text-white regular-20 mb-4">
+            <p className="font-standard text-white regular-20 mb-8">
               {client.summary_p2}
             </p>
           </div>
