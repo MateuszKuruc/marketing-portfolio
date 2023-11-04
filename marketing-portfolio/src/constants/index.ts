@@ -34,7 +34,7 @@ export const CLIENT_DATA = [
   {
     id: 1,
     title: "7 zł za leada w branży kredytowej",
-   
+
     shortDescription:
       "Zlecenie klienta dotyczyło stworzenia strategii promocyjnej na Facebooku w branży kredytowej. Stanąłem przed wyzwaniem budowania obecności online od podstaw - nie istniała jeszcze ani strona fanpage, ani konto reklamowe. Moim celem była budowa skutecznej kampanii od zera, bez istniejących grup docelowych.",
     results_p1:
@@ -50,33 +50,48 @@ export const CLIENT_DATA = [
 
   {
     id: 2,
-    clientName: "Google",
+    clientName: "ROAS 16000%",
     shortDescription:
-      "testowy opis krotki klient 2 nrwqjjhejwqheqwkjehqwkehqkwjhejkqwhekjqwhek hwqkejh qwkehkwqh ekjqwhe kjqwh ekjhqwke jhqwkewqh kjehqwkej hqwkej qhwkj ehqwkj ehqwkjehqwkjehqwkjehqwkje qw",
-    results:
-      "klient 2 wyniki wqhkeqwhejkqwhejkhqwjkehkj hqwkjehkwqhekjwqhejkhwqkje hqwjkehjkwqhekjqwheqjkwehkjh jkqwhekjqwhejkwqhekjqwhekqjwhe kjqwhejkwqhejkqwhejkqwhekjqwhejk hjqwhejkqwjhejkqwhejkqwhekjqw",
-    summary:
-      "klient 2 krotkie podsumowanie hwqjehwqjkehqjkehwqkjeh ewkjqhjkehjkwhqejkhqwekjqh  wkjqhekjqwjhekjqhejkqwhekqj ewqjkehwjkqehjkqwehjkqw wqjkehwqjekqwhejkqwjheqwjkehwq",
+      "Stałem przed wyzwaniem opracowania i realizacji strategii reklamowej dla sklepu odzieżowego eCommerce, który miał ambitne plany rozwoju swojej obecności w internecie. Celem było znaczące zwiększenie efektywności inwestycji w reklamę, co miałem zmierzyć wskaźnikiem ROAS (Return on Advertising Spend).",
+    results_p1:
+      "Początkowy wskaźnik zwrotu z inwestycji w reklamę wynosił 800%. To był dobry początek, ale ja miałem aspiracje, aby tę wartość wywindować znacznie wyżej. WprowadzaŁEM optymalizacje - od dopracowania komunikatów marketingowych po precyzyjne targetowanie i personalizację reklam, aż po usprawnienia w ścieżce zakupowej klientów.",
+    results_p2:
+      "Moje działania przyniosły wzrost ROAS do poziomu 16000%. Taki wynik udało się osiągnąć dzięki ciągłemu monitorowaniu kampanii, analizie danych i dostosowywaniu się do zmieniających się preferencji klientów.",
+    summary_p1:
+      "Podsumowując, zaangażowanie w kampanię reklamową dla sklepu Okee przyniosło zdumiewająco wysoki zwrot z inwestycji i umocniło pozycję marki na rynku.",
+    summary_p2:
+      "Moje doświadczenie ponownie potwierdza, że odpowiednio zaprojektowana i zarządzana strategia reklamowa może generować znaczące korzyści. W kwestii wyników kampanii nie ma sufitu, zamykaliśmy niektóre tygodnie na ROAS'ie 70-80.",
+    img: "/client_2_results.jpeg",
   },
   {
     id: 3,
-    clientName: "Apple",
+    clientName: "Samsung",
     shortDescription:
-      "testowy opis krotki klient 3 nrwqjjhejwqheqwkjehqwkehqkwjhejkqwhekjqwhek hwqkejh qwkehkwqh ekjqwhe kjqwh ekjhqwke jhqwkewqh kjehqwkej hqwkej qhwkj ehqwkj ehqwkjehqwkjehqwkjehqwkje qw",
-    results:
-      "klient 3 wyniki wqhkeqwhejkqwhejkhqwjkehkj hqwkjehkwqhekjwqhejkhwqkje hqwjkehjkwqhekjqwheqjkwehkjh jkqwhekjqwhejkwqhekjqwhekqjwhe kjqwhejkwqhejkqwhejkqwhekjqwhejk hjqwhejkqwjhejkqwhejkqwhekjqw",
-    summary:
-      "klient 3 krotkie podsumowanie hwqjehwqjkehqjkehwqkjeh ewkjqhjkehjkwhqejkhqwekjqh  wkjqhekjqwjhekjqhejkqwhekqj ewqjkehwjkqehjkqwehjkqw wqjkehwqjekqwhejkqwjheqwjkehwq",
+      "Zostałem poproszony o pomoc przez jedną z ambasadorek marki Mary Kay, działającą w systemie MLM w branży beauty. Zadaniem było stworzenie kampanii na Meta Ads, która wygeneruje silne zaangażowanie i przekształci obserwujących w klientów.",
+    results_p1:
+      "Cel udało się osiągnąć, tworząc spersonalizowane treści, które przekazują wartości i estetykę marki Mary Kay. Stawiałem na interakcję i budowanie społeczności wokół produktów, a także na inspirowanie potencjalnych klientów do dzielenia się swoimi doświadczeniami i zainteresowaniami.",
+    results_p2:
+      "Moje wysiłki przyniosły nadzwyczajne rezultaty - posty, które stworzyłem, zgromadziły niemal 400 komentarzy, co świadczyło o wysokim stopniu zaangażowania i zainteresowaniu marką. To zaangażowanie zamieniłem na konkretne wyniki - udało mi się pozyskać aż 300 nowych klientów dla ambasadorki, co znacznie przekroczyło jej oczekiwania.",
+    summary_p1:
+      "Ten projekt był dowodem na to, że dobrze przemyślana strategia w mediach społecznościowych, oparta na autentycznym zaangażowaniu i interakcji z odbiorcami, może przynieść znakomite rezultaty w branży beauty, gdzie relacje i osobiste doświadczenia odgrywają kluczową rolę.",
+    summary_p2:
+      "Dzięki współpracy z ambasadorką Mary Kay, nie tylko osiągnąłem wyznaczone cele, ale także zbudowałem solidną podstawę dla jej dalszego rozwoju i sukcesu w biznesie MLM.",
+    img: "/client_3_results.jpeg",
   },
   {
     id: 4,
-    clientName: "Samsung",
+    clientName: "ROAS 700% NA EBOOKU",
     shortDescription:
-      "testowy opis krotki klient 4 nrwqjjhejwqheqwkjehqwkehqkwjhejkqwhekjqwhek hwqkejh qwkehkwqh ekjqwhe kjqwh ekjhqwke jhqwkewqh kjehqwkej hqwkej qhwkj ehqwkj ehqwkjehqwkjehqwkjehqwkje qw",
-    results:
-      "klient 4 wyniki wqhkeqwhejkqwhejkhqwjkehkj hqwkjehkwqhekjwqhejkhwqkje hqwjkehjkwqhekjqwheqjkwehkjh jkqwhekjqwhejkwqhekjqwhekqjwhe kjqwhejkwqhejkqwhejkqwhekjqwhejk hjqwhejkqwjhejkqwhejkqwhekjqw",
-    summary:
-      "klient 4 krotkie podsumowanie hwqjehwqjkehqjkehwqkjeh ewkjqhjkehjkwhqejkhqwekjqh  wkjqhekjqwjhekjqhejkqwhekqj ewqjkehwjkqehjkqwehjkqw wqjkehwqjekqwhejkqwjheqwjkehwq",
+      "Zostałem zatrudniony przez klientkę, która zajmowała się sprzedażą ebooków - produktów w pełni cyfrowych, dedykowanych rodzicom szukającym porad w wychowaniu dzieci. Moim zadaniem była optymalizacja kampanii reklamowej, aby zwiększyć rentowność sprzedaży jej poradników.",
+    results_p1:
+      "Ceny za zakup wynosiły między 6 a 7 zł, co pozwoliło mi osiągnąć REALNY ROAS na poziomie 700%. Było to możliwe dzięki analizie rynku oraz dostosowaniu kampanii do specyfiki grupy docelowej, składającej się z rodziców potrzebujących wsparcia w wychowaniu swoich pociech.",
+    results_p2:
+      "Praca nad kampanią obejmowała między innymi testowanie różnych wersji reklam, segmentację odbiorców i wykorzystanie zaawansowanego targetowania, aby dotrzeć do osób najbardziej zainteresowanych treścią poradników. Efektywność działań promocyjnych przełożyła się na zysk rzędu około 30 zł na każdym sprzedanym egzemplarzu ebooka.",
+    summary_p1:
+      "Ten projekt pokazał mi, że nawet produkty cyfrowe o wąskiej niszy rynkowej, takie jak poradniki dla rodziców, mogą generować znaczące przychody przy właściwej strategii marketingowej.",
+    summary_p2:
+      "Dzięki skupieniu się na danych i ciągłym optymalizacjom, udało mi się nie tylko spełnić, ale przekroczyć oczekiwania klientki pod względem sprzedaży jej produktów.",
+    img: "",
   },
 ];
 
