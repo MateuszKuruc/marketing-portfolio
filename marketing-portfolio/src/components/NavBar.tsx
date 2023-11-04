@@ -7,13 +7,25 @@ import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link as ScrollLink } from "react-scroll";
 
+import { usePathname } from 'next/navigation'
+
+
 const NavBar = () => {
+  const pathname = usePathname();
+
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
   const autoScrolling = useRef(false);
   const mobileMenuRef = useRef<HTMLDivElement | null>(null);
   const navRef = useRef<HTMLDivElement | null>(null);
   const iconsRef = useRef<HTMLDivElement | null>(null);
+
+
+  const isOnHomePage = () => {
+    return pathname === "/";
+  };
+
+  console.log("page", isOnHomePage());
 
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
@@ -114,7 +126,7 @@ const NavBar = () => {
           {NAV_LINKS.map((link) => (
             <li key={link.key}>
               <ScrollLink
-                to={link.href}
+                to={link.key}
                 spy={true}
                 smooth={true}
                 offset={-85}
