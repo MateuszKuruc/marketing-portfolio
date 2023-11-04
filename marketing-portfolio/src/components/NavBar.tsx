@@ -23,8 +23,6 @@ const NavBar = () => {
     return pathname === "/";
   };
 
-  console.log("page", isOnHomePage());
-
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
       const target = event.target as Element;
