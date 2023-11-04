@@ -119,9 +119,12 @@ const NavBar = () => {
         ref={navRef}
         className="border-2 border-black flexAround glob max-container padding-container py-4 lg:py-8 bg-gray-90"
       >
-        <Link href="/">
+        <Link href="/#portfolio">
           <Image src="/logo1.png" alt="home_logo" width={70} height={70} />
         </Link>
+        {isOnHomePage() ? (
+
+        
         <ul className="hidden h-full gap-12 lg:flex">
           {NAV_LINKS.map((link) => (
             <li key={link.key}>
@@ -145,6 +148,8 @@ const NavBar = () => {
           ))}
         </ul>
 
+): null}
+
         <div ref={iconsRef}>
           {showMobileMenu ? (
             <AiOutlineClose
@@ -160,6 +165,7 @@ const NavBar = () => {
             />
           )}
         </div>
+        
       </nav>
       {showMobileMenu && (
         <div
