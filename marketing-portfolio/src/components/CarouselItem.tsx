@@ -42,9 +42,7 @@ const CarouselItem = () => {
         autoPlaySpeed={3000}
         infinite={true}
         ssr={true}
-        // partialVisbile={true}
         centerMode={true}
-        // focusOnSelect={true}
       >
         {CAROUSEL_DATA.map((item) => (
           <div key={item.name} className="mx-1">
