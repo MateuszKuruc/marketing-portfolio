@@ -8,8 +8,9 @@ export const metadata: Metadata = {
   title: "Bartosz Kuruc - Marketing Specialist",
   description: "Bartosz Kuruc - Marketing Specialist",
   icons: {
-    icon: "/favicon.svg"
-  }
+    icon: ["/favicon.ico"],
+    apple: ["/apple-touch-icon.png?"],
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +24,7 @@ export default function RootLayout({
         <NavBar />
         <main className="relative overflow-hidden bg-blue-50 max-container">
           {children}
-          </main>
+        </main>
         <Footer />
       </body>
     </html>
