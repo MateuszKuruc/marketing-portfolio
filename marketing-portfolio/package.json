@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "formik": "^2.4.5",
+    "framer-motion": "^10.16.4",
     "next": "^13.5.6",
     "nodemailer": "^6.9.7",
     "react": "^18",
