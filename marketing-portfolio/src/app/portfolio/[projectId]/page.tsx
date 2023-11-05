@@ -1,16 +1,24 @@
+"use client";
+
 import React from "react";
 import { CLIENT_DATA } from "@/constants";
 import Image from "next/image";
 import { Params } from "../../../../types";
+import { useState } from "react";
 
 const Project = ({ params }: Params) => {
   const id = params.projectId;
+
+  const [isZoomed, setIsZoomed] = useState(false);
 
   return (
     <section className="bg-gradient-to-b from-gray-30 to-gray-90 py-8 max-container padding-container">
       {CLIENT_DATA.map((client) =>
         client.id.toString() === id ? (
-          <div className="md:padding-container flex flex-col items-center">
+          <div
+            key={client.id}
+            className="md:padding-container flex flex-col items-center"
+          >
             <h1 className="font-header text-blue-50 bold-40 lg:bold-52 text-center">
               {client.title}
             </h1>
@@ -29,10 +37,14 @@ const Project = ({ params }: Params) => {
             <div>
               {client.img && (
                 <Image
+                  className={`cursor-pointer transition ease-in-out duration-500 border-4 border-red-500 ${
+                    isZoomed ? "zoomed" : ""
+                  }`}
                   src={client.img}
                   width={1200}
                   height={350}
                   alt="tabela wyników"
+                  onClick={() => setIsZoomed(!isZoomed)}
                 />
               )}
             </div>

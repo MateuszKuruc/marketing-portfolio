@@ -25,6 +25,10 @@
   box-sizing: border-box;
 }
 
+.zoomed {
+  transform: scale(2);
+}
+
 .font-header {
   font-family: GoodTimes;
 }
