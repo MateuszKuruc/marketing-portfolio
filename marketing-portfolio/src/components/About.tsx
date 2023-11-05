@@ -49,14 +49,14 @@ const About = () => {
             src="/meta_cert.png"
             width={250}
             height={250}
-            alt="Meta certification"
+            alt="Meta certyfikat"
           />
           <Image
             className="hidden xl:block"
             src="/google_cert.png"
             width={250}
             height={88}
-            alt="Google certification"
+            alt="Google certyfikat"
           />
         </div>
       </div>

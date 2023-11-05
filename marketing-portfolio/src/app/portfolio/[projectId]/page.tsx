@@ -28,7 +28,12 @@ const Project = ({ params }: Params) => {
             </p>
             <div>
               {client.img && (
-                <Image src={client.img} width={850} height={350} alt="wyniki" />
+                <Image
+                  src={client.img}
+                  width={1200}
+                  height={350}
+                  alt="tabela wyników"
+                />
               )}
             </div>
             <h2 className="font-header text-blue-50 bold-40 lg:bold-52 py-8">
