@@ -26,7 +26,7 @@ const Hero = () => {
         <Image
           src="/bartosz_large.png"
           width={500}
-          height={350}
+          height={500}
           alt="Bartosz Kuruc"
         />
       </div>

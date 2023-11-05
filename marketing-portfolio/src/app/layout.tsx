@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Bartosz Kuruc - Marketing Specialist",
   icons: {
     icon: ["/favicon.ico"],
-    apple: ["/apple-touch-icon.png?"],
+    apple: ["/apple-touch-icon.png"],
   },
 };
 
