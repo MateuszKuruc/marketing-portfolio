@@ -143,7 +143,7 @@ const NavBar = () => {
                 </ScrollLink>
               ) : (
                 <Link
-                  href={`/#${link.href}`}
+                  href={`/${link.href}`}
                   className={`regular-18 font-standard text-white flexCenter cursor-pointer pb-1.5 hover:text-coral-50 ${
                     activeLink === link.key ? "border-b-3 border-coral-50" : ""
                   }`}
