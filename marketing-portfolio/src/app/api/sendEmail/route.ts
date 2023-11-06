@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
 
     const mailOptions = {
       from: process.env.SEND_EMAIL,
-      to: process.env.SEND_EMAIL,
+      to: process.env.CONTACT_EMAIL,
       text: "This is a test string",
       subject: "Email sent test123",
       html: `
