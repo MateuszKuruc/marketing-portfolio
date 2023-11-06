@@ -8,6 +8,8 @@ import { GiConfirmed } from "react-icons/gi";
 import { BiErrorCircle } from "react-icons/bi";
 import { FormValues } from "../../types";
 
+import Reveal from "./Reveal";
+
 const Form = () => {
   const [successNotification, setSuccessNotification] = useState(false);
   const [errorNotification, setErrorNotification] = useState(false);
@@ -70,6 +72,9 @@ const Form = () => {
   });
 
   return (
+    <Reveal>
+
+   
     <form
       className={`md:mb-8 md:mt-2 xs:mb-4 bg-gray-90 p-5 md:p-10 flex flex-col gap-2 md:w-[520px] rounded-md relative  ${
         isSubmitting ? "opacity-50" : "opacity-100"
@@ -168,6 +173,7 @@ const Form = () => {
         variant={isSubmitting ? "btn_disabled" : "btn_submit"}
       />
     </form>
+    </Reveal>
   );
 };
 
