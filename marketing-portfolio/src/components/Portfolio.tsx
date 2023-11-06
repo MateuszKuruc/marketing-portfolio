@@ -17,16 +17,13 @@ const Portfolio = () => {
   };
 
   return (
-    <section
-    // id="portfolio"
-    className=" border-t-4 border-white max-container padding-container bg-gradient-to-t from-gray-30 to-gray-90 py-10 lg:py-20 md:gap-28"
-    >
-        <header className="mb-10 padding container max-container flex flex-col items-center">
-          <h1 className="font-header bold-40 lg:bold-52 text-blue-50">
-            Case study
-          </h1>
-        </header>
-        <Reveal>
+    <section className=" border-t-4 border-white max-container padding-container bg-gradient-to-t from-gray-30 to-gray-90 py-10 lg:py-20 md:gap-28">
+      <header className="mb-10 padding container max-container flex flex-col items-center">
+        <h1 className="font-header bold-40 lg:bold-52 text-blue-50">
+          Case study
+        </h1>
+      </header>
+      <Reveal>
         <div className="max-container md:padding-container">
           {ACCORDION_DATA.map((data, index) => {
             return (
@@ -41,8 +38,8 @@ const Portfolio = () => {
             );
           })}
         </div>
-    </Reveal>
-      </section>
+      </Reveal>
+    </section>
   );
 };
 
