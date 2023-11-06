@@ -25,11 +25,6 @@
   box-sizing: border-box;
 }
 
-.zoomed {
-  transform: scale(4);
-  
-}
-
 .font-header {
   font-family: GoodTimes;
 }
@@ -64,7 +59,7 @@
   }
 
   .max-container {
-    @apply mx-auto max-w-[1440px];
+    @apply mx-auto max-w-[1680px];
   }
 
   .padding-container {
