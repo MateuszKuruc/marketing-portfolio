@@ -13,7 +13,9 @@ const NavBar = () => {
   const pathname = usePathname();
 
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [activeLink, setActiveLink] = useState("hero");
+  const [activeLink, setActiveLink] = useState(() => {
+    return localStorage.getItem("activeLink") || "hero";
+  });
   const autoScrolling = useRef(false);
   const mobileMenuRef = useRef<HTMLDivElement | null>(null);
   const navRef = useRef<HTMLDivElement | null>(null);
@@ -66,8 +68,6 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-
-      console.log("scrollY", scrollY);
 
       let isMobile = null;
       typeof window !== "undefined"
