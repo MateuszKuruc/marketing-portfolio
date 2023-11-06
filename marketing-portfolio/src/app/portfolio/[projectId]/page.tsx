@@ -32,7 +32,7 @@ const Project = ({ params }: Params) => {
             <div>
               {client.img && (
                 <Image
-                  className="rounded-2xl "
+                  className="rounded-md border-2 border-coral-50 lg:rounded-2xl lg:border-4"
                   src={client.img}
                   width={1200}
                   height={350}
