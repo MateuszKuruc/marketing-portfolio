@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="border-t-0 border-white skew-y-3 bg-gradient-to-b from-gray-30 to-gray-90 max-container padding-container py-10 lg:py-20"
+      className="border-t-0 border-white skew-y-3 bg-gradient-to-br from-gray-90 to-gray-30 max-container padding-container py-10 lg:py-20"
     >
       <div className="-skew-y-3 flex justify-between lg:padding-container">
         <header>
