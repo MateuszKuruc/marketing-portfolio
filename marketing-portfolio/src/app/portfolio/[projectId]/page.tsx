@@ -1,7 +1,10 @@
+"use client";
+
 import React from "react";
 import { CLIENT_DATA } from "@/constants";
 import Image from "next/image";
 import { Params } from "../../../../types";
+import Reveal from "@/components/Reveal";
 
 const Project = ({ params }: Params) => {
   const id = params.projectId;
@@ -17,18 +20,25 @@ const Project = ({ params }: Params) => {
             <h1 className="font-header text-blue-50 bold-40 lg:bold-52 text-center">
               {client.title}
             </h1>
-            <p className="font-standard text-white regular-20 py-8">
-              {client.shortDescription}
-            </p>
+            <Reveal>
+              <p className="font-standard text-white regular-20 py-8">
+                {client.shortDescription}
+              </p>
+            </Reveal>
             <h2 className="font-header text-blue-50 bold-40 lg:bold-52">
               Wyniki
             </h2>
-            <p className="font-standard text-white regular-20 pt-8 pb-4">
-              {client.results_p1}
-            </p>
-            <p className="font-standard text-white regular-20 mb-8">
-              {client.results_p2}
-            </p>
+            <Reveal>
+              <p className="font-standard text-white regular-20 pt-8 pb-4">
+                {client.results_p1}
+              </p>
+            </Reveal>
+            <Reveal>
+              <p className="font-standard text-white regular-20 mb-8">
+                {client.results_p2}
+              </p>
+            </Reveal>
+
             <div>
               {client.img && (
                 <Image
@@ -40,15 +50,20 @@ const Project = ({ params }: Params) => {
                 />
               )}
             </div>
+
             <h2 className="font-header text-blue-50 bold-40 lg:bold-52 py-8">
               Ocena
             </h2>
-            <p className="font-standard text-white regular-20 mb-4">
-              {client.summary_p1}
-            </p>
-            <p className="font-standard text-white regular-20 mb-8">
-              {client.summary_p2}
-            </p>
+            <Reveal>
+              <p className="font-standard text-white regular-20 mb-4">
+                {client.summary_p1}
+              </p>
+            </Reveal>
+            <Reveal>
+              <p className="font-standard text-white regular-20 mb-8">
+                {client.summary_p2}
+              </p>
+            </Reveal>
           </div>
         ) : null
       )}
