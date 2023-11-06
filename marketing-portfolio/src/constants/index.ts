@@ -12,9 +12,9 @@ export const OFFSETS_DESKTOP: {
   [key: string]: number;
 } = {
   hero: 0,
-  about: 600,
-  portfolio: 1200,
-  contact: 2700,
+  about: 550,
+  portfolio: 1150,
+  contact: 2500,
 };
 
 // offsets for mobile

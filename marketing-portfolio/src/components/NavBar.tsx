@@ -185,7 +185,7 @@ const NavBar = () => {
               <li key={link.key}>
                 {isOnHomePage() ? (
                   <ScrollLink
-                    to={link.href}
+                    to={link.key}
                     spy={true}
                     smooth={true}
                     offset={-150}
@@ -205,7 +205,7 @@ const NavBar = () => {
                   </ScrollLink>
                 ) : (
                   <Link
-                    href={`/#${link.href}`}
+                    href={`/${link.href}`}
                     className="medium-18 text-black flexCenter pb-1.5"
                     onClick={() => {
                       autoScrolling.current = true;
