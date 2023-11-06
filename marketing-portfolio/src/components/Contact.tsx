@@ -1,7 +1,10 @@
+"use client";
+
 import React from "react";
 import Form from "./Form";
 import Link from "next/link";
 import Image from "next/image";
+import Reveal from "./Reveal";
 
 const Contact = () => {
   return (
@@ -14,7 +17,8 @@ const Contact = () => {
           Kontakt
         </h1>
         <p className="font-standard p-4 regular-20 text-white flex flex-col items-center">
-          Uzupełnij formularz lub zadzwoń: <span className="font-medium">{process.env.CONTACT_NUMBER}</span>
+          Uzupełnij formularz lub zadzwoń:{" "}
+          <span className="font-medium">{process.env.CONTACT_NUMBER}</span>
         </p>
 
         <Image
@@ -25,9 +29,11 @@ const Contact = () => {
           height={500}
           quality={100}
         />
-        <div className="pb-4 px-4">
-          <Form />
-        </div>
+        <Reveal>
+          <div className="pb-4 px-4">
+            <Form />
+          </div>
+        </Reveal>
       </div>
     </section>
   );

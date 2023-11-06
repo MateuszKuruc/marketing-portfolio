@@ -16,13 +16,16 @@ const About = () => {
             <h1 className="font-header bold-40 lg:bold-52 text-blue-50">
               O mnie
             </h1>
+            <Reveal>
+
             <p className="font-standard regular-20 mt-4 xl:max-w-[520px] text-white">
               Ekspert w dziedzinie marketingu cyfrowego oferujący ekskluzywne
               usługi dla wyjątkowych klientów.
             </p>
-            <Reveal>
+            </Reveal>
 
             
+            <Reveal>
             <ul className="ml-6 font-standard text-white regular-20 list-none">
               <li className="mt-2 flex items-center gap-2">
                 <BiRightArrow />
