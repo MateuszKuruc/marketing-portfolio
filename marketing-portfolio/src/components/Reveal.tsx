@@ -10,15 +10,12 @@ interface RevealProps {
 const Reveal = ({ children }: RevealProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-
   const mainControls = useAnimation();
-  const slideControls = useAnimation();
 
   useEffect(() => {
     console.log(isInView);
     if (isInView) {
       mainControls.start("visible");
-      slideControls.start("visible");
     }
   }, [isInView]);
 
@@ -31,7 +28,7 @@ const Reveal = ({ children }: RevealProps) => {
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.8, delay: 0.5 }}
+        transition={{ duration: 0.8, delay: 0.35 }}
       >
         {children}
       </motion.div>
