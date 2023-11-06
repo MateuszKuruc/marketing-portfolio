@@ -11,6 +11,17 @@ const Reveal = ({ children }: RevealProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
+  const mainControls = useAnimation();
+  const slideControls = useAnimation();
+
+  useEffect(() => {
+    console.log(isInView);
+    if (isInView) {
+      mainControls.start("visible");
+      slideControls.start("visible");
+    }
+  }, [isInView]);
+
   return (
     <div ref={ref}>
       <motion.div
@@ -19,12 +30,12 @@ const Reveal = ({ children }: RevealProps) => {
           visible: { opacity: 1, x: 0 },
         }}
         initial="hidden"
-        animate="visible"
-        transition={{ duration: 0.5, delay: 0.25 }}
+        animate={mainControls}
+        transition={{ duration: 0.8, delay: 0.25 }}
       >
         {children}
       </motion.div>
-    </div>
+     </div>
   );
 };
 
