@@ -188,7 +188,7 @@ const NavBar = () => {
                     to={link.href}
                     spy={true}
                     smooth={true}
-                    offset={-320}
+                    offset={-150}
                     duration={700}
                     className={`medium-18 text-black flexCenter pb-1.5 ${
                       activeLink === link.key

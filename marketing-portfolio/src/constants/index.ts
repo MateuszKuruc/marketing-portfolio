@@ -22,10 +22,10 @@ export const OFFSETS_DESKTOP: {
 export const OFFSETS_MOBILE: {
   [key: string]: number;
 } = {
-  home: 0,
-  about: 600,
-  portfolio: 1200,
-  contact: 2300,
+  hero: 0,
+  about: 560,
+  portfolio: 990,
+  contact: 2550,
 };
 
 // Clients for accordion
