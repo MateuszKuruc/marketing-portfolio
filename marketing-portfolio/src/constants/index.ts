@@ -1,6 +1,6 @@
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: "", key: "hero", label: "Strona główna" },
+  { href: "hero", key: "hero", label: "Strona główna" },
   { href: "about", key: "about", label: "O mnie" },
   { href: "portfolio", key: "portfolio", label: "Portfolio" },
   { href: "contact", key: "contact", label: "Kontakt " },
@@ -11,10 +11,10 @@ export const NAV_LINKS = [
 export const OFFSETS_DESKTOP: {
   [key: string]: number;
 } = {
-  home: 0,
-  about: 400,
-  portfolio: 950,
-  contact: 1700,
+  hero: 0,
+  about: 600,
+  portfolio: 1200,
+  contact: 2700,
 };
 
 // offsets for mobile

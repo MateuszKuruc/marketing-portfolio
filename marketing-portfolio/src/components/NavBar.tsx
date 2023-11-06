@@ -13,7 +13,7 @@ const NavBar = () => {
   const pathname = usePathname();
 
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [activeLink, setActiveLink] = useState("home");
+  const [activeLink, setActiveLink] = useState("hero");
   const autoScrolling = useRef(false);
   const mobileMenuRef = useRef<HTMLDivElement | null>(null);
   const navRef = useRef<HTMLDivElement | null>(null);
@@ -66,6 +66,8 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
+
+      console.log("scrollY", scrollY);
 
       let isMobile = null;
       typeof window !== "undefined"
@@ -127,7 +129,7 @@ const NavBar = () => {
                   to={link.key}
                   spy={true}
                   smooth={true}
-                  offset={-85}
+                  offset={-150}
                   duration={700}
                   className={`regular-18 font-standard text-white flexCenter cursor-pointer pb-1.5 hover:text-coral-50 ${
                     activeLink === link.key ? "border-b-3 border-coral-50" : ""
