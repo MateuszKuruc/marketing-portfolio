@@ -45,14 +45,14 @@ const About = () => {
         </header>
         <div className="flex flex-col gap-6 items-center justify-center">
           <Image
-            className="hidden xl:block"
+            className="hidden xl:block border-4 border-coral-50 rounded-full"
             src="/meta_cert.png"
             width={250}
             height={250}
             alt="Meta certyfikat"
           />
           <Image
-            className="hidden xl:block"
+            className="hidden xl:block rounded-2xl border-4 border-coral-50"
             src="/google_cert.png"
             width={250}
             height={88}
