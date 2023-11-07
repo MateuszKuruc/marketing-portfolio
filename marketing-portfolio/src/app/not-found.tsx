@@ -9,12 +9,12 @@ const NotFound = () => {
         Nie znaleziono strony, której szukasz.
       </p>
       <p className="font-standard regular-20">
-        Wróć do strony głównej{" "}
+        Wróć do<span>&nbsp;</span>
         <Link
           className="underline text-slate-500 font-medium hover:text-slate-700"
           href="/"
         >
-          tutaj
+          strony głównej
         </Link>
       </p>
     </main>
