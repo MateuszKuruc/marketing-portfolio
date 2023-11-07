@@ -143,26 +143,26 @@ export const CAROUSEL_DATA = [
   },
   {
     name: "Wany",
-    img: "/logo6.jpg",
+    img: "/logo5.jpg",
   },
   {
     name: "Cargo Expert",
-    img: "/logo7.jpg",
+    img: "/logo6.jpg",
   },
   {
     name: "Okee",
-    img: "/logo8.png",
+    img: "/logo7.png",
   },
   {
     name: "Strefa Serwisowa",
-    img: "/logo9.jpg",
+    img: "/logo8.jpg",
   },
   {
     name: "DomOgrodIMy",
-    img: "/logo10.png",
+    img: "/logo9.png",
   },
   {
     name: "Okna Debow",
-    img: "/logo11.png",
+    img: "/logo10.png",
   },
 ];

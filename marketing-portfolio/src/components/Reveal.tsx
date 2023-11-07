@@ -16,7 +16,7 @@ const Reveal = ({ children }: RevealProps) => {
     if (isInView) {
       mainControls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
 
   return (
     <div ref={ref}>
