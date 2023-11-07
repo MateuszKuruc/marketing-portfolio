@@ -21,7 +21,7 @@ const Contact = () => {
         <Image
           src="/background.jpg"
           className="w-full h-full absolute object-cover mix-blend-luminosity rounded-2xl opacity-5"
-          alt="background"
+          alt="background social media icons"
           width={500}
           height={500}
           quality={100}

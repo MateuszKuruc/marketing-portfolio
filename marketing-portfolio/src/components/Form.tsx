@@ -81,7 +81,10 @@ const Form = () => {
         noValidate
       >
         {successNotification && (
-          <div className="px-4 py-3 mb-4 rounded-2xl bg-green-700 border-2 flex flexAround">
+          <div
+            role="status"
+            className="px-4 py-3 mb-4 rounded-2xl bg-green-700 border-2 flex flexAround"
+          >
             <p className="font-standard text-white regular-20">
               Formularz został przesłany, dziękuję!
             </p>
@@ -90,7 +93,10 @@ const Form = () => {
         )}
 
         {errorNotification && (
-          <div className="px-4 py-3 mb-4 rounded-2xl bg-red-700 border-2 flex flexAround">
+          <div
+            role="status"
+            className="px-4 py-3 mb-4 rounded-2xl bg-red-700 border-2 flex flexAround"
+          >
             <p className="font-standard text-white regular-20">
               Wystąpił problem, spróbuj ponownie!
             </p>
@@ -172,6 +178,7 @@ const Form = () => {
           type="submit"
           title="WYŚLIJ"
           variant={isSubmitting ? "btn_disabled" : "btn_submit"}
+          aria-label="wyślij formularz"
         />
       </form>
     </Reveal>
