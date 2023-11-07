@@ -16,13 +16,15 @@ const AccordionItem = ({
       <div
         className="bg-gray-90 border-2 p-10 flex flexBetween border-coral-50"
         onClick={toggleAccordion}
+        role="button"
+        aria-label={open ? "Rozwiń" : "Zwiń"}
       >
         <p className="font-header text-white regular-32">{title}</p>
         <div>
           {open ? (
-            <AiFillMinusCircle color="white" size={50} />
+            <AiFillMinusCircle color="white" size={50} aria-label="Zwiń" />
           ) : (
-            <AiFillPlusCircle color="white" size={50} />
+            <AiFillPlusCircle color="white" size={50} aria-label="Rozwiń" />
           )}
         </div>
       </div>
@@ -31,14 +33,13 @@ const AccordionItem = ({
         <div className="font-standard regular-20 p-5 flex flex-col gap-4">
           <p>{description}</p>
           {open && (
-
             <Link
-            className="font-medium text-slate-500 regular-20 hover:text-slate-700"
-            href={`/portfolio/${id}`}
+              className="font-medium text-slate-500 regular-20 hover:text-slate-700"
+              href={`/portfolio/${id}`}
             >
-            Zobacz więcej...
-          </Link>
-            )}
+              Zobacz więcej...
+            </Link>
+          )}
         </div>
       </Collapse>
     </div>
