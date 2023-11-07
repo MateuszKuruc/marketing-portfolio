@@ -115,7 +115,7 @@ const NavBar = () => {
         ref={navRef}
         className="border-2 border-black flexAround glob max-container padding-container py-4 lg:py-8 bg-gray-90"
       >
-        <Link href="/">
+        <Link href="/" aria-label="logo Bartosz Kuruc">
           <Image src="/logo1.png" alt="home_logo" width={70} height={70} />
         </Link>
 
@@ -160,12 +160,14 @@ const NavBar = () => {
         <div ref={iconsRef}>
           {showMobileMenu ? (
             <AiOutlineClose
+              aria-label="otwórz menu mobilne"
               color="white"
               onClick={() => setShowMobileMenu(!showMobileMenu)}
               className="bold-32 lg:hidden"
             />
           ) : (
             <AiOutlineMenu
+              aria-label="zamknij menu mobilne"
               color="white"
               onClick={() => setShowMobileMenu(!showMobileMenu)}
               className="bold-32 lg:hidden"
