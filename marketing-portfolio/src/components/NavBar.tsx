@@ -109,6 +109,18 @@ const NavBar = () => {
     }
   });
 
+  const handleDesktopMenuClick = (linkKey: string) => {
+    autoScrolling.current = true;
+    handleLinkClick(linkKey);
+    
+  };
+
+  const handleMobileMenuClick = (linkKey: string) => {
+    autoScrolling.current = true;
+    handleLinkClick(linkKey);
+    setShowMobileMenu(!showMobileMenu);
+  };
+
   return (
     <section className="sticky top-0 z-30 opacity-95">
       <nav
@@ -133,10 +145,11 @@ const NavBar = () => {
                   className={`regular-18 font-standard text-white flexCenter cursor-pointer pb-1.5 hover:text-coral-50 ${
                     activeLink === link.key ? "border-b-3 border-coral-50" : ""
                   }`}
-                  onClick={() => {
-                    autoScrolling.current = true;
-                    handleLinkClick(link.key);
-                  }}
+                  // onClick={() => {
+                  //   autoScrolling.current = true;
+                  //   handleLinkClick(link.key);
+                  // }}
+                  onClick={() => handleDesktopMenuClick(link.key)}
                   aria-label={`Przejdź do: ${link.label}`}
                 >
                   {link.label}
@@ -147,10 +160,11 @@ const NavBar = () => {
                   className={`regular-18 font-standard text-white flexCenter cursor-pointer pb-1.5 hover:text-coral-50 ${
                     activeLink === link.key ? "border-b-3 border-coral-50" : ""
                   }`}
-                  onClick={() => {
-                    autoScrolling.current = true;
-                    handleLinkClick(link.key);
-                  }}
+                  // onClick={() => {
+                  //   autoScrolling.current = true;
+                  //   handleLinkClick(link.key);
+                  // }}
+                  onClick={() => handleDesktopMenuClick(link.key)}
                   aria-label={`Przejdź do: ${link.label}`}
                 >
                   {link.label}
@@ -199,11 +213,12 @@ const NavBar = () => {
                         ? "border-b-3 border-coral-50"
                         : ""
                     }`}
-                    onClick={() => {
-                      autoScrolling.current = true;
-                      handleLinkClick(link.key);
-                      setShowMobileMenu(!showMobileMenu);
-                    }}
+                    // onClick={() => {
+                    //   autoScrolling.current = true;
+                    //   handleLinkClick(link.key);
+                    //   setShowMobileMenu(!showMobileMenu);
+                    // }}
+                    onClick={() => handleMobileMenuClick(link.key)}
                     aria-label={`Przejdź do: ${link.label}`}
                   >
                     {link.label}
@@ -212,11 +227,12 @@ const NavBar = () => {
                   <Link
                     href={`/${link.href}`}
                     className="medium-18 text-black flexCenter pb-1.5"
-                    onClick={() => {
-                      autoScrolling.current = true;
-                      handleLinkClick(link.key);
-                      setShowMobileMenu(!showMobileMenu);
-                    }}
+                    // onClick={() => {
+                    //   autoScrolling.current = true;
+                    //   handleLinkClick(link.key);
+                    //   setShowMobileMenu(!showMobileMenu);
+                    // }}
+                    onClick={() => handleMobileMenuClick(link.key)}
                     aria-label={`Przejdź do: ${link.label}`}
                   >
                     {link.label}
