@@ -125,6 +125,7 @@ const NavBar = () => {
               {isOnHomePage() ? (
                 <ScrollLink
                   to={link.key}
+                  href={link.href}
                   spy={true}
                   smooth={true}
                   offset={-150}
@@ -188,6 +189,7 @@ const NavBar = () => {
                 {isOnHomePage() ? (
                   <ScrollLink
                     to={link.key}
+                    href={link.href}
                     spy={true}
                     smooth={true}
                     offset={-150}
