@@ -32,27 +32,27 @@ const Footer = () => {
         <div className="flex flex-col items-center gap-4">
           <p className="text-white font-medium regular-20">Social</p>
           <div className="flex ">
-            <Link
+            <a
               target="_blank"
               href="placeholder"
               aria-label="Link do profilu Facebook"
             >
               <AiOutlineFacebook color="white" size="50" />
-            </Link>
-            <Link
+            </a>
+            <a
               target="_blank"
               href="placeholderlink"
               aria-label="Link do profilu Instagram"
             >
               <AiOutlineInstagram color="white" size="50" />
-            </Link>
-            <Link
+            </a>
+            <a
               target="_blank"
               href="https://www.linkedin.com/in/bartoszkuruc/"
               aria-label="Link do profilu LinkedIn"
             >
               <AiOutlineLinkedin color="white" size="50" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
