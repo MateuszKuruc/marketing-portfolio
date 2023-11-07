@@ -136,6 +136,7 @@ const NavBar = () => {
                     autoScrolling.current = true;
                     handleLinkClick(link.key);
                   }}
+                  aria-label={`Przejdź do: ${link.label}`}
                 >
                   {link.label}
                 </ScrollLink>
@@ -149,6 +150,7 @@ const NavBar = () => {
                     autoScrolling.current = true;
                     handleLinkClick(link.key);
                   }}
+                  aria-label={`Przejdź do: ${link.label}`}
                 >
                   {link.label}
                 </Link>
@@ -200,6 +202,7 @@ const NavBar = () => {
                       handleLinkClick(link.key);
                       setShowMobileMenu(!showMobileMenu);
                     }}
+                    aria-label={`Przejdź do: ${link.label}`}
                   >
                     {link.label}
                   </ScrollLink>
@@ -212,6 +215,7 @@ const NavBar = () => {
                       handleLinkClick(link.key);
                       setShowMobileMenu(!showMobileMenu);
                     }}
+                    aria-label={`Przejdź do: ${link.label}`}
                   >
                     {link.label}
                   </Link>
