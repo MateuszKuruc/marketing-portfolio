@@ -1,5 +1,3 @@
-import { StringSchema } from "yup";
-
 export interface AccordionItemProps {
   open: boolean;
   toggleAccordion: () => void;
