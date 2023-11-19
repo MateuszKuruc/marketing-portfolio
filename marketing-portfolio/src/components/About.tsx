@@ -22,34 +22,43 @@ const About = () => {
             </p>
           </Reveal>
 
-          <Reveal>
-            <ul className="ml-6 font-standard text-white regular-20 list-none">
+          <ul className="ml-6 font-standard text-white regular-20 list-none">
+            <Reveal>
               <li className="mt-2 flex items-center gap-2">
                 <BiRightArrow />
                 Kampanie Facebook Ads
               </li>
-
+            </Reveal>
+            <Reveal>
               <li className="flex items-center gap-2">
                 <BiRightArrow /> Audyty kont Facebook Ads
               </li>
+            </Reveal>
+            <Reveal>
               <li className=" flex items-center gap-2">
                 <BiRightArrow />
                 Google Ads
               </li>
+            </Reveal>
+            <Reveal>
               <li className="flex items-center gap-2">
                 <BiRightArrow />
                 Facebook Pixel
               </li>
+            </Reveal>
+            <Reveal>
               <li className="flex items-center gap-2">
                 <BiRightArrow />
                 Google Analytics 4
               </li>
+            </Reveal>
+            <Reveal>
               <li className="flex items-center gap-2">
                 <BiRightArrow />
                 Google Tag Manager
               </li>
-            </ul>
-          </Reveal>
+            </Reveal>
+          </ul>
         </header>
         <div className="flex flex-col gap-6 items-center justify-center">
           <Image

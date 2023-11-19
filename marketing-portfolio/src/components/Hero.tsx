@@ -15,6 +15,7 @@ const Hero = () => {
             <h1 className="font-header hidden lg:block bold-40 lg:bold-52 text-blue-50">
               Facebook Ads - razem zrobimy z tego hit!
             </h1>
+
             <Reveal>
               <p className="font-standard regular-20 my-4 text-white xl:max-w-[520px]">
                 Nie wiesz jak zdominować świat{" "}

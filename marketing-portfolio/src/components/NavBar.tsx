@@ -127,7 +127,12 @@ const NavBar = () => {
         className="border-2 border-black flexAround glob max-container padding-container py-4 lg:py-8 bg-gray-90"
       >
         <Link href="/" aria-label="logo Bartosz Kuruc">
-          <Image src="/logo1.png" alt="home_logo" width={70} height={70} />
+          <Image
+            src="/logo_barti.png"
+            alt="home_logo"
+            width={100}
+            height={70}
+          />
         </Link>
 
         <ul className="hidden h-full gap-12 lg:flex">

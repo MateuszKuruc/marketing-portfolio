@@ -16,7 +16,7 @@ const Footer = () => {
           <p className="text-white font-standard regular-18">
             Email:{" "}
             <Link
-              className="text-blue-50 font-standard regular-18"
+              className="text-blue-50 font-standard regular-18 hover:text-blue-70"
               href={`mailto:${process.env.CONTACT_EMAIL}`}
             >
               {process.env.CONTACT_EMAIL}
@@ -31,27 +31,39 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-center gap-4">
           <p className="text-white font-medium regular-20">Social</p>
-          <div className="flex ">
+          <div className="flex">
             <a
               target="_blank"
               href="placeholder"
               aria-label="Link do profilu Facebook"
             >
-              <AiOutlineFacebook color="white" size="50" />
+              <AiOutlineFacebook
+                color="white"
+                size="50"
+                className="hover:scale-105 ease-in-out duration-300"
+              />
             </a>
             <a
               target="_blank"
               href="placeholderlink"
               aria-label="Link do profilu Instagram"
             >
-              <AiOutlineInstagram color="white" size="50" />
+              <AiOutlineInstagram
+                color="white"
+                size="50"
+                className="hover:scale-105 ease-in-out duration-300"
+              />
             </a>
             <a
               target="_blank"
               href="https://www.linkedin.com/in/bartoszkuruc/"
               aria-label="Link do profilu LinkedIn"
             >
-              <AiOutlineLinkedin color="white" size="50" />
+              <AiOutlineLinkedin
+                color="white"
+                size="50"
+                className="hover:scale-105 ease-in-out duration-300"
+              />
             </a>
           </div>
         </div>
