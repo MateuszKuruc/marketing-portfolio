@@ -38,9 +38,8 @@ const Footer = () => {
               aria-label="Link do profilu Facebook"
             >
               <AiOutlineFacebook
-                color="white"
                 size="50"
-                className="hover:scale-105 ease-in-out duration-300"
+                className="hover:scale-110 ease-in-out duration-300 text-white hover:text-blue-50"
               />
             </a>
             <a
@@ -49,9 +48,8 @@ const Footer = () => {
               aria-label="Link do profilu Instagram"
             >
               <AiOutlineInstagram
-                color="white"
                 size="50"
-                className="hover:scale-105 ease-in-out duration-300"
+                className="hover:scale-110 ease-in-out duration-300 text-white  hover:text-blue-50"
               />
             </a>
             <a
@@ -60,9 +58,8 @@ const Footer = () => {
               aria-label="Link do profilu LinkedIn"
             >
               <AiOutlineLinkedin
-                color="white"
                 size="50"
-                className="hover:scale-105 ease-in-out duration-300"
+                className="hover:scale-110 ease-in-out duration-300 text-white hover:text-blue-50"
               />
             </a>
           </div>
