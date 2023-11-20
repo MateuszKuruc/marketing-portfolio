@@ -36,6 +36,7 @@ const Footer = () => {
               target="_blank"
               href="placeholder"
               aria-label="Link do profilu Facebook"
+              rel="noopener noreferrer"
             >
               <AiOutlineFacebook
                 size="50"
@@ -46,6 +47,7 @@ const Footer = () => {
               target="_blank"
               href="placeholderlink"
               aria-label="Link do profilu Instagram"
+              rel="noopener noreferrer"
             >
               <AiOutlineInstagram
                 size="50"
@@ -56,6 +58,7 @@ const Footer = () => {
               target="_blank"
               href="https://www.linkedin.com/in/bartoszkuruc/"
               aria-label="Link do profilu LinkedIn"
+              rel="noopener noreferrer"
             >
               <AiOutlineLinkedin
                 size="50"
