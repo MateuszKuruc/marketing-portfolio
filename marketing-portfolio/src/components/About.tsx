@@ -23,41 +23,59 @@ const About = () => {
           </Reveal>
 
           <ul className="ml-6 font-standard text-white regular-20 list-none">
-            <Reveal>
-              <li className="mt-2 flex items-center gap-2">
-                <BiRightArrow />
-                Kampanie Facebook Ads
-              </li>
-            </Reveal>
-            <Reveal>
-              <li className="flex items-center gap-2">
-                <BiRightArrow /> Audyty kont Facebook Ads
-              </li>
-            </Reveal>
-            <Reveal>
-              <li className=" flex items-center gap-2">
-                <BiRightArrow />
-                Google Ads
-              </li>
-            </Reveal>
-            <Reveal>
-              <li className="flex items-center gap-2">
-                <BiRightArrow />
-                Facebook Pixel
-              </li>
-            </Reveal>
-            <Reveal>
-              <li className="flex items-center gap-2">
-                <BiRightArrow />
-                Google Analytics 4
-              </li>
-            </Reveal>
-            <Reveal>
-              <li className="flex items-center gap-2">
-                <BiRightArrow />
-                Google Tag Manager
-              </li>
-            </Reveal>
+            <li>
+              <Reveal>
+                <div className="mt-2 flex items-center gap-2">
+                  <BiRightArrow />
+                  <p>Kampanie Facebook Ads</p>
+                </div>
+              </Reveal>
+            </li>
+
+            <li>
+              <Reveal>
+                <div className="mt-2 flex items-center gap-2">
+                  <BiRightArrow />
+                  <p>Audyty kont Facebook Ads</p>
+                </div>
+              </Reveal>
+            </li>
+
+            <li>
+              <Reveal>
+                <div className="mt-2 flex items-center gap-2">
+                  <BiRightArrow />
+                  <p>Google Ads</p>
+                </div>
+              </Reveal>
+            </li>
+
+            <li>
+              <Reveal>
+                <div className="mt-2 flex items-center gap-2">
+                  <BiRightArrow />
+                  <p>Facebook Pixel</p>
+                </div>
+              </Reveal>
+            </li>
+
+            <li>
+              <Reveal>
+                <div className="mt-2 flex items-center gap-2">
+                  <BiRightArrow />
+                  <p>Google Analytics 4</p>
+                </div>
+              </Reveal>
+            </li>
+
+            <li>
+              <Reveal>
+                <div className="mt-2 flex items-center gap-2">
+                  <BiRightArrow />
+                  <p>Google Tag Manager</p>
+                </div>
+              </Reveal>
+            </li>
           </ul>
         </header>
         <div className="flex flex-col gap-6 items-center justify-center">

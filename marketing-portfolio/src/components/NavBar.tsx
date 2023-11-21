@@ -131,7 +131,8 @@ const NavBar = () => {
             src="/logo_barti.png"
             alt="home_logo"
             width={100}
-            height={70}
+            height={57}
+            priority={true}
           />
         </Link>
 
