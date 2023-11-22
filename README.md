@@ -34,9 +34,15 @@ The goal of the project was to build a modern portfolio website for a marketing 
 
 <h2>Visual representation</h2>
 <div style="display: flex;">
-  
-<img width="500px" src="marketing-portfolio/public/marketing_desktop_3.png" alt="marketing portfolio desktop screen" />
-<img width="200px" src="marketing-portfolio/public/marketing_mobile_2.png" alt="marketing portfolio mobile screen" />
+<img width="500px" src="marketing-portfolio/public/marketing_desktop_3.png" alt="marketing portfolio contact form desktop screen" />
+<img width="200px" src="marketing-portfolio/public/marketing_mobile_2.png" alt="marketing portfolio carousel mobile screen" />
+<br/>
+<img width="200px" src="marketing-portfolio/public/marketing_mobile_1.png" alt="marketing portfolio case study mobile screen" />
+<img width="500px" src="marketing-portfolio/public/marketing_desktop_2.png" alt="marketing portfolio about section desktop screen" />
+
+<br/>
+<img width="500px" src="marketing-portfolio/public/marketing_desktop_2.png" alt="marketing portfolio case study desktop screen" />
+<img width="200px" src="marketing-portfolio/public/marketing_performance.png" alt="marketing portfolio performance statistics" />
 </div>
 
 <h2>More details</h2>
