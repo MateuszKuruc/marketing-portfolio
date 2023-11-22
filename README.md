@@ -1,12 +1,12 @@
 # marketing-portfolio
-The goal of the project wsa to build a modern portfolio website for a marketing professional, so the clients can easily find key details and quickly get in touch.
+The goal of the project was to build a modern portfolio website for a marketing professional, so the clients can easily find key details and quickly get in touch.
 
 
 🌐 [Marketing portfolio website live](https://www.reklamyfacebook.pl/)
 
 <h3>Goals</h3>
 <p>This is a modern portfolio website for online marketing specialist. Developed with focus on performance, responsive design and clean, futuristic design.</p>
-<p>The project of this type was a perfect excuse for me to pick up Next.js, TypeScript and Tailwind CSS, as I haven't worked with these technologies before. Next.js naturally felt a good fit because the app is frontend heavy, but there was a need to handle some backend requests as well.</p>
+<p>The project of this type was a perfect excuse for me to pick up Next.js, TypeScript and Tailwind CSS, as I haven't worked with these technologies before. Next.js naturally felt a good fit because the app is frontend heavy, but there was still a need to handle some backend requests as well.</p>
 <p>My job was to create graphic design for the website, prepare color palette, build the whole application and deploy it.</p>
 
 <h3>Technologies</h3>
