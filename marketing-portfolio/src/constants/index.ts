@@ -58,7 +58,7 @@ export const CLIENT_DATA = [
     results_p2:
       "Moje działania przyniosły wzrost ROAS do poziomu 16000%. Taki wynik udało się osiągnąć dzięki ciągłemu monitorowaniu kampanii, analizie danych i dostosowywaniu się do zmieniających się preferencji klientów.",
     summary_p1:
-      "Podsumowując, zaangażowanie w kampanię reklamową dla sklepu Okee przyniosło zdumiewająco wysoki zwrot z inwestycji i umocniło pozycję marki na rynku.",
+      "Podsumowując, zaangażowanie w kampanię reklamową przyniosło zdumiewająco wysoki zwrot z inwestycji i umocniło pozycję marki na rynku.",
     summary_p2:
       "Moje doświadczenie ponownie potwierdza, że odpowiednio zaprojektowana i zarządzana strategia reklamowa może generować znaczące korzyści. W kwestii wyników kampanii nie ma sufitu, zamykaliśmy niektóre tygodnie na ROAS'ie 70-80.",
     img: "/client_2_results.jpeg",
@@ -133,10 +133,10 @@ export const CAROUSEL_DATA = [
     name: "Credit Agricole",
     img: "/logo2.jpg",
   },
-  {
-    name: "Cabrio Poland",
-    img: "/logo3.jpg",
-  },
+  // {
+  //   name: "Cabrio Poland",
+  //   img: "/logo3.jpg",
+  // },
   {
     name: "Prof Energy",
     img: "/logo4.jpg",
@@ -149,10 +149,10 @@ export const CAROUSEL_DATA = [
     name: "Cargo Expert",
     img: "/logo6.jpg",
   },
-  {
-    name: "Okee",
-    img: "/logo7.png",
-  },
+  // {
+  //   name: "Okee",
+  //   img: "/logo7.png",
+  // },
   {
     name: "Strefa Serwisowa",
     img: "/logo8.jpg",
