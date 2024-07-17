@@ -12,7 +12,7 @@ The goal of the project was to build a modern portfolio website for a marketing 
 <h2>Technologies</h2>
 <img align="left" alt="Next.js" width="30px"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />     
 <img align="left" alt="TypeScript" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />   
-<img align="left" alt="Tailwind" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />   
+<img align="left" alt="Tailwind" width="30px" src="https://www.svgrepo.com/show/333609/tailwind-css.svg" />   
 
 <br/><br/>
 
